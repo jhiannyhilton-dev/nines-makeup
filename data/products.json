@@ -4,57 +4,57 @@
       "salePrice": 0,
       "img": "https://m.media-amazon.com/images/I/61k50H8JLyL._AC_UF1000,1000_QL80_.jpg",
       "brand": "Huda Beauty",
-      "price": 2000,
+      "price": 1800,
       "name": "EASY BAKE LOOSE BAKING & SETTING POWDER",
       "cost": "1-10: $1500 / 10-99: $1200 / 100+: $1100",
       "variants": [
         {
           "name": "Matcha Milk Cake",
-          "img": ""
+          "img": "https://hudabeauty.com/cdn/shop/files/EASY-BAKE_MATCHA-MILK-CAKE_SHOP-PDP_FINAL_PACKSHOT_1.webp?v=1772447567&width=1100"
         },
         {
           "name": "Pound Cake",
-          "img": ""
+          "img": "https://hudabeauty.com/cdn/shop/files/PDP-SECTION1-EASYBAKELOOSEPOWDER-POUNDCAKE-TILE1_a4006f92-8df8-4053-a348-ee20d9d347c7.webp?v=1759866924&width=1100"
         },
         {
           "name": "Cupcake",
-          "img": ""
+          "img": "https://hudabeauty.com/cdn/shop/files/PDP-SECTION1-EASYBAKELOOSEPOWDER-CUPCAKE-TILE1.webp?v=1759866911&width=1024"
         },
         {
           "name": "Peach Pie",
-          "img": ""
+          "img": "https://hudabeauty.com/cdn/shop/files/PDP-SECTION1-EASYBAKELOOSEPOWDER-PEACHPIE-TILE1.webp?v=1759866848&width=1100"
         },
         {
           "name": "Sugar Cookie Cake",
-          "img": ""
+          "img": "https://hudabeauty.com/cdn/shop/files/PDP-SECTION1-EASYBAKELOOSEPOWDER-SUGARCOOKIE-TILE1.webp?v=1759866899&width=1024"
         },
         {
           "name": "Ube Birthday Cake",
-          "img": ""
+          "img": "https://hudabeauty.com/cdn/shop/files/PDP-SECTION1-EASYBAKELOOSEPOWDER-UBEBIRTHDAYCAKE-TILE1_f7a2d3fc-04e4-45e2-b076-399cceafc837.webp?v=1759749397&width=1100"
         },
         {
-          "name": "Cherry Blossom",
-          "img": ""
+          "name": "Cherry Blossom Cake",
+          "img": "https://hudabeauty.com/cdn/shop/files/PDP-SECTION1-EASYBAKELOOSEPOWDER-CHERRYBLOSSOMCAKE-TILE1.webp?v=1759866887&width=1100"
         },
         {
-          "name": "Banana Bread",
-          "img": ""
+          "name": "Banana Bread ",
+          "img": "https://hudabeauty.com/cdn/shop/files/PDP-SECTION1-EASYBAKELOOSEPOWDER-BANANABREAD-TILE1.webp?v=1759866935&width=1100"
         },
         {
           "name": "Kunafa",
-          "img": ""
+          "img": "https://hudabeauty.com/cdn/shop/files/PDP-SECTION1-EASYBAKELOOSEPOWDER-KUNAFA-TILE1.webp?v=1759866958&width=1100"
         },
         {
           "name": "Blondie",
-          "img": ""
+          "img": "https://hudabeauty.com/cdn/shop/files/PDP-SECTION1-EASYBAKELOOSEPOWDER-BLONDIE-TILE1.webp?v=1759866947&width=1100"
         },
         {
           "name": "Cinnamon Bum",
-          "img": ""
+          "img": "https://hudabeauty.com/cdn/shop/files/PDP-SECTION1-EASYBAKELOOSEPOWDER-CINNAMONBUN-TILE1.webp?v=1759866971&width=1100"
         },
         {
           "name": "Coffe Cake",
-          "img": ""
+          "img": "https://hudabeauty.com/cdn/shop/files/PDP-SECTION1-EASYBAKELOOSE-COFFEECAKE-TILE1.webp?v=1770025663&width=1100"
         }
       ],
       "saleEndsAt": null,
