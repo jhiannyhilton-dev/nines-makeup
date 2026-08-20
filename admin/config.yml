@@ -60,7 +60,10 @@ collections:
               - { label: "Tamaño / presentación", name: "spec", widget: "string", required: false }
               - { label: "Precio normal (RD$, 0 = pendiente)", name: "price", widget: "number", value_type: "int", default: 0 }
               - { label: "Foto del producto", name: "img", widget: "image", required: false, hint: "Si la dejas vacía se muestra un ícono con la inicial de la marca." }
-              - { label: "Variantes / tonos", name: "variants", widget: "list", field: { label: "Tono", name: "variant", widget: "string" }, required: false }
+              - { label: "Variantes / tonos", name: "variants", widget: "list", required: false, summary: "{{fields.name}}", fields: [
+                  { label: "Nombre del tono", name: "name", widget: "string" },
+                  { label: "Foto de este tono (opcional)", name: "img", widget: "image", required: false, hint: "Si la dejas vacía se usa la foto principal del producto." }
+                ] }
               - { label: "Nota de costo mayorista (referencia interna)", name: "cost", widget: "string", required: false }
               - { label: "Precio de oferta RD$ (0 = sin oferta)", name: "salePrice", widget: "number", value_type: "int", default: 0, hint: "Si pones aquí un precio menor al normal, el producto aparece en Ofertas / Bazaar." }
               - { label: "La oferta termina (opcional)", name: "saleEndsAt", widget: "datetime", required: false, hint: "Deja vacío para que la oferta no venza sola. Actívala poniendo un precio de oferta arriba." }
