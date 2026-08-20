@@ -246,6 +246,22 @@
   // ---------- sincroniza precio/foto de las tarjetas de producto ya dibujadas
   // en cada página de categoría con los datos reales (para que un cambio de
   // precio o foto en el admin se vea sin tener que reescribir el HTML) ----------
+  function frameImg(card, p, variantName) {
+    const frame = card.querySelector(".pcard-frame");
+    if (!frame) return;
+    let img = p.img;
+    if (variantName) {
+      const v = (p.variants || []).find(v => v.name === variantName);
+      if (v && v.img) img = v.img;
+    }
+    if (img) {
+      frame.innerHTML = `<img src="${img}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover">`;
+      frame.classList.add("has-photo");
+    } else {
+      frame.innerHTML = `<div class="pcard-swatch">${p.brand.charAt(0)}</div>`;
+      frame.classList.remove("has-photo");
+    }
+  }
   function syncProductCards() {
     document.querySelectorAll("[data-id]").forEach(card => {
       if (!card.classList.contains("pcard")) return;
@@ -265,10 +281,7 @@
           priceEl.textContent = "Precio próximamente";
         }
       }
-      const frame = card.querySelector(".pcard-frame");
-      if (frame && p.img) {
-        frame.innerHTML = `<img src="${p.img}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover">`;
-      }
+      frameImg(card, p);
       if (onSale(p) && !card.querySelector(".pcard-sale-badge")) {
         const badge = document.createElement("div");
         badge.className = "pcard-sale-badge";
@@ -285,7 +298,7 @@
   }
   function cardHTML(p) {
     const sw = p.img ? `<img src="${p.img}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover">` : `<div class="pcard-swatch">${p.brand.charAt(0)}</div>`;
-    const variantsOpts = (p.variants || []).map(v => `<option>${v}</option>`).join("");
+    const variantsOpts = (p.variants || []).map(v => `<option>${v.name}</option>`).join("");
     const priceHTML = p.price > 0
       ? `<span class="price-strike">${money(p.price)}</span> <span class="price-sale">${money(p.salePrice)}</span>`
       : `Precio próximamente`;
@@ -293,7 +306,7 @@
     if (p.saleEndsAt) countdown = `<div class="pcard-countdown" data-ends="${p.saleEndsAt}">Calculando…</div>`;
     return `<article class="pcard" data-id="${p.id}">
       <div class="pcard-sale-badge">Oferta</div>
-      <div class="pcard-frame">${sw}</div>
+      <div class="pcard-frame${p.img ? " has-photo" : ""}">${sw}</div>
       <div class="pcard-brand">${p.brand}</div>
       <h3 class="pcard-name">${p.name}</h3>
       <div class="pcard-spec">${p.spec || ""}</div>
@@ -388,5 +401,16 @@
     });
     const zsel = document.querySelector("[data-f-zone]");
     if (zsel) zsel.addEventListener("change", e => { zone = e.target.value; paintTotals(); });
+
+    // cuando el cliente elige un tono distinto en una tarjeta de producto,
+    // si ese tono tiene su propia foto, la mostramos en vez de la genérica
+    document.addEventListener("change", e => {
+      const sel = e.target.closest("[data-variant]");
+      if (!sel) return;
+      const card = sel.closest(".pcard");
+      if (!card) return;
+      const p = find(sel.dataset.variant);
+      if (p) frameImg(card, p, sel.value);
+    });
   }
 })();
