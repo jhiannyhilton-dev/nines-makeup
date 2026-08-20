@@ -76,9 +76,9 @@ collections:
         file: "data/home.json"
         format: "json"
         fields:
-          - { label: "Foto principal del banner de arriba (hero)", name: "heroMain", widget: "image", hint: "Usa PNG con fondo transparente — el producto se ve flotando sin caja alrededor." }
-          - { label: "Foto secundaria del banner de arriba", name: "heroSide", widget: "image", hint: "PNG con fondo transparente." }
-          - { label: "Foto destacada — paso 1 de 3 (círculo 'Nine's Pick')", name: "showcase1", widget: "image", hint: "PNG con fondo transparente. Si solo llenas esta, los pasos 2 y 3 la reusan automáticamente." }
+          - { label: "Foto principal del banner de arriba (hero)", name: "heroMain", widget: "image", required: false, hint: "Usa PNG con fondo transparente — el producto se ve flotando sin caja alrededor." }
+          - { label: "Foto secundaria del banner de arriba", name: "heroSide", widget: "image", required: false, hint: "PNG con fondo transparente." }
+          - { label: "Foto destacada — paso 1 de 3 (círculo 'Nine's Pick')", name: "showcase1", widget: "image", required: false, hint: "PNG con fondo transparente. Si solo llenas esta, los pasos 2 y 3 la reusan automáticamente." }
           - { label: "Foto destacada — paso 2 de 3", name: "showcase2", widget: "image", required: false }
           - { label: "Foto destacada — paso 3 de 3", name: "showcase3", widget: "image", required: false }
           - label: "Favoritos de Nine's (4 productos del catálogo)"
@@ -86,7 +86,7 @@ collections:
             widget: "list"
             hint: "Escribe el ID exacto de cada producto (lo ves en la pestaña Productos, arriba de cada ficha, ej. rb-076). El nombre, marca, foto y precio se toman solos del catálogo — no hace falta subir fotos aquí."
             field: { label: "ID del producto", name: "id", widget: "string" }
-          - { label: "Foto de la sección 'La tienda se siente como una marca'", name: "editorial", widget: "image", hint: "PNG con fondo transparente para mejor resultado." }
+          - { label: "Foto de la sección 'La tienda se siente como una marca'", name: "editorial", widget: "image", required: false, hint: "PNG con fondo transparente para mejor resultado." }
 
   - name: "tienda"
     label: "Configuración de la tienda"
