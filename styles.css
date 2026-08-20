@@ -385,18 +385,18 @@
     .navbar{color:var(--wine-deep)}
     .navbar:not(.scrolled){background:rgba(255,250,248,.72);backdrop-filter:blur(12px)}
     .product-photo-arch{background:#f1d3df;transform:rotate(2deg);display:block}
-    .hero-product{position:absolute;object-fit:contain;filter:drop-shadow(0 30px 40px rgba(47,2,12,.20))}
-    .hero-product-main{width:92%;height:92%;left:4%;top:4%;transform:rotate(-5deg)}
+    .hero-product{position:absolute;object-fit:cover;filter:drop-shadow(0 30px 40px rgba(47,2,12,.20))}
+    .hero-product-main{width:100%;height:100%;left:0;top:0}
     .hero-product-side{width:38%;height:48%;right:-5%;bottom:2%;transform:rotate(9deg)}
-    .real-showcase{background:transparent;overflow:visible;padding:0;box-shadow:none!important}
+    .real-showcase{background:transparent;overflow:hidden;padding:0;box-shadow:none!important}
     .real-showcase::before,.real-showcase::after{display:none!important}
-    .real-showcase img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 30px 36px rgba(47,2,12,.22));transition:opacity .18s ease}
-    .real-product{background:transparent;overflow:visible;box-shadow:none!important}
+    .real-showcase img{width:100%;height:100%;object-fit:cover;transition:opacity .18s ease}
+    .real-product{background:transparent;overflow:hidden}
     .real-product::before{display:none}
-    .real-product img{position:relative;z-index:2;width:92%;height:92%;object-fit:contain;filter:drop-shadow(0 20px 26px rgba(47,2,12,.16));transition:transform .5s var(--ease)}
+    .real-product img{position:relative;z-index:2;width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
     .product-card:hover .real-product img{transform:scale(1.05)}
-    .real-editorial{background:transparent!important;overflow:visible;padding:0;box-shadow:none!important}
-    .real-editorial img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 24px 30px rgba(47,2,12,.2))}
+    .real-editorial{background:transparent!important;overflow:hidden;padding:0;box-shadow:none!important}
+    .real-editorial img{width:100%;height:100%;object-fit:cover}
     .hero .eyebrow{color:var(--wine)}
     .hero h1{color:var(--wine-deep)}
 
