@@ -387,7 +387,12 @@
     .product-photo-arch{background:#f1d3df;transform:rotate(2deg);display:block}
     .hero-product{position:absolute;object-fit:cover;filter:drop-shadow(0 30px 40px rgba(47,2,12,.20))}
     .hero-product-main{width:100%;height:100%;left:0;top:0}
-    .hero-product-side{width:38%;height:48%;right:-5%;bottom:2%;transform:rotate(9deg)}
+    .hero-side-card{
+      position:absolute;width:34%;aspect-ratio:.82;right:-8%;bottom:3%;
+      border-radius:24px;overflow:hidden;box-shadow:0 30px 60px rgba(47,2,12,.28);
+      background:#fff;transform:rotate(9deg);z-index:3;
+    }
+    .hero-product-side{position:static;width:100%;height:100%;transform:none;filter:none}
     .real-showcase{background:transparent;overflow:hidden;padding:0;box-shadow:none!important}
     .real-showcase::before,.real-showcase::after{display:none!important}
     .real-showcase img{width:100%;height:100%;object-fit:cover;transition:opacity .18s ease}
