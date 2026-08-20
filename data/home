@@ -2,9 +2,6 @@
   "heroMain": "https://www.cultbeauty.co.uk/images?auto=avif&fit=cover&format=webp&height=985&url=https%3A%2F%2Fstatic.thcdn.com%2Fproductimg%2Foriginal%2F15408984-1205167299110874.jpg&width=985",
   "heroSide": "https://www.magasin.dk/dw/image/v2/BFCS_PRD/on/demandware.static/-/Sites-mdn-master-catalog/default/dw968c0645/large2/88/60578-media_principal.jpg?sfrm=jpg&sw=900",
   "showcase": "https://www.magasin.dk/dw/image/v2/BFCS_PRD/on/demandware.static/-/Sites-mdn-master-catalog/default/dw87bebea2/large2/1E/425708_swatch.jpg?sfrm=jpg&sw=900",
-  "edit1": "https://www.magasin.dk/dw/image/v2/BFCS_PRD/on/demandware.static/-/Sites-mdn-master-catalog/default/dw968c0645/large2/88/60578-media_principal.jpg?sfrm=jpg&sw=900",
-  "edit2": "https://www.magasin.dk/dw/image/v2/BFCS_PRD/on/demandware.static/-/Sites-mdn-master-catalog/default/dw87bebea2/large2/1E/425708_swatch.jpg?sfrm=jpg&sw=900",
-  "edit3": "https://images.ctfassets.net/9lidvwy42aez/2zRdXR8SbvbcSPeLoUrN0i/4cd992d147fdfae5ed36806b3645ee68/3988943C-D786-4D96-8AA0-3FE15DD95BF2.jpg?fm=webp",
-  "edit4": "https://www.magasin.dk/dw/image/v2/BFCS_PRD/on/demandware.static/-/Sites-mdn-master-catalog/default/dw3650cc88/large2/EC/236276-media_swatch.jpg?sfrm=jpg&sw=900",
+  "editPicks": ["rb-076", "hb-001", "e-070", "g-084"],
   "editorial": "https://www.cultbeauty.co.uk/images?auto=avif&fit=cover&format=webp&height=985&url=https%3A%2F%2Fstatic.thcdn.com%2Fproductimg%2Foriginal%2F15408984-1205167299110874.jpg&width=985"
 }
