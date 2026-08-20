@@ -26,7 +26,14 @@ let BRANDS = [];
     FEATURED = site.FEATURED;
     BRANDS = site.BRANDS;
     document.dispatchEvent(new Event("nines:data-ready"));
+    if (window.__ninesDataResolve) window.__ninesDataResolve();
   }).catch(err => {
     console.error("NINE'S — no se pudieron cargar los datos de la tienda:", err);
   });
 })();
+
+// Promesa segura contra condiciones de carrera: cualquier script (como el
+// del home) puede hacer `await window.NINES_READY` sin importar si el
+// catálogo ya terminó de cargar o todavía no — nunca se queda esperando
+// un evento que ya pasó.
+window.NINES_READY = new Promise(resolve => { window.__ninesDataResolve = resolve; });
