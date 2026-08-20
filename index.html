@@ -66,9 +66,6 @@
           <div class="arch product-photo-arch">
             <img class="hero-product hero-product-main" data-home-img="heroMain" src="https://www.cultbeauty.co.uk/images?auto=avif&fit=cover&format=webp&height=985&url=https%3A%2F%2Fstatic.thcdn.com%2Fproductimg%2Foriginal%2F15408984-1205167299110874.jpg&width=985" alt="Foto principal del hero">
           </div>
-          <div class="hero-side-card">
-            <img class="hero-product hero-product-side" data-home-img="heroSide" src="https://www.magasin.dk/dw/image/v2/BFCS_PRD/on/demandware.static/-/Sites-mdn-master-catalog/default/dw968c0645/large2/88/60578-media_principal.jpg?sfrm=jpg&sw=900" alt="Foto secundaria del hero">
-          </div>
         </div>
       </div>
       <div class="scroll-hint">Scroll to discover<span></span></div>
@@ -280,10 +277,15 @@
       if (img && window.__ninesHome && img.dataset.stage != stage) {
         img.dataset.stage = stage;
         const src = window.__ninesHome['showcase' + stage] || window.__ninesHome.showcase1;
-        if (src && img.dataset.src !== src) {
-          img.dataset.src = src;
-          img.style.opacity = 0;
-          setTimeout(() => { img.src = src; img.style.opacity = 1; }, 180);
+        if (src) {
+          if (img.dataset.src !== src) {
+            img.dataset.src = src;
+            img.style.opacity = 0;
+            setTimeout(() => { img.src = src; img.style.display = ""; img.style.opacity = 1; }, 180);
+          }
+        } else {
+          img.removeAttribute("src");
+          img.style.display = "none";
         }
       }
     }, { passive:true });
@@ -378,7 +380,15 @@
     window.__ninesHome = home;
     document.querySelectorAll("[data-home-img]").forEach(img => {
       const key = img.dataset.homeImg;
-      if (home[key]) img.src = home[key];
+      if (home[key]) {
+        img.src = home[key];
+        img.style.display = "";
+      } else {
+        // no hay foto puesta en el panel para este espacio: se oculta en
+        // vez de mostrar la foto de relleno que traía el código original
+        img.removeAttribute("src");
+        img.style.display = "none";
+      }
     });
 
     const grid = document.querySelector("[data-edit-picks]");
