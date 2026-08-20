@@ -1,0 +1,116 @@
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finalizar compra — NINE'S</title>
+<meta name="description" content="Confirma tu pedido, tus datos de entrega y elige cómo pagar.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+<style>
+  .co-wrap{ max-width:980px; margin:0 auto; padding:26px 20px 90px; }
+  .co-head{ margin-bottom:28px; }
+  .co-head .eyebrow{ font-size:10px; letter-spacing:.24em; text-transform:uppercase; color:var(--wine); font-weight:600; margin-bottom:8px; }
+  .co-head h1{ font-family:"Italiana",serif; font-size:clamp(34px,5vw,54px); color:var(--wine-deep); margin:0; line-height:1; }
+  .co-back{ display:inline-flex; align-items:center; gap:6px; font-size:12px; color:var(--muted); text-decoration:none; margin-bottom:18px; }
+  .co-back:hover{ color:var(--wine); }
+  .co-grid{ display:grid; grid-template-columns:1fr 380px; gap:36px; align-items:start; }
+  @media(max-width:860px){ .co-grid{ grid-template-columns:1fr; } }
+  .co-section{ background:#fff; border:1px solid var(--line); border-radius:20px; padding:26px 28px; margin-bottom:22px; }
+  .co-section h2{ font-family:"Italiana",serif; font-size:22px; color:var(--wine-deep); margin:0 0 18px; display:flex; align-items:center; gap:10px; }
+  .co-num{ display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background:var(--wine); color:#fff; font-family:"DM Sans",sans-serif; font-size:12px; font-weight:700; flex-shrink:0; }
+  .co-side{ position:sticky; top:20px; }
+  .co-line{ display:flex; gap:14px; padding:14px 0; border-bottom:1px solid var(--line); }
+  .co-line:last-child{ border-bottom:none; }
+  .co-line .line-frame{ width:56px; height:56px; }
+  .co-empty{ text-align:center; padding:100px 20px; }
+  .co-empty h2{ font-family:"Italiana",serif; font-size:30px; color:var(--wine-deep); margin:0 0 10px; }
+  .co-empty p{ color:var(--muted); margin:0 0 22px; }
+  .co-row{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media(max-width:520px){ .co-row{ grid-template-columns:1fr; } }
+  .pay-secure{ font-size:11px; color:var(--muted); text-align:center; margin-top:14px; }
+</style>
+</head><body>
+
+<div class="announcement">Envíos a todo el país · Belleza, curated by Nine's</div>
+<header class="navbar" id="navbar">
+  <nav class="nav-links"><a class="nav-link hoverable" href="rostro.html">Rostro</a><a class="nav-link hoverable" href="labios.html">Labios</a><a class="nav-link hoverable" href="ojos.html">Ojos</a><a class="nav-link hoverable" href="skincare.html">Skincare</a><a class="nav-link hoverable" href="cabello.html">Cabello</a><a class="nav-link hoverable" href="fragancias.html">Fragancias</a><a class="nav-link hoverable" href="ofertas.html">Ofertas</a></nav>
+  <a href="index.html" class="brand-logo hoverable" aria-label="NINE'S" style="font-family:'Italiana',serif;font-size:26px;color:var(--wine-deep)">NINE'S</a>
+  <div class="nav-actions">
+    <a class="nav-link hide-mobile hoverable" href="catalogo.html">Catálogo</a>
+  </div>
+</header>
+
+<main class="co-wrap">
+  <a href="catalogo.html" class="co-back hoverable">← Seguir viendo el catálogo</a>
+  <div class="co-head">
+    <div class="eyebrow">Paso final</div>
+    <h1>Finalizar compra</h1>
+  </div>
+
+  <div data-checkout-empty class="co-empty" style="display:none">
+    <h2>Tu carrito está vacío</h2>
+    <p>Agrega productos desde el catálogo para continuar con tu compra.</p>
+    <a href="catalogo.html" class="btn btn-dark hoverable">Ver catálogo</a>
+  </div>
+
+  <div data-checkout-content class="co-grid">
+    <div>
+      <div class="co-section">
+        <h2><span class="co-num">1</span> Tu pedido</h2>
+        <div data-cart-body></div>
+      </div>
+
+      <div class="co-section">
+        <h2><span class="co-num">2</span> Datos de entrega</h2>
+        <div class="pick" data-pick>
+          <button data-mode="delivery" class="is-on">Delivery<small>A tu dirección</small></button>
+          <button data-mode="pickup">Pickup<small>Retiras en tienda</small></button>
+        </div>
+        <div data-delivery-fields>
+          <div class="co-row">
+            <div class="field"><label for="z">Zona de envío</label><select id="z" data-f-zone></select></div>
+            <div class="field"><label for="ph">Teléfono</label><input id="ph" type="tel" data-f-phone placeholder="809 000 0000"></div>
+          </div>
+          <div class="field"><label for="ad">Dirección</label><textarea id="ad" data-f-addr placeholder="Calle, número, sector, referencia"></textarea></div>
+        </div>
+        <div class="hint" data-pickup-note style="display:none">Retiras tu pedido en Calle B No. 68, Ensanche Isabelita, Santo Domingo Este. Te confirmamos por WhatsApp cuando esté listo.</div>
+        <div class="co-row">
+          <div class="field"><label for="nm">Nombre</label><input id="nm" data-f-name placeholder="Nombre y apellido"></div>
+          <div class="field"><label for="em">Correo (opcional)</label><input id="em" type="email" data-f-email placeholder="tucorreo@ejemplo.com"></div>
+        </div>
+        <div class="field"><label for="nt">Nota (opcional)</label><textarea id="nt" data-f-note placeholder="Alguna instrucción especial para tu pedido"></textarea></div>
+      </div>
+    </div>
+
+    <div class="co-side">
+      <div class="co-section">
+        <h2><span class="co-num">3</span> Resumen y pago</h2>
+        <div data-totals></div>
+        <p class="pay-lead" style="margin:16px 0 12px;font-size:13px;color:var(--muted)">Elige cómo quieres pagar. Coordinamos todo por WhatsApp.</p>
+        <button class="pay-method" data-pay-method="whatsapp">
+          <span class="pay-method-ic">🟢</span>
+          <span class="pay-method-txt"><strong>Pago por WhatsApp</strong><small>Te enviamos el enlace de pago al chat.</small></span>
+          <span class="pay-method-arrow">→</span>
+        </button>
+        <button class="pay-method" data-pay-method="transferencia">
+          <span class="pay-method-ic">🏦</span>
+          <span class="pay-method-txt"><strong>Transferencia bancaria</strong><small>Coordinamos los datos y el comprobante por WhatsApp.</small></span>
+          <span class="pay-method-arrow">→</span>
+        </button>
+        <button class="pay-method is-soon" data-card-soon>
+          <span class="pay-method-ic">💳</span>
+          <span class="pay-method-txt"><strong>Tarjeta de crédito/débito</strong><small>Próximamente</small></span>
+          <span class="pay-method-arrow">→</span>
+        </button>
+        <p class="pay-secure">Ningún dato de pago se guarda en el sitio. El cobro se coordina de forma segura por WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-cols">
+    <div><a href="index.html" aria-label="NINE'S" style="font-family:'Italiana',serif;font-size:22px;color:#fff">NINE'S</a></div>
+    <div><h4>Catálogo</h4><p><a href="rostro.html">Rostro</a><br><a href="labios.html">Labios</a><br><a href="ojos.html">Ojos</a><br><a href="skincare.html">Skincare</a><br><a href="cabello.html">Cabello</a><br><a href="fragancias.html">Fragancias</a></p></div>
+  </div>
+</footer>
+
+<script src="catalog.js"></script><script src="backend-config.js"></script><script src="shop.js"></script>
+</body></html>

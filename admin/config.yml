@@ -1,0 +1,95 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Las fotos que subas desde el CMS se guardan aquí y se sirven directo del sitio
+media_folder: "uploads"
+public_folder: "/uploads"
+
+site_url: https://TU-SITIO.netlify.app
+display_url: https://TU-SITIO.netlify.app
+
+collections:
+  - name: "productos"
+    label: "Productos"
+    files:
+      - name: "productos"
+        label: "Catálogo de productos"
+        file: "data/products.json"
+        format: "json"
+        fields:
+          - label: "Productos"
+            name: "productos"
+            widget: "list"
+            summary: "{{fields.brand}} — {{fields.name}} ({{fields.cat}})"
+            fields:
+              - { label: "ID (no cambiar en productos existentes)", name: "id", widget: "string" }
+              - { label: "Marca", name: "brand", widget: "string" }
+              - { label: "Nombre del producto", name: "name", widget: "string" }
+              - label: "Categoría"
+                name: "cat"
+                widget: "select"
+                options:
+                  - { label: "Rostro", value: "rostro" }
+                  - { label: "Labios", value: "labios" }
+                  - { label: "Ojos", value: "ojos" }
+                  - { label: "Skincare", value: "skincare" }
+                  - { label: "Cabello", value: "cabello" }
+                  - { label: "Fragancias", value: "fragancias" }
+              - { label: "Tamaño / presentación", name: "spec", widget: "string", required: false }
+              - { label: "Precio normal (RD$, 0 = pendiente)", name: "price", widget: "number", value_type: "int", default: 0 }
+              - { label: "Foto del producto", name: "img", widget: "image", required: false, hint: "Si la dejas vacía se muestra un ícono con la inicial de la marca." }
+              - { label: "Variantes / tonos", name: "variants", widget: "list", field: { label: "Tono", name: "variant", widget: "string" }, required: false }
+              - { label: "Nota de costo mayorista (referencia interna)", name: "cost", widget: "string", required: false }
+              - { label: "Precio de oferta RD$ (0 = sin oferta)", name: "salePrice", widget: "number", value_type: "int", default: 0, hint: "Si pones aquí un precio menor al normal, el producto aparece en Ofertas / Bazaar." }
+              - { label: "La oferta termina (opcional)", name: "saleEndsAt", widget: "datetime", required: false, hint: "Deja vacío para que la oferta no venza sola. Actívala poniendo un precio de oferta arriba." }
+
+  - name: "tienda"
+    label: "Configuración de la tienda"
+    files:
+      - name: "sitio"
+        label: "Datos generales, zonas de envío y marcas"
+        file: "data/site.json"
+        format: "json"
+        fields:
+          - label: "Tienda"
+            name: "SHOP"
+            widget: "object"
+            fields:
+              - { label: "WhatsApp (con código de país, ej. 18098862048)", name: "whatsapp", widget: "string" }
+              - { label: "Dirección de la tienda", name: "address", widget: "string" }
+              - { label: "Símbolo de moneda", name: "currency", widget: "string" }
+          - label: "Zonas de envío"
+            name: "ZONES"
+            widget: "list"
+            summary: "{{fields.name}} — RD$ {{fields.fee}}"
+            fields:
+              - { label: "ID interno (no cambiar)", name: "id", widget: "string" }
+              - { label: "Nombre de la zona", name: "name", widget: "string" }
+              - { label: "Costo de envío (vacío = a cotizar)", name: "fee", widget: "number", value_type: "int", required: false }
+          - label: "Categorías del menú"
+            name: "CATEGORIES"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Slug (no cambiar)", name: "slug", widget: "string" }
+              - { label: "Nombre", name: "name", widget: "string" }
+              - { label: "Descripción corta", name: "note", widget: "string" }
+          - label: "Marca destacada del banner (home)"
+            name: "FEATURED"
+            widget: "object"
+            fields:
+              - { label: "Nombre de la marca", name: "key", widget: "string" }
+              - { label: "Etiqueta pequeña", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "headline", widget: "string" }
+              - { label: "Texto", name: "text", widget: "text" }
+              - { label: "Categoría a la que enlaza", name: "cat", widget: "string" }
+          - label: "Marcas destacadas"
+            name: "BRANDS"
+            widget: "list"
+            summary: "{{fields.key}}"
+            fields:
+              - { label: "Nombre", name: "key", widget: "string" }
+              - { label: "Etiqueta", name: "tag", widget: "string" }
+              - { label: "Texto", name: "text", widget: "string" }
+              - { label: "Categoría", name: "cat", widget: "string" }

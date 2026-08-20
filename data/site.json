@@ -1,0 +1,128 @@
+{
+  "SHOP": {
+    "whatsapp": "18098862048",
+    "address": "Calle B No. 68, Ensanche Isabelita, Santo Domingo Este",
+    "currency": "RD$"
+  },
+  "ZONES": [
+    {
+      "id": "isabelita",
+      "name": "Ensanche Isabelita / Alma Rosa",
+      "fee": 150
+    },
+    {
+      "id": "sde",
+      "name": "Santo Domingo Este (resto)",
+      "fee": 250
+    },
+    {
+      "id": "dn",
+      "name": "Distrito Nacional",
+      "fee": 350
+    },
+    {
+      "id": "norte",
+      "name": "Santo Domingo Norte",
+      "fee": 400
+    },
+    {
+      "id": "oeste",
+      "name": "Santo Domingo Oeste",
+      "fee": 450
+    },
+    {
+      "id": "otro",
+      "name": "Otra zona (a cotizar)",
+      "fee": null
+    }
+  ],
+  "CATEGORIES": [
+    {
+      "slug": "rostro",
+      "name": "Rostro",
+      "note": "Base, blush, glow y polvos."
+    },
+    {
+      "slug": "labios",
+      "name": "Labios",
+      "note": "Gloss, lip oils, labiales y liners."
+    },
+    {
+      "slug": "ojos",
+      "name": "Ojos",
+      "note": "Paletas, máscara y delineado."
+    },
+    {
+      "slug": "skincare",
+      "name": "Skincare",
+      "note": "Prep, hidratación y tratamiento."
+    },
+    {
+      "slug": "cabello",
+      "name": "Cabello",
+      "note": "Aceites, mascarillas y perfume capilar."
+    },
+    {
+      "slug": "fragancias",
+      "name": "Fragancias",
+      "note": "Perfumes y brumas."
+    }
+  ],
+  "FEATURED": {
+    "key": "Huda Beauty",
+    "eyebrow": "Marca de la semana",
+    "headline": "Pigmento profesional, sin disculpas",
+    "text": "Sombras, bases y labiales de acabado profesional. Cambia esta marca cada semana desde aquí.",
+    "cat": "rostro"
+  },
+  "BRANDS": [
+    {
+      "key": "Huda Beauty",
+      "tag": "Pigmento",
+      "text": "Sombras y bases de acabado profesional.",
+      "cat": "rostro"
+    },
+    {
+      "key": "Patrick Ta",
+      "tag": "Dos pasos",
+      "text": "Rubor e iluminador en capas.",
+      "cat": "ojos"
+    },
+    {
+      "key": "Dior",
+      "tag": "Maison",
+      "text": "Fragancia y color de la casa francesa.",
+      "cat": "labios"
+    },
+    {
+      "key": "Rhode",
+      "tag": "Skin first",
+      "text": "Cuidado esencial con acabado luminoso.",
+      "cat": "skincare"
+    },
+    {
+      "key": "Summer Fridays",
+      "tag": "Descanso",
+      "text": "Bálsamos labiales y mascarillas de culto.",
+      "cat": "labios"
+    },
+    {
+      "key": "e.l.f.",
+      "tag": "Precisión",
+      "text": "Rendimiento alto sin el margen alto.",
+      "cat": "rostro"
+    },
+    {
+      "key": "Rare Beauty",
+      "tag": "Una gota",
+      "text": "Blush líquido de alta pigmentación.",
+      "cat": "rostro"
+    },
+    {
+      "key": "Gisou",
+      "tag": "Miel",
+      "text": "Cuidado capilar con miel de la colmena Mirsalehi.",
+      "cat": "labios"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ofertas — NINE'S</title>
+<meta name="description" content="Bazaar de ofertas y ventas flash — precios especiales por tiempo limitado.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+</head><body>
+
+<div class="announcement">Envíos a todo el país · Belleza, curated by Nine's</div>
+<header class="navbar" id="navbar">
+  <nav class="nav-links"><a class="nav-link hoverable" href="rostro.html">Rostro</a><a class="nav-link hoverable" href="labios.html">Labios</a><a class="nav-link hoverable" href="ojos.html">Ojos</a><a class="nav-link hoverable" href="skincare.html">Skincare</a><a class="nav-link hoverable" href="cabello.html">Cabello</a><a class="nav-link hoverable" href="fragancias.html">Fragancias</a><a class="nav-link hoverable" href="ofertas.html" style="color:var(--wine)">Ofertas</a></nav>
+  <a href="index.html" class="brand-logo hoverable" aria-label="NINE'S" style="font-family:'Italiana',serif;font-size:26px;color:var(--wine-deep)">NINE'S</a>
+  <div class="nav-actions">
+    <a class="nav-link hide-mobile hoverable" href="catalogo.html">Catálogo</a>
+    <button class="nav-icon hoverable" data-open-cart aria-label="Carrito">🛍 <span class="nav-count" data-count>0</span></button>
+  </div>
+</header>
+
+<main class="catalog">
+  <div class="catalog-head">
+    <div class="eyebrow">Bazaar</div>
+    <h1>Ofertas</h1>
+    <p>Ventas flash y descuentos por tiempo limitado. Se actualiza constantemente — vuelve seguido.</p>
+  </div>
+
+  <div class="product-grid" data-sale-grid></div>
+  <div class="bazaar-empty-page" data-sale-empty style="display:none;text-align:center;padding:70px 20px">
+    <p style="color:var(--muted);font-size:15px;margin-bottom:18px">No hay ofertas activas por el momento — pero mira el catálogo completo, seguro encuentras algo que te encante.</p>
+    <a href="catalogo.html" class="btn btn-dark hoverable">Ver catálogo</a>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-cols">
+    <div><a href="index.html" aria-label="NINE'S" style="font-family:'Italiana',serif;font-size:22px;color:#fff">NINE'S</a></div>
+    <div><h4>Catálogo</h4><p><a href="rostro.html">Rostro</a><br><a href="labios.html">Labios</a><br><a href="ojos.html">Ojos</a><br><a href="skincare.html">Skincare</a><br><a href="cabello.html">Cabello</a><br><a href="fragancias.html">Fragancias</a></p></div>
+  </div>
+</footer>
+
+<div class="scrim" data-scrim></div>
+<aside class="drawer" data-drawer role="dialog" aria-label="Carrito">
+  <div class="drawer-top"><span class="drawer-title" data-drawer-title>Carrito</span>
+    <button class="drawer-x" data-close-cart aria-label="Cerrar">×</button></div>
+  <div class="cart-view" data-cart-view style="display:contents">
+    <div class="drawer-body" data-cart-body></div>
+    <div class="drawer-foot" data-cart-foot></div>
+  </div>
+</aside>
+
+<script src="catalog.js"></script><script src="backend-config.js"></script><script src="shop.js"></script>
+</body></html>

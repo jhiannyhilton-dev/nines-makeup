@@ -1,0 +1,1643 @@
+{
+  "productos": [
+    {
+      "id": "hb-001",
+      "brand": "Huda Beauty",
+      "name": "Easy Bake setting powder",
+      "cat": "rostro",
+      "spec": "20g",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Matcha Milk",
+        "Pound Cake",
+        "Cupcake",
+        "Peach Pie",
+        "Sugar Cookie",
+        "Ube Birthday",
+        "Cherry Blossom",
+        "Banana Bread",
+        "Kunafa",
+        "Blondie"
+      ],
+      "cost": "1-10: $3.99 / 10-99: $3.89 / 100+: $3.59",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "hb-002",
+      "brand": "Huda Beauty",
+      "name": "2 in 1 Easy Bake duo loose powder",
+      "cat": "rostro",
+      "spec": "2 x 6.5g",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Cherry Peach",
+        "Pink Pumpkin"
+      ],
+      "cost": "1-10: $4.50 / 10-99: $4.20 / 100+: $4.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "hb-003",
+      "brand": "Huda Beauty",
+      "name": "Faux Filler jelly lip oil",
+      "cat": "labios",
+      "spec": "3.9ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Juicy Toasty Brown",
+        "Juicy Peach",
+        "Juicy Pink Lady",
+        "Juicy Goji",
+        "Juicy Rose",
+        "Juicy Cherry"
+      ],
+      "cost": "20-49: $1.50 / 50-200: $1.40 / 200+: $1.30",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "hb-004",
+      "brand": "Huda Beauty",
+      "name": "Non-staining matte lip gloss",
+      "cat": "labios",
+      "spec": "3.9ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "301",
+        "302",
+        "303",
+        "304",
+        "305",
+        "306",
+        "307",
+        "308",
+        "309",
+        "310",
+        "311",
+        "312"
+      ],
+      "cost": "20-49: $1.60 / 50-200: $1.50 / 200+: $1.40",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "hb-005",
+      "brand": "Huda Beauty",
+      "name": "High shine lip gloss",
+      "cat": "labios",
+      "spec": "3.9ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Honey",
+        "Foxy",
+        "Bombshell",
+        "Posh",
+        "Coco",
+        "Sugar Baby"
+      ],
+      "cost": "20-49: $1.50 / 50-200: $1.40 / 200+: $1.30",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "hb-006",
+      "brand": "Huda Beauty",
+      "name": "Lip Contour stain lip tint",
+      "cat": "labios",
+      "spec": "1ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Rich Brown",
+        "Cinnamon",
+        "Cherry Red",
+        "Warm Brown",
+        "Toasty Brown",
+        "Rosewood",
+        "Baby Pink",
+        "Soft Nude"
+      ],
+      "cost": "20-49: $1.50 / 50-200: $1.40 / 200+: $1.30",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "hb-007",
+      "brand": "Huda Beauty",
+      "name": "Easy Bake setting spray",
+      "cat": "rostro",
+      "spec": "100ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Enjoy Bake"
+      ],
+      "cost": "12-49: $2.60 / 50-99: $2.50 / 100+: $2.40",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "hb-008",
+      "brand": "Huda Beauty",
+      "name": "Blush Filter soft glow liquid blush",
+      "cat": "rostro",
+      "spec": "4.5ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Strawberry Cream",
+        "Cotton Candy",
+        "Bubble Gum",
+        "Ube Cream",
+        "Intense Guava",
+        "Sunset Lychee",
+        "Peach Sorbet"
+      ],
+      "cost": "1-20: $2.20 / 21-99: $2.00 / 100+: $1.80",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "hb-009",
+      "brand": "Huda Beauty",
+      "name": "Color corrector",
+      "cat": "rostro",
+      "spec": "9ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Peach",
+        "Cherry Blossom",
+        "Graham Cracker 4.1G",
+        "Nougat 2.5G"
+      ],
+      "cost": "1-49: $2.20 / 50-99: $2.00 / 100+: $1.80",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "hb-010",
+      "brand": "Huda Beauty",
+      "name": "Color corrector — nueva versión",
+      "cat": "rostro",
+      "spec": "9ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Cherry Light",
+        "Peach Light",
+        "Whipped Cream 0.1G",
+        "Honey 1.7B"
+      ],
+      "cost": "1-49: $2.80 / 50-199: $2.50 / 200+: $2.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "hb-011",
+      "brand": "Huda Beauty",
+      "name": "Stay Blur foundation",
+      "cat": "rostro",
+      "spec": "50ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "S210",
+        "S220",
+        "S225"
+      ],
+      "cost": "1-100: $2.20 / 100-200: $2.00 / 200+: $1.80",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "hb-012",
+      "brand": "Huda Beauty",
+      "name": "FauxFilter Luminous matte buildable coverage foundation",
+      "cat": "rostro",
+      "spec": "35ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "110N",
+        "120B",
+        "140G",
+        "150G"
+      ],
+      "cost": "1-49: $3.50 / 50-99: $3.40 / 100+: $3.20",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "hb-013",
+      "brand": "Huda Beauty",
+      "name": "Blush Lighters palette",
+      "cat": "rostro",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Único"
+      ],
+      "cost": "1-49: $8.80 / 50-99: $8.00 / 100+: $7.60",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "hb-014",
+      "brand": "Huda Beauty",
+      "name": "Easy Bake pressed powder",
+      "cat": "rostro",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Sugar Cookie",
+        "Translucent",
+        "Cherry Blossom Cake",
+        "Pound Cake",
+        "Peach Cupcake",
+        "Banana Bread",
+        "Kunafa Blondie",
+        "Cinnamon Bun",
+        "Coco Truffle"
+      ],
+      "cost": "1-20: $9.00 / 21-50: $8.40 / 51+: $7.80",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "hb-015",
+      "brand": "Huda Beauty",
+      "name": "Eyeshadow palette",
+      "cat": "ojos",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Empowered",
+        "Rose Gold"
+      ],
+      "cost": "1-49: $3.00 / 50-99: $2.80 / 100+: $2.60",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "pt-016",
+      "brand": "Patrick Ta",
+      "name": "Major Dimension Essential Artistry Edit eyeshadow palette",
+      "cat": "ojos",
+      "spec": "6 tonos",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Light",
+        "Medium",
+        "Deep"
+      ],
+      "cost": "1-50: $9.50 / 50-199: $9.00 / 200+: $8.50",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "pt-017",
+      "brand": "Patrick Ta",
+      "name": "Major Headlines double take crème & powder blush duo",
+      "cat": "rostro",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Thank Me Later",
+        "Soft Launch",
+        "She's Seductive",
+        "She Goes To The Gym",
+        "She Knows Who She Is",
+        "She Left Me On Red",
+        "Just Enough",
+        "She's the Moment",
+        "Not Too Much",
+        "She's Wanted",
+        "She's Giving",
+        "She's Flushed",
+        "She's So LA",
+        "She's a Doll",
+        "She's Vibrant",
+        "She's Blushing",
+        "She's That Girl",
+        "She's Statuesque",
+        "She's Sculpted",
+        "She's Chiseled"
+      ],
+      "cost": "1-50: $8.60 / 50-199: $8.00 / 200+: $7.30",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-018",
+      "brand": "Dior",
+      "name": "Lipstick with pendant",
+      "cat": "labios",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "101",
+        "102",
+        "103",
+        "104",
+        "105"
+      ],
+      "cost": "1-9: $4.50 / 10-20: $4.20 / 21-99: $4.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-019",
+      "brand": "Dior",
+      "name": "Lipgloss",
+      "cat": "labios",
+      "spec": "6ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "001",
+        "003",
+        "004",
+        "006",
+        "007",
+        "010",
+        "012",
+        "015",
+        "018",
+        "019",
+        "020",
+        "021",
+        "026",
+        "027",
+        "028",
+        "029",
+        "037",
+        "038",
+        "039",
+        "053",
+        "061",
+        "062",
+        "063",
+        "065",
+        "084",
+        "203",
+        "204",
+        "206"
+      ],
+      "cost": "1-9: $4.00 / 10-20: $3.80 / 21-99: $3.60",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-020",
+      "brand": "Dior",
+      "name": "Lip Glow oil",
+      "cat": "labios",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "001",
+        "004",
+        "007",
+        "012",
+        "015",
+        "020",
+        "030",
+        "031"
+      ],
+      "cost": "1-9: $5.50 / 10-20: $5.20 / 21-99: $5.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-021",
+      "brand": "Dior",
+      "name": "Forever Blush soft filter",
+      "cat": "rostro",
+      "spec": "11ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "01 Petal",
+        "02 Peony",
+        "03 Bloom",
+        "04 Daisy",
+        "05 Lily"
+      ],
+      "cost": "1-9: $8.00 / 10-20: $7.80 / 21-99: $7.50",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-022",
+      "brand": "Dior",
+      "name": "Addict Lip Glow — nueva versión",
+      "cat": "labios",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "001 Pink",
+        "004",
+        "012",
+        "074",
+        "078"
+      ],
+      "cost": "1-9: $4.20 / 10-20: $4.00 / 21-99: $3.80",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-023",
+      "brand": "Dior",
+      "name": "Lip highlighter stick",
+      "cat": "rostro",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "001 Pink",
+        "006 Berry",
+        "012 Rosewood",
+        "015 Cherry",
+        "063 Pink Lilac",
+        "077 Candy",
+        "103 Toffee"
+      ],
+      "cost": "1-9: $8.20 / 10-20: $8.00 / 21-99: $7.50",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-024",
+      "brand": "Dior",
+      "name": "Set de labios 2 piezas — Lip Glow + Glow Oil",
+      "cat": "labios",
+      "spec": "2 piezas",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "001 Pink"
+      ],
+      "cost": "1-9: $5.50 / 10-20: $5.20 / 21-99: $5.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-025",
+      "brand": "Dior",
+      "name": "Set de lip oil 2 piezas",
+      "cat": "labios",
+      "spec": "2 piezas",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "001 + 004"
+      ],
+      "cost": "1-9: $5.50 / 10-20: $5.20 / 21-99: $5.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-026",
+      "brand": "Dior",
+      "name": "Set de lipgloss 3 piezas",
+      "cat": "labios",
+      "spec": "3 piezas",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Heart pattern",
+        "Black"
+      ],
+      "cost": "1-9: $6.80 / 10-20: $6.60 / 21-99: $6.20",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-027",
+      "brand": "Dior",
+      "name": "Set de labios 3 piezas — Lip Glow, Glow Oil, Maximizer",
+      "cat": "labios",
+      "spec": "3.2g / 6ml / 2ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "001 Pink"
+      ],
+      "cost": "1-9: $6.80 / 10-20: $6.60 / 21-99: $6.20",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-028",
+      "brand": "Dior",
+      "name": "Set de lip gloss y blush 2 piezas",
+      "cat": "labios",
+      "spec": "2 piezas",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Único"
+      ],
+      "cost": "1-9: $12.00 / 10-20: $11.50 / 21-99: $11.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-029",
+      "brand": "Dior",
+      "name": "Diorshow 5 Couleurs eyeshadow palette",
+      "cat": "ojos",
+      "spec": "5 tonos",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "429",
+        "689",
+        "743",
+        "279",
+        "343",
+        "649"
+      ],
+      "cost": "1-9: $6.50 / 10-20: $6.00 / 21-99: $5.50",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-030",
+      "brand": "Dior",
+      "name": "Paleta 4 colores — versión normal",
+      "cat": "ojos",
+      "spec": "4 tonos",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "001",
+        "002",
+        "003",
+        "004"
+      ],
+      "cost": "1-9: $4.50 / 10-20: $4.20 / 21-99: $4.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-031",
+      "brand": "Dior",
+      "name": "Paleta 4 colores — versión 3D",
+      "cat": "ojos",
+      "spec": "4 tonos",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "001",
+        "002",
+        "003",
+        "004"
+      ],
+      "cost": "1-9: $15.00 / 10-20: $14.00 / 21-99: $13.20",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-032",
+      "brand": "Dior",
+      "name": "Paleta monocolor",
+      "cat": "ojos",
+      "spec": "1 tono",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "001 Pink",
+        "006 Berry",
+        "012 Rosewood",
+        "015 Cherry",
+        "063 Pink Lilac",
+        "077 Candy",
+        "103 Toffee"
+      ],
+      "cost": "1-9: $5.00 / 10-20: $4.60 / 21-99: $4.20",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-033",
+      "brand": "Dior",
+      "name": "Single-color blush",
+      "cat": "rostro",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "001",
+        "004",
+        "006",
+        "012",
+        "015",
+        "020"
+      ],
+      "cost": "1-9: $5.80 / 10-20: $5.60 / 21-99: $5.20",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-034",
+      "brand": "Dior",
+      "name": "Paleta monocolor con brocha",
+      "cat": "ojos",
+      "spec": "1 tono",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "211",
+        "219",
+        "343",
+        "601",
+        "621",
+        "060",
+        "250",
+        "520",
+        "999"
+      ],
+      "cost": "1-9: $5.00 / 10-20: $4.80 / 21-99: $4.50",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-035",
+      "brand": "Dior",
+      "name": "Paleta 2 colores",
+      "cat": "ojos",
+      "spec": "2 tonos",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "100",
+        "257",
+        "287",
+        "457"
+      ],
+      "cost": "1-9: $4.50 / 10-20: $4.20 / 21-99: $4.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-036",
+      "brand": "Dior",
+      "name": "Mascara",
+      "cat": "ojos",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Único"
+      ],
+      "cost": "1-9: $3.50 / 10-20: $3.20 / 21-99: $3.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-037",
+      "brand": "Dior",
+      "name": "Bronzer",
+      "cat": "rostro",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "02 Light Naturel",
+        "03 Soft Nature",
+        "04 Warm",
+        "05 Intense Nature"
+      ],
+      "cost": "1-9: $9.00 / 10-20: $8.50 / 21-99: $8.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "r-038",
+      "brand": "Rhode",
+      "name": "Peptide glazing fluid",
+      "cat": "skincare",
+      "spec": "50ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Único"
+      ],
+      "cost": "20-49: $2.20 / 50-99: $2.10 / 100-200: $2.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "r-039",
+      "brand": "Rhode",
+      "name": "Peptide lip treatment / gloss",
+      "cat": "labios",
+      "spec": "10ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Sweet Pea",
+        "Pretzel",
+        "Sugarberry",
+        "Strawberry",
+        "Sugar Cookie",
+        "Jellybean",
+        "Rhode Vanilla",
+        "Vanilla Cake",
+        "Watermelon",
+        "Passionfruit",
+        "Salted Caramel",
+        "Cinnamon Roll",
+        "Peppermint Glaze",
+        "PBJ",
+        "Raspberry Jelly",
+        "Guava Spritz",
+        "Peach Pit",
+        "Shortcake",
+        "Salty Tan",
+        "Toast",
+        "Ribbon",
+        "Unscented",
+        "Lemontini",
+        "Espresso",
+        "Banana"
+      ],
+      "cost": "20-49: $0.80 / 50-99: $0.70 / 100-200: $0.60",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "r-040",
+      "brand": "Rhode",
+      "name": "Birthday limited gloss",
+      "cat": "labios",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Raspberry",
+        "Espresso",
+        "Toast",
+        "Ribbon"
+      ],
+      "cost": "20-49: $0.90 / 50-99: $0.80 / 100-200: $0.70",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "r-041",
+      "brand": "Rhode",
+      "name": "Blush",
+      "cat": "rostro",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Único"
+      ],
+      "cost": "20-49: $0.90 / 50-99: $0.85 / 100-200: $0.80",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "r-042",
+      "brand": "Rhode",
+      "name": "Highlight stick",
+      "cat": "rostro",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "01 Bronzo",
+        "02 Sunlight",
+        "03 Pearl",
+        "04 Rose"
+      ],
+      "cost": "20-49: $0.90 / 50-99: $0.85 / 100-200: $0.80",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "r-043",
+      "brand": "Rhode",
+      "name": "Lip liner",
+      "cat": "labios",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Único"
+      ],
+      "cost": "20-49: $1.30 / 50-99: $1.20 / 100-200: $1.10",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "r-044",
+      "brand": "Rhode",
+      "name": "Gloss set 4 en 1",
+      "cat": "labios",
+      "spec": "4 piezas",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Espresso + Raspberry + Toast + Ribbon"
+      ],
+      "cost": "20-49: $2.40 / 50-99: $2.20 / 100-200: $2.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "r-045",
+      "brand": "Rhode",
+      "name": "Barrier cream",
+      "cat": "skincare",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Único"
+      ],
+      "cost": "20-49: $1.20 / 50-99: $1.10 / 100-200: $1.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "r-046",
+      "brand": "Rhode",
+      "name": "Pineapple face wash",
+      "cat": "skincare",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Único"
+      ],
+      "cost": "20-49: $1.50 / 50-99: $1.40",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "r-047",
+      "brand": "Rhode",
+      "name": "Glazing milk",
+      "cat": "skincare",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Único"
+      ],
+      "cost": "20-49: $3.00 / 50-99: $2.90 / 100-200: $2.80",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "r-048",
+      "brand": "Rhode",
+      "name": "Glazing mist",
+      "cat": "skincare",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Único"
+      ],
+      "cost": "20-49: $4.00 / 50-99: $3.90 / 100-200: $3.80",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "r-049",
+      "brand": "Rhode",
+      "name": "Eye patches",
+      "cat": "skincare",
+      "spec": "6 pares",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Rhode logo",
+        "L logo",
+        "Banana"
+      ],
+      "cost": "20-49: $4.00 / 50-99: $3.90 / 100-200: $3.80",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "r-050",
+      "brand": "Rhode",
+      "name": "Gloss set",
+      "cat": "labios",
+      "spec": "set",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Único"
+      ],
+      "cost": "10-50: $5.80 / 50+: $5.60",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "sf-051",
+      "brand": "Summer Fridays",
+      "name": "Lip Butter Balm / gloss",
+      "cat": "labios",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Poppy",
+        "Cherry",
+        "Pink Sugar",
+        "Vanilla Beige",
+        "Sweet Mint",
+        "Brown Sugar",
+        "Vanilla",
+        "Iced Coffee",
+        "Birthday Cake",
+        "Hot Cocoa",
+        "Pink Guava",
+        "Toasted Marshmallow",
+        "Strawberry"
+      ],
+      "cost": "20-49: $1.00 / 50-99: $0.90 / 100-200: $0.80",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "sf-052",
+      "brand": "Summer Fridays",
+      "name": "Lip oil",
+      "cat": "labios",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Soft Mauve",
+        "Rosewood Nights",
+        "Pink Cloud",
+        "Blush Dreams",
+        "Bare Sand",
+        "Rose Bud",
+        "Midnight Berry",
+        "Warm Beige"
+      ],
+      "cost": "20-49: $1.50 / 50-99: $1.40 / 100-200: $1.30",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "sf-053",
+      "brand": "Summer Fridays",
+      "name": "Lip set 2 en 1",
+      "cat": "labios",
+      "spec": "2 piezas",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Birthday Cake + Strawberry"
+      ],
+      "cost": "20-49: $2.10 / 50-99: $2.00 / 100-200: $1.90",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "sf-054",
+      "brand": "Summer Fridays",
+      "name": "Gloss set 3 en 1",
+      "cat": "labios",
+      "spec": "3 piezas",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Vanilla Beige + Sweet Mint + Poppy",
+        "Cherry + Sweet Mint + Birthday Cake"
+      ],
+      "cost": "20-49: $3.00 / 50-99: $2.70 / 100-200: $2.40",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "sf-055",
+      "brand": "Summer Fridays",
+      "name": "Mini gloss set 4 en 1",
+      "cat": "labios",
+      "spec": "4 piezas",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Vanilla + Vanilla Beige + Iced Coffee + Brown Sugar",
+        "Vanilla + Vanilla Beige + Poppy + Brown Sugar"
+      ],
+      "cost": "20-49: $1.60 / 50-99: $1.50 / 100-200: $1.40",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "sf-056",
+      "brand": "Summer Fridays",
+      "name": "Jet Lag mask",
+      "cat": "skincare",
+      "spec": "15g",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Único"
+      ],
+      "cost": "20-49: $2.10 / 50-99: $2.00 / 100-200: $1.90",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "sf-057",
+      "brand": "Summer Fridays",
+      "name": "Jet Lag mask",
+      "cat": "skincare",
+      "spec": "64g",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Único"
+      ],
+      "cost": "20-49: $3.20 / 50-99: $3.00 / 100-200: $2.80",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "e-058",
+      "brand": "e.l.f.",
+      "name": "Halo Glow Beauty Wand blush",
+      "cat": "rostro",
+      "spec": "10ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "1 Pink Me Up",
+        "2 You Go Cocoa",
+        "3 Candlelit",
+        "4 Rose You Slay",
+        "5 Magic Hour",
+        "6 Berry Radiant"
+      ],
+      "cost": "20-49: $1.30 / 50-99: $1.20 / 100+: $1.10",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "e-059",
+      "brand": "e.l.f.",
+      "name": "Putty blush",
+      "cat": "rostro",
+      "spec": "10g",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "01 Fiji",
+        "02 Bora Bora",
+        "03 Bahamas",
+        "04 Turks and Caicos",
+        "05 Caribbean",
+        "06 Bali",
+        "07 Maldives",
+        "08 Tahiti"
+      ],
+      "cost": "20-49: $1.30 / 50-99: $1.20 / 100+: $1.10",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "e-060",
+      "brand": "e.l.f.",
+      "name": "Sheer For It blush tint",
+      "cat": "rostro",
+      "spec": "6.8ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "1 Pink Positive",
+        "2 Cherry Cola",
+        "3 Orange Crush",
+        "4 Left on Red",
+        "5 Plums Up"
+      ],
+      "cost": "20-49: $1.30 / 50-99: $1.20 / 100+: $1.10",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "e-061",
+      "brand": "e.l.f.",
+      "name": "Lip gloss",
+      "cat": "labios",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "01 Vanilla Toffee",
+        "02 Java Chip",
+        "03 Blackberry Sorbet",
+        "04 Yummy Gummy",
+        "05 Wild Cherry",
+        "06 Strawberry Shortcake"
+      ],
+      "cost": "20-49: $1.30 / 50-99: $1.20 / 100+: $1.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "e-062",
+      "brand": "e.l.f.",
+      "name": "Glow Reviver lip oil — shine",
+      "cat": "labios",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "01 Crystal Baller",
+        "02 Candy Coded",
+        "03 Princess Cut",
+        "04 Citrine Gleam",
+        "05 Super-Neutral",
+        "06 Chocoluxe",
+        "07 Opal-ogy Tour",
+        "08 Divine Wine"
+      ],
+      "cost": "20-49: $1.40 / 50-99: $1.30 / 100+: $1.20",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "e-063",
+      "brand": "e.l.f.",
+      "name": "Glow Reviver lip oil",
+      "cat": "labios",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "01 Coral Fixation",
+        "02 It's Giving Guava",
+        "03 Pink Quartz",
+        "04 Rose Envy",
+        "05 Red Delicious",
+        "06 Honey Talks",
+        "07 Hot as Fudge",
+        "08 Money Mauve",
+        "09 Jam Session"
+      ],
+      "cost": "20-49: $1.40 / 50-99: $1.30 / 100+: $1.20",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "e-064",
+      "brand": "e.l.f.",
+      "name": "Lip gloss mini",
+      "cat": "labios",
+      "spec": "6g",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Peach",
+        "Vanilla Frosting",
+        "Strawberry",
+        "Honeydew",
+        "Blueberry",
+        "Grape"
+      ],
+      "cost": "20-49: $1.10 / 50-99: $1.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "e-065",
+      "brand": "e.l.f.",
+      "name": "Monochromatic multi-stick",
+      "cat": "rostro",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Dazzling Peony",
+        "Glowing Mango",
+        "Sparkling Rose",
+        "Glistening Peach",
+        "Bronzed Cherry",
+        "Glimmering Guava",
+        "Luminous Berry"
+      ],
+      "cost": "20-49: $1.30 / 50-99: $1.20 / 100+: $1.10",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "e-066",
+      "brand": "e.l.f.",
+      "name": "Camo liquid blush",
+      "cat": "rostro",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Dusty Rose",
+        "Peach Perfect",
+        "Rose Tea",
+        "Coral Crush"
+      ],
+      "cost": "20-49: $1.30 / 50-99: $1.20 / 100+: $1.10",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "e-067",
+      "brand": "e.l.f.",
+      "name": "e.l.f. x Jen Atkin set 3 en 1",
+      "cat": "rostro",
+      "spec": "3 piezas",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Set"
+      ],
+      "cost": "10-30: $4.00 / 31-60: $3.80 / 61-89: $3.60 / 90-100: $3.40",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "e-068",
+      "brand": "e.l.f.",
+      "name": "Matte Fusion setting powder",
+      "cat": "rostro",
+      "spec": "15g",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "01",
+        "02",
+        "03"
+      ],
+      "cost": "20-50: $1.80 / 50-100: $1.40",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "e-069",
+      "brand": "e.l.f.",
+      "name": "Halo Glow setting powder",
+      "cat": "rostro",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "01",
+        "02",
+        "03"
+      ],
+      "cost": "20-50: $1.80 / 50-100: $1.40",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "e-070",
+      "brand": "e.l.f.",
+      "name": "Power Grip primer",
+      "cat": "rostro",
+      "spec": "75ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "01 Green Tube"
+      ],
+      "cost": "20-50: $1.80 / 50-100: $1.40",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "e-071",
+      "brand": "e.l.f.",
+      "name": "Primer mini",
+      "cat": "rostro",
+      "spec": "24ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "01 Green Tube",
+        "02 Pink Tube"
+      ],
+      "cost": "20-50: $1.20 / 50-99: $1.10 / 100-200: $1.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "e-072",
+      "brand": "e.l.f.",
+      "name": "Luminous Putty primer",
+      "cat": "rostro",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Único"
+      ],
+      "cost": "20-50: $1.20 / 50-99: $1.10 / 100-200: $1.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "e-073",
+      "brand": "e.l.f.",
+      "name": "Matte primer",
+      "cat": "rostro",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Black"
+      ],
+      "cost": "20-50: $1.20 / 50-99: $1.10 / 100-200: $1.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "e-074",
+      "brand": "e.l.f.",
+      "name": "e.l.f. Skin Thirst Burst drops",
+      "cat": "skincare",
+      "spec": "10ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Blue"
+      ],
+      "cost": "20-49: $1.00 / 50-100: $0.80",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "e-075",
+      "brand": "e.l.f.",
+      "name": "Foundation set 3 en 1",
+      "cat": "rostro",
+      "spec": "3 piezas",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Set"
+      ],
+      "cost": "1-29: $6.50 / 30-50: $6.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "rb-076",
+      "brand": "Rare Beauty",
+      "name": "Soft Pinch liquid blush",
+      "cat": "rostro",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "01 Lucky",
+        "02 Happy",
+        "03 Joy",
+        "04 Hope",
+        "05 Love",
+        "06 Believe",
+        "07 Grateful",
+        "08 Virtue",
+        "09 Encourage",
+        "10 Bliss",
+        "11 Worth",
+        "12 Faith",
+        "13 Grace"
+      ],
+      "cost": "20-50: $1.30 / 50-99: $1.20 / 100+: $1.10",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "rb-077",
+      "brand": "Rare Beauty",
+      "name": "Stay Vulnerable melting cream blush",
+      "cat": "rostro",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "01 Apricot",
+        "02 Berry",
+        "03 Mauve",
+        "04 Neutral",
+        "05 Rose"
+      ],
+      "cost": "20-50: $2.20 / 50-99: $2.10 / 100+: $2.00 / 500+: $1.80",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "rb-078",
+      "brand": "Rare Beauty",
+      "name": "Stay Vulnerable glossy lip balm",
+      "cat": "labios",
+      "spec": "3.3ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "01 Dazzle",
+        "02 Beam",
+        "03 Flicker",
+        "04 Glimmer",
+        "05 Spark",
+        "06 Blaze"
+      ],
+      "cost": "20-49: $1.40 / 50-99: $1.30 / 100+: $1.20",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "rb-079",
+      "brand": "Rare Beauty",
+      "name": "Positive Light liquid luminizer",
+      "cat": "rostro",
+      "spec": "15ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "01 Outshine",
+        "02 Transcend",
+        "03 Reflect",
+        "04 Enchant",
+        "05 Flaunt",
+        "06 Reveal"
+      ],
+      "cost": "20-50: $1.80 / 50-99: $1.70 / 100+: $1.60",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "rb-080",
+      "brand": "Rare Beauty",
+      "name": "Soft Pinch matte bouncy blush",
+      "cat": "rostro",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "01 Happy",
+        "02 Hope",
+        "03 Thriving",
+        "04 Alive",
+        "05 Grateful",
+        "06 Worth",
+        "07 Truth"
+      ],
+      "cost": "20-50: $1.70 / 50-99: $1.60 / 100+: $1.50",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "rb-081",
+      "brand": "Rare Beauty",
+      "name": "Stay Vulnerable glossy lip balm — tonos nude",
+      "cat": "labios",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "01 Apricot",
+        "02 Rose",
+        "03 Mauve",
+        "04 Neutral",
+        "05 Berry"
+      ],
+      "cost": "20-49: $1.50 / 50-99: $1.40 / 100+: $1.30",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "rb-082",
+      "brand": "Rare Beauty",
+      "name": "Soft Pinch tinted lip oil",
+      "cat": "labios",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "01 Happy",
+        "02 Wonder",
+        "03 Honesty",
+        "04 Hope",
+        "05 Serenity"
+      ],
+      "cost": "20-49: $1.20 / 50-99: $1.10 / 100+: $1.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "g-083",
+      "brand": "Gisou",
+      "name": "Honey Infused lip oil / gloss",
+      "cat": "labios",
+      "spec": "8ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Peach",
+        "Glazed Plum",
+        "Milky Mocha",
+        "Raspberry Swirl",
+        "Sticky Toffee",
+        "Vanilla Glaze",
+        "Honey",
+        "Cherry",
+        "Watermelon",
+        "Strawberry",
+        "Coconut",
+        "Mango"
+      ],
+      "cost": "20-49: $1.20 / 50-99: $1.10 / 100+: $1.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "g-084",
+      "brand": "Gisou",
+      "name": "Honey Infused hair oil",
+      "cat": "cabello",
+      "spec": "20ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Único"
+      ],
+      "cost": "20-100: $1.50 / 101-200: $1.40 / 201+: $1.30",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "g-085",
+      "brand": "Gisou",
+      "name": "Honey Infused set 4 piezas",
+      "cat": "cabello",
+      "spec": "75ml / 50ml / 8ml / 20ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Hair Mask + Hair Perfume + Lip Oil + Hair Oil"
+      ],
+      "cost": "1-20: $7.50 / 20-50: $7.00 / 50+: $6.80",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "g-086",
+      "brand": "Gisou",
+      "name": "Lip oil set 3 piezas",
+      "cat": "labios",
+      "spec": "8ml x 3",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "Vanilla Glaze + Sticky Toffee + Milky Mocha"
+      ],
+      "cost": "1-20: $5.00 / 20-50: $4.50 / 50+: $4.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "g-087",
+      "brand": "Gisou",
+      "name": "Honey Infused hair perfume",
+      "cat": "fragancias",
+      "spec": "50ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        "01 Rose",
+        "02 Lavender Berry"
+      ],
+      "cost": "1-20: $3.20 / 20-50: $3.00 / 50+: $2.80",
+      "salePrice": 0,
+      "saleEndsAt": null
+    }
+  ]
+}
