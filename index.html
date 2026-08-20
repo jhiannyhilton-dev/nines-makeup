@@ -165,27 +165,7 @@
         </p>
       </div>
 
-      <div class="products-grid">
-        <article class="product-card reveal hoverable">
-          <span class="tag">Bestseller</span>
-          <div class="product-image real-product"><img data-home-img="edit1" src="https://www.magasin.dk/dw/image/v2/BFCS_PRD/on/demandware.static/-/Sites-mdn-master-catalog/default/dw968c0645/large2/88/60578-media_principal.jpg?sfrm=jpg&sw=900" alt="Rare Beauty Soft Pinch Liquid Blush"></div>
-          <div class="product-meta"><small>Rare Beauty</small><h3>Soft Pinch Liquid Blush</h3><strong>Disponible en Nine’s</strong></div>
-        </article>
-        <article class="product-card reveal delay-1 hoverable">
-          <span class="tag">Favorito</span>
-          <div class="product-image real-product"><img data-home-img="edit2" src="https://www.magasin.dk/dw/image/v2/BFCS_PRD/on/demandware.static/-/Sites-mdn-master-catalog/default/dw87bebea2/large2/1E/425708_swatch.jpg?sfrm=jpg&sw=900" alt="Huda Beauty Easy Bake Setting Powder"></div>
-          <div class="product-meta"><small>Huda Beauty</small><h3>Easy Bake Setting Powder</h3><strong>Disponible en Nine’s</strong></div>
-        </article>
-        <article class="product-card reveal delay-2 hoverable">
-          <div class="product-image real-product"><img data-home-img="edit3" src="https://images.ctfassets.net/9lidvwy42aez/2zRdXR8SbvbcSPeLoUrN0i/4cd992d147fdfae5ed36806b3645ee68/3988943C-D786-4D96-8AA0-3FE15DD95BF2.jpg?fm=webp" alt="e.l.f. Power Grip Primer"></div>
-          <div class="product-meta"><small>e.l.f.</small><h3>Power Grip Primer</h3><strong>Disponible en Nine’s</strong></div>
-        </article>
-        <article class="product-card reveal delay-3 hoverable">
-          <span class="tag">Nine’s Pick</span>
-          <div class="product-image real-product"><img data-home-img="edit4" src="https://www.magasin.dk/dw/image/v2/BFCS_PRD/on/demandware.static/-/Sites-mdn-master-catalog/default/dw3650cc88/large2/EC/236276-media_swatch.jpg?sfrm=jpg&sw=900" alt="Gisou Honey Infused Hair Oil"></div>
-          <div class="product-meta"><small>Gisou</small><h3>Honey Infused Hair Oil</h3><strong>Disponible en Nine’s</strong></div>
-        </article>
-      </div>
+      <div class="products-grid" data-edit-picks></div>
     </section>
 
     <section class="editorial" id="story">
@@ -371,13 +351,34 @@
     });
   }
 </script>
-<!-- Aplica las fotos del home editables desde el panel (Portada del sitio) -->
+<!-- Aplica las fotos del home editables desde el panel (Portada del sitio),
+     y dibuja los "Favoritos de Nine's" a partir del catálogo real -->
 <script>
   fetch("data/home.json").then(r => r.json()).then(home => {
     document.querySelectorAll("[data-home-img]").forEach(img => {
       const key = img.dataset.homeImg;
       if (home[key]) img.src = home[key];
     });
+
+    function paintEditPicks() {
+      const grid = document.querySelector("[data-edit-picks]");
+      if (!grid || !home.editPicks) return;
+      grid.innerHTML = home.editPicks.map(entry => {
+        const id = typeof entry === "string" ? entry : entry.id;
+        const p = PRODUCTS.find(x => x.id === id);
+        if (!p) return "";
+        const img = p.img
+          ? `<img src="${p.img}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover">`
+          : `<div class="pcard-swatch" style="position:static;font-size:40px">${p.brand.charAt(0)}</div>`;
+        const priceLine = p.price > 0 ? `RD$ ${Number(p.price).toLocaleString("es-DO")}` : "Disponible en Nine's";
+        return `<article class="product-card reveal hoverable">
+          <div class="product-image real-product">${img}</div>
+          <div class="product-meta"><small>${p.brand}</small><h3>${p.name}</h3><strong>${priceLine}</strong></div>
+        </article>`;
+      }).join("");
+    }
+    if (PRODUCTS && PRODUCTS.length) paintEditPicks();
+    else document.addEventListener("nines:data-ready", paintEditPicks);
   }).catch(() => {});
 </script>
 </body>
