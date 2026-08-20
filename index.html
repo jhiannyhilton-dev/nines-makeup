@@ -150,7 +150,7 @@
         <div class="showcase-visual">
           <div class="showcase-circle" id="showcaseCircle"></div>
           <div class="showcase-item real-showcase" id="showcaseItem">
-            <img data-home-img="showcase" src="https://www.magasin.dk/dw/image/v2/BFCS_PRD/on/demandware.static/-/Sites-mdn-master-catalog/default/dw87bebea2/large2/1E/425708_swatch.jpg?sfrm=jpg&sw=900" alt="Foto destacada">
+            <img id="showcaseImg" data-home-img="showcase1" src="https://www.magasin.dk/dw/image/v2/BFCS_PRD/on/demandware.static/-/Sites-mdn-master-catalog/default/dw87bebea2/large2/1E/425708_swatch.jpg?sfrm=jpg&sw=900" alt="Foto destacada">
           </div>
           <div class="showcase-badge"><strong>Nine’s Pick</strong></div>
         </div>
@@ -272,6 +272,18 @@
 
       document.getElementById('showcaseNumber').textContent =
         local < .33 ? '01' : local < .66 ? '02' : '03';
+
+      const stage = local < .33 ? 1 : local < .66 ? 2 : 3;
+      const img = document.getElementById('showcaseImg');
+      if (img && window.__ninesHome && img.dataset.stage != stage) {
+        img.dataset.stage = stage;
+        const src = window.__ninesHome['showcase' + stage] || window.__ninesHome.showcase1;
+        if (src && img.dataset.src !== src) {
+          img.dataset.src = src;
+          img.style.opacity = 0;
+          setTimeout(() => { img.src = src; img.style.opacity = 1; }, 180);
+        }
+      }
     }, { passive:true });
 
     const observer = new IntersectionObserver((entries) => {
@@ -352,17 +364,23 @@
   }
 </script>
 <!-- Aplica las fotos del home editables desde el panel (Portada del sitio),
-     y dibuja los "Favoritos de Nine's" a partir del catálogo real -->
+     y dibuja los "Favoritos de Nine's" a partir del catálogo real.
+     Usa window.NINES_READY (una promesa) en vez de escuchar el evento
+     directamente, para no perdernos la señal si el catálogo ya cargó
+     antes de que este script llegue a pedirla. -->
 <script>
-  fetch("data/home.json").then(r => r.json()).then(home => {
+  Promise.all([
+    fetch("data/home.json").then(r => r.json()),
+    window.NINES_READY
+  ]).then(([home]) => {
+    window.__ninesHome = home;
     document.querySelectorAll("[data-home-img]").forEach(img => {
       const key = img.dataset.homeImg;
       if (home[key]) img.src = home[key];
     });
 
-    function paintEditPicks() {
-      const grid = document.querySelector("[data-edit-picks]");
-      if (!grid || !home.editPicks) return;
+    const grid = document.querySelector("[data-edit-picks]");
+    if (grid && home.editPicks) {
       grid.innerHTML = home.editPicks.map(entry => {
         const id = typeof entry === "string" ? entry : entry.id;
         const p = PRODUCTS.find(x => x.id === id);
@@ -377,9 +395,7 @@
         </article>`;
       }).join("");
     }
-    if (PRODUCTS && PRODUCTS.length) paintEditPicks();
-    else document.addEventListener("nines:data-ready", paintEditPicks);
-  }).catch(() => {});
+  }).catch(err => console.error("NINE'S home:", err));
 </script>
 </body>
 </html>
