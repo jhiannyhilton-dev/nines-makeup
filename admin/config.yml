@@ -78,7 +78,9 @@ collections:
         fields:
           - { label: "Foto principal del banner de arriba (hero)", name: "heroMain", widget: "image" }
           - { label: "Foto secundaria del banner de arriba", name: "heroSide", widget: "image" }
-          - { label: "Foto destacada (círculo 'Nine's Pick')", name: "showcase", widget: "image" }
+          - { label: "Foto destacada — paso 1 de 3 (círculo 'Nine's Pick')", name: "showcase1", widget: "image" }
+          - { label: "Foto destacada — paso 2 de 3", name: "showcase2", widget: "image" }
+          - { label: "Foto destacada — paso 3 de 3", name: "showcase3", widget: "image" }
           - label: "Favoritos de Nine's (4 productos del catálogo)"
             name: "editPicks"
             widget: "list"
