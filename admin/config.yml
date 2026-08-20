@@ -68,6 +68,23 @@ collections:
               - { label: "Precio de oferta RD$ (0 = sin oferta)", name: "salePrice", widget: "number", value_type: "int", default: 0, hint: "Si pones aquí un precio menor al normal, el producto aparece en Ofertas / Bazaar." }
               - { label: "La oferta termina (opcional)", name: "saleEndsAt", widget: "datetime", required: false, hint: "Deja vacío para que la oferta no venza sola. Actívala poniendo un precio de oferta arriba." }
 
+  - name: "portada"
+    label: "Portada (fotos del home)"
+    files:
+      - name: "home"
+        label: "Fotos de la página principal"
+        file: "data/home.json"
+        format: "json"
+        fields:
+          - { label: "Foto principal del banner de arriba (hero)", name: "heroMain", widget: "image" }
+          - { label: "Foto secundaria del banner de arriba", name: "heroSide", widget: "image" }
+          - { label: "Foto destacada (círculo 'Nine's Pick')", name: "showcase", widget: "image" }
+          - { label: "Favorito 1 (Rare Beauty)", name: "edit1", widget: "image" }
+          - { label: "Favorito 2 (Huda Beauty)", name: "edit2", widget: "image" }
+          - { label: "Favorito 3 (e.l.f.)", name: "edit3", widget: "image" }
+          - { label: "Favorito 4 (Gisou)", name: "edit4", widget: "image" }
+          - { label: "Foto de la sección 'La tienda se siente como una marca'", name: "editorial", widget: "image" }
+
   - name: "tienda"
     label: "Configuración de la tienda"
     files:
