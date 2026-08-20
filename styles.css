@@ -1,5 +1,4 @@
-
-    :root {
+:root {
       --wine:#870b39;
       --wine-deep:#4e061f;
       --wine-dark:#250810;
@@ -428,7 +427,8 @@ footer .brand-logo-svg{height:46px;color:#fff;margin-bottom:18px}
 
 .pcard{display:flex;flex-direction:column}
 .pcard-frame{position:relative;aspect-ratio:1;border-radius:20px;overflow:hidden;background:linear-gradient(150deg,var(--blush),var(--rose-soft));display:grid;place-items:center;margin-bottom:16px;box-shadow:var(--shadow)}
-.pcard-frame img{width:100%;height:100%;object-fit:contain;padding:14%}
+.pcard-frame.has-photo{background:#fff}
+.pcard-frame img{width:100%;height:100%;object-fit:cover}
 .pcard-swatch{position:absolute;inset:0;display:grid;place-items:center;font-family:"Italiana",serif;font-size:72px;color:rgba(135,11,57,.16)}
 .pcard-swatch-dot{position:absolute;bottom:14px;left:14px;width:26px;height:26px;border-radius:50%;border:2px solid #fff;box-shadow:0 2px 8px rgba(66,5,27,.25)}
 .pcard-brand{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--wine);font-weight:600}
