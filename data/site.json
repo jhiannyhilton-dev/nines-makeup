@@ -7,13 +7,13 @@
   "ZONES": [
     {
       "id": "isabelita",
-      "name": "Ensanche Isabelita / Alma Rosa",
-      "fee": 150
+      "name": "Villa Duarte / Puente Juan Carlos.",
+      "fee": 250
     },
     {
       "id": "sde",
       "name": "Santo Domingo Este (resto)",
-      "fee": 250
+      "fee": 300
     },
     {
       "id": "dn",
@@ -23,12 +23,12 @@
     {
       "id": "norte",
       "name": "Santo Domingo Norte",
-      "fee": 400
+      "fee": 500
     },
     {
       "id": "oeste",
       "name": "Santo Domingo Oeste",
-      "fee": 450
+      "fee": 525
     },
     {
       "id": "otro",
