@@ -8,18 +8,54 @@
       "name": "EASY BAKE LOOSE BAKING & SETTING POWDER",
       "cost": "1-10: $1500 / 10-99: $1200 / 100+: $1100",
       "variants": [
-        "Matcha Milk Cake",
-        "Pound Cake",
-        "Cupcake",
-        "Peach Pie",
-        "Sugar Cookie Cake ",
-        "Ube Birthday Cake",
-        "Cherry Blossom",
-        "Banana Bread",
-        "Kunafa",
-        "Blondie",
-        "Cinnamon Bum",
-        "Coffe Cake"
+        {
+          "name": "Matcha Milk Cake",
+          "img": ""
+        },
+        {
+          "name": "Pound Cake",
+          "img": ""
+        },
+        {
+          "name": "Cupcake",
+          "img": ""
+        },
+        {
+          "name": "Peach Pie",
+          "img": ""
+        },
+        {
+          "name": "Sugar Cookie Cake",
+          "img": ""
+        },
+        {
+          "name": "Ube Birthday Cake",
+          "img": ""
+        },
+        {
+          "name": "Cherry Blossom",
+          "img": ""
+        },
+        {
+          "name": "Banana Bread",
+          "img": ""
+        },
+        {
+          "name": "Kunafa",
+          "img": ""
+        },
+        {
+          "name": "Blondie",
+          "img": ""
+        },
+        {
+          "name": "Cinnamon Bum",
+          "img": ""
+        },
+        {
+          "name": "Coffe Cake",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -34,8 +70,14 @@
       "name": "2 in 1 Easy Bake duo loose powder",
       "cost": "1-10: $4.50 / 10-99: $4.20 / 100+: $4.00",
       "variants": [
-        "Cherry Peach",
-        "Pink Pumpkin"
+        {
+          "name": "Cherry Peach",
+          "img": ""
+        },
+        {
+          "name": "Pink Pumpkin",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -50,12 +92,30 @@
       "name": "Faux Filler jelly lip oil",
       "cost": "20-49: $1.50 / 50-200: $1.40 / 200+: $1.30",
       "variants": [
-        "Juicy Toasty Brown",
-        "Juicy Peach",
-        "Juicy Pink Lady",
-        "Juicy Goji",
-        "Juicy Rose",
-        "Juicy Cherry"
+        {
+          "name": "Juicy Toasty Brown",
+          "img": ""
+        },
+        {
+          "name": "Juicy Peach",
+          "img": ""
+        },
+        {
+          "name": "Juicy Pink Lady",
+          "img": ""
+        },
+        {
+          "name": "Juicy Goji",
+          "img": ""
+        },
+        {
+          "name": "Juicy Rose",
+          "img": ""
+        },
+        {
+          "name": "Juicy Cherry",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -70,18 +130,54 @@
       "name": "Non-staining matte lip gloss",
       "cost": "20-49: $1.60 / 50-200: $1.50 / 200+: $1.40",
       "variants": [
-        "301",
-        "302",
-        "303",
-        "304",
-        "305",
-        "306",
-        "307",
-        "308",
-        "309",
-        "310",
-        "311",
-        "312"
+        {
+          "name": "301",
+          "img": ""
+        },
+        {
+          "name": "302",
+          "img": ""
+        },
+        {
+          "name": "303",
+          "img": ""
+        },
+        {
+          "name": "304",
+          "img": ""
+        },
+        {
+          "name": "305",
+          "img": ""
+        },
+        {
+          "name": "306",
+          "img": ""
+        },
+        {
+          "name": "307",
+          "img": ""
+        },
+        {
+          "name": "308",
+          "img": ""
+        },
+        {
+          "name": "309",
+          "img": ""
+        },
+        {
+          "name": "310",
+          "img": ""
+        },
+        {
+          "name": "311",
+          "img": ""
+        },
+        {
+          "name": "312",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -96,12 +192,30 @@
       "name": "High shine lip gloss",
       "cost": "20-49: $1.50 / 50-200: $1.40 / 200+: $1.30",
       "variants": [
-        "Honey",
-        "Foxy",
-        "Bombshell",
-        "Posh",
-        "Coco",
-        "Sugar Baby"
+        {
+          "name": "Honey",
+          "img": ""
+        },
+        {
+          "name": "Foxy",
+          "img": ""
+        },
+        {
+          "name": "Bombshell",
+          "img": ""
+        },
+        {
+          "name": "Posh",
+          "img": ""
+        },
+        {
+          "name": "Coco",
+          "img": ""
+        },
+        {
+          "name": "Sugar Baby",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -116,14 +230,38 @@
       "name": "Lip Contour stain lip tint",
       "cost": "20-49: $1.50 / 50-200: $1.40 / 200+: $1.30",
       "variants": [
-        "Rich Brown",
-        "Cinnamon",
-        "Cherry Red",
-        "Warm Brown",
-        "Toasty Brown",
-        "Rosewood",
-        "Baby Pink",
-        "Soft Nude"
+        {
+          "name": "Rich Brown",
+          "img": ""
+        },
+        {
+          "name": "Cinnamon",
+          "img": ""
+        },
+        {
+          "name": "Cherry Red",
+          "img": ""
+        },
+        {
+          "name": "Warm Brown",
+          "img": ""
+        },
+        {
+          "name": "Toasty Brown",
+          "img": ""
+        },
+        {
+          "name": "Rosewood",
+          "img": ""
+        },
+        {
+          "name": "Baby Pink",
+          "img": ""
+        },
+        {
+          "name": "Soft Nude",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -138,7 +276,10 @@
       "name": "Easy Bake setting spray",
       "cost": "12-49: $2.60 / 50-99: $2.50 / 100+: $2.40",
       "variants": [
-        "Enjoy Bake"
+        {
+          "name": "Enjoy Bake",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -153,13 +294,34 @@
       "name": "Blush Filter soft glow liquid blush",
       "cost": "1-20: $2.20 / 21-99: $2.00 / 100+: $1.80",
       "variants": [
-        "Strawberry Cream",
-        "Cotton Candy",
-        "Bubble Gum",
-        "Ube Cream",
-        "Intense Guava",
-        "Sunset Lychee",
-        "Peach Sorbet"
+        {
+          "name": "Strawberry Cream",
+          "img": ""
+        },
+        {
+          "name": "Cotton Candy",
+          "img": ""
+        },
+        {
+          "name": "Bubble Gum",
+          "img": ""
+        },
+        {
+          "name": "Ube Cream",
+          "img": ""
+        },
+        {
+          "name": "Intense Guava",
+          "img": ""
+        },
+        {
+          "name": "Sunset Lychee",
+          "img": ""
+        },
+        {
+          "name": "Peach Sorbet",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -174,10 +336,22 @@
       "name": "Color corrector",
       "cost": "1-49: $2.20 / 50-99: $2.00 / 100+: $1.80",
       "variants": [
-        "Peach",
-        "Cherry Blossom",
-        "Graham Cracker 4.1G",
-        "Nougat 2.5G"
+        {
+          "name": "Peach",
+          "img": ""
+        },
+        {
+          "name": "Cherry Blossom",
+          "img": ""
+        },
+        {
+          "name": "Graham Cracker 4.1G",
+          "img": ""
+        },
+        {
+          "name": "Nougat 2.5G",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -192,10 +366,22 @@
       "name": "Color corrector — nueva versión",
       "cost": "1-49: $2.80 / 50-199: $2.50 / 200+: $2.00",
       "variants": [
-        "Cherry Light",
-        "Peach Light",
-        "Whipped Cream 0.1G",
-        "Honey 1.7B"
+        {
+          "name": "Cherry Light",
+          "img": ""
+        },
+        {
+          "name": "Peach Light",
+          "img": ""
+        },
+        {
+          "name": "Whipped Cream 0.1G",
+          "img": ""
+        },
+        {
+          "name": "Honey 1.7B",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -210,9 +396,18 @@
       "name": "Stay Blur foundation",
       "cost": "1-100: $2.20 / 100-200: $2.00 / 200+: $1.80",
       "variants": [
-        "S210",
-        "S220",
-        "S225"
+        {
+          "name": "S210",
+          "img": ""
+        },
+        {
+          "name": "S220",
+          "img": ""
+        },
+        {
+          "name": "S225",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -227,10 +422,22 @@
       "name": "FauxFilter Luminous matte buildable coverage foundation",
       "cost": "1-49: $3.50 / 50-99: $3.40 / 100+: $3.20",
       "variants": [
-        "110N",
-        "120B",
-        "140G",
-        "150G"
+        {
+          "name": "110N",
+          "img": ""
+        },
+        {
+          "name": "120B",
+          "img": ""
+        },
+        {
+          "name": "140G",
+          "img": ""
+        },
+        {
+          "name": "150G",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -245,7 +452,10 @@
       "name": "Blush Lighters palette",
       "cost": "1-49: $8.80 / 50-99: $8.00 / 100+: $7.60",
       "variants": [
-        "Único"
+        {
+          "name": "Único",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -260,15 +470,42 @@
       "name": "Easy Bake pressed powder",
       "cost": "1-20: $9.00 / 21-50: $8.40 / 51+: $7.80",
       "variants": [
-        "Sugar Cookie",
-        "Translucent",
-        "Cherry Blossom Cake",
-        "Pound Cake",
-        "Peach Cupcake",
-        "Banana Bread",
-        "Kunafa Blondie",
-        "Cinnamon Bun",
-        "Coco Truffle"
+        {
+          "name": "Sugar Cookie",
+          "img": ""
+        },
+        {
+          "name": "Translucent",
+          "img": ""
+        },
+        {
+          "name": "Cherry Blossom Cake",
+          "img": ""
+        },
+        {
+          "name": "Pound Cake",
+          "img": ""
+        },
+        {
+          "name": "Peach Cupcake",
+          "img": ""
+        },
+        {
+          "name": "Banana Bread",
+          "img": ""
+        },
+        {
+          "name": "Kunafa Blondie",
+          "img": ""
+        },
+        {
+          "name": "Cinnamon Bun",
+          "img": ""
+        },
+        {
+          "name": "Coco Truffle",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -283,8 +520,14 @@
       "name": "Eyeshadow palette",
       "cost": "1-49: $3.00 / 50-99: $2.80 / 100+: $2.60",
       "variants": [
-        "Empowered",
-        "Rose Gold"
+        {
+          "name": "Empowered",
+          "img": ""
+        },
+        {
+          "name": "Rose Gold",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "ojos",
@@ -299,9 +542,18 @@
       "name": "Major Dimension Essential Artistry Edit eyeshadow palette",
       "cost": "1-50: $9.50 / 50-199: $9.00 / 200+: $8.50",
       "variants": [
-        "Light",
-        "Medium",
-        "Deep"
+        {
+          "name": "Light",
+          "img": ""
+        },
+        {
+          "name": "Medium",
+          "img": ""
+        },
+        {
+          "name": "Deep",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "ojos",
@@ -316,26 +568,86 @@
       "name": "Major Headlines double take crème & powder blush duo",
       "cost": "1-50: $8.60 / 50-199: $8.00 / 200+: $7.30",
       "variants": [
-        "Thank Me Later",
-        "Soft Launch",
-        "She's Seductive",
-        "She Goes To The Gym",
-        "She Knows Who She Is",
-        "She Left Me On Red",
-        "Just Enough",
-        "She's the Moment",
-        "Not Too Much",
-        "She's Wanted",
-        "She's Giving",
-        "She's Flushed",
-        "She's So LA",
-        "She's a Doll",
-        "She's Vibrant",
-        "She's Blushing",
-        "She's That Girl",
-        "She's Statuesque",
-        "She's Sculpted",
-        "She's Chiseled"
+        {
+          "name": "Thank Me Later",
+          "img": ""
+        },
+        {
+          "name": "Soft Launch",
+          "img": ""
+        },
+        {
+          "name": "She's Seductive",
+          "img": ""
+        },
+        {
+          "name": "She Goes To The Gym",
+          "img": ""
+        },
+        {
+          "name": "She Knows Who She Is",
+          "img": ""
+        },
+        {
+          "name": "She Left Me On Red",
+          "img": ""
+        },
+        {
+          "name": "Just Enough",
+          "img": ""
+        },
+        {
+          "name": "She's the Moment",
+          "img": ""
+        },
+        {
+          "name": "Not Too Much",
+          "img": ""
+        },
+        {
+          "name": "She's Wanted",
+          "img": ""
+        },
+        {
+          "name": "She's Giving",
+          "img": ""
+        },
+        {
+          "name": "She's Flushed",
+          "img": ""
+        },
+        {
+          "name": "She's So LA",
+          "img": ""
+        },
+        {
+          "name": "She's a Doll",
+          "img": ""
+        },
+        {
+          "name": "She's Vibrant",
+          "img": ""
+        },
+        {
+          "name": "She's Blushing",
+          "img": ""
+        },
+        {
+          "name": "She's That Girl",
+          "img": ""
+        },
+        {
+          "name": "She's Statuesque",
+          "img": ""
+        },
+        {
+          "name": "She's Sculpted",
+          "img": ""
+        },
+        {
+          "name": "She's Chiseled",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -350,11 +662,26 @@
       "name": "Lipstick with pendant",
       "cost": "1-9: $4.50 / 10-20: $4.20 / 21-99: $4.00",
       "variants": [
-        "101",
-        "102",
-        "103",
-        "104",
-        "105"
+        {
+          "name": "101",
+          "img": ""
+        },
+        {
+          "name": "102",
+          "img": ""
+        },
+        {
+          "name": "103",
+          "img": ""
+        },
+        {
+          "name": "104",
+          "img": ""
+        },
+        {
+          "name": "105",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -369,34 +696,118 @@
       "name": "Lipgloss",
       "cost": "1-9: $4.00 / 10-20: $3.80 / 21-99: $3.60",
       "variants": [
-        "001",
-        "003",
-        "004",
-        "006",
-        "007",
-        "010",
-        "012",
-        "015",
-        "018",
-        "019",
-        "020",
-        "021",
-        "026",
-        "027",
-        "028",
-        "029",
-        "037",
-        "038",
-        "039",
-        "053",
-        "061",
-        "062",
-        "063",
-        "065",
-        "084",
-        "203",
-        "204",
-        "206"
+        {
+          "name": "001",
+          "img": ""
+        },
+        {
+          "name": "003",
+          "img": ""
+        },
+        {
+          "name": "004",
+          "img": ""
+        },
+        {
+          "name": "006",
+          "img": ""
+        },
+        {
+          "name": "007",
+          "img": ""
+        },
+        {
+          "name": "010",
+          "img": ""
+        },
+        {
+          "name": "012",
+          "img": ""
+        },
+        {
+          "name": "015",
+          "img": ""
+        },
+        {
+          "name": "018",
+          "img": ""
+        },
+        {
+          "name": "019",
+          "img": ""
+        },
+        {
+          "name": "020",
+          "img": ""
+        },
+        {
+          "name": "021",
+          "img": ""
+        },
+        {
+          "name": "026",
+          "img": ""
+        },
+        {
+          "name": "027",
+          "img": ""
+        },
+        {
+          "name": "028",
+          "img": ""
+        },
+        {
+          "name": "029",
+          "img": ""
+        },
+        {
+          "name": "037",
+          "img": ""
+        },
+        {
+          "name": "038",
+          "img": ""
+        },
+        {
+          "name": "039",
+          "img": ""
+        },
+        {
+          "name": "053",
+          "img": ""
+        },
+        {
+          "name": "061",
+          "img": ""
+        },
+        {
+          "name": "062",
+          "img": ""
+        },
+        {
+          "name": "063",
+          "img": ""
+        },
+        {
+          "name": "065",
+          "img": ""
+        },
+        {
+          "name": "084",
+          "img": ""
+        },
+        {
+          "name": "203",
+          "img": ""
+        },
+        {
+          "name": "204",
+          "img": ""
+        },
+        {
+          "name": "206",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -411,14 +822,38 @@
       "name": "Lip Glow oil",
       "cost": "1-9: $5.50 / 10-20: $5.20 / 21-99: $5.00",
       "variants": [
-        "001",
-        "004",
-        "007",
-        "012",
-        "015",
-        "020",
-        "030",
-        "031"
+        {
+          "name": "001",
+          "img": ""
+        },
+        {
+          "name": "004",
+          "img": ""
+        },
+        {
+          "name": "007",
+          "img": ""
+        },
+        {
+          "name": "012",
+          "img": ""
+        },
+        {
+          "name": "015",
+          "img": ""
+        },
+        {
+          "name": "020",
+          "img": ""
+        },
+        {
+          "name": "030",
+          "img": ""
+        },
+        {
+          "name": "031",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -433,11 +868,26 @@
       "name": "Forever Blush soft filter",
       "cost": "1-9: $8.00 / 10-20: $7.80 / 21-99: $7.50",
       "variants": [
-        "01 Petal",
-        "02 Peony",
-        "03 Bloom",
-        "04 Daisy",
-        "05 Lily"
+        {
+          "name": "01 Petal",
+          "img": ""
+        },
+        {
+          "name": "02 Peony",
+          "img": ""
+        },
+        {
+          "name": "03 Bloom",
+          "img": ""
+        },
+        {
+          "name": "04 Daisy",
+          "img": ""
+        },
+        {
+          "name": "05 Lily",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -452,11 +902,26 @@
       "name": "Addict Lip Glow — nueva versión",
       "cost": "1-9: $4.20 / 10-20: $4.00 / 21-99: $3.80",
       "variants": [
-        "001 Pink",
-        "004",
-        "012",
-        "074",
-        "078"
+        {
+          "name": "001 Pink",
+          "img": ""
+        },
+        {
+          "name": "004",
+          "img": ""
+        },
+        {
+          "name": "012",
+          "img": ""
+        },
+        {
+          "name": "074",
+          "img": ""
+        },
+        {
+          "name": "078",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -471,13 +936,34 @@
       "name": "Lip highlighter stick",
       "cost": "1-9: $8.20 / 10-20: $8.00 / 21-99: $7.50",
       "variants": [
-        "001 Pink",
-        "006 Berry",
-        "012 Rosewood",
-        "015 Cherry",
-        "063 Pink Lilac",
-        "077 Candy",
-        "103 Toffee"
+        {
+          "name": "001 Pink",
+          "img": ""
+        },
+        {
+          "name": "006 Berry",
+          "img": ""
+        },
+        {
+          "name": "012 Rosewood",
+          "img": ""
+        },
+        {
+          "name": "015 Cherry",
+          "img": ""
+        },
+        {
+          "name": "063 Pink Lilac",
+          "img": ""
+        },
+        {
+          "name": "077 Candy",
+          "img": ""
+        },
+        {
+          "name": "103 Toffee",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -492,7 +978,10 @@
       "name": "Set de labios 2 piezas — Lip Glow + Glow Oil",
       "cost": "1-9: $5.50 / 10-20: $5.20 / 21-99: $5.00",
       "variants": [
-        "001 Pink"
+        {
+          "name": "001 Pink",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -507,7 +996,10 @@
       "name": "Set de lip oil 2 piezas",
       "cost": "1-9: $5.50 / 10-20: $5.20 / 21-99: $5.00",
       "variants": [
-        "001 + 004"
+        {
+          "name": "001 + 004",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -522,8 +1014,14 @@
       "name": "Set de lipgloss 3 piezas",
       "cost": "1-9: $6.80 / 10-20: $6.60 / 21-99: $6.20",
       "variants": [
-        "Heart pattern",
-        "Black"
+        {
+          "name": "Heart pattern",
+          "img": ""
+        },
+        {
+          "name": "Black",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -538,7 +1036,10 @@
       "name": "Set de labios 3 piezas — Lip Glow, Glow Oil, Maximizer",
       "cost": "1-9: $6.80 / 10-20: $6.60 / 21-99: $6.20",
       "variants": [
-        "001 Pink"
+        {
+          "name": "001 Pink",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -553,7 +1054,10 @@
       "name": "Set de lip gloss y blush 2 piezas",
       "cost": "1-9: $12.00 / 10-20: $11.50 / 21-99: $11.00",
       "variants": [
-        "Único"
+        {
+          "name": "Único",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -568,12 +1072,30 @@
       "name": "Diorshow 5 Couleurs eyeshadow palette",
       "cost": "1-9: $6.50 / 10-20: $6.00 / 21-99: $5.50",
       "variants": [
-        "429",
-        "689",
-        "743",
-        "279",
-        "343",
-        "649"
+        {
+          "name": "429",
+          "img": ""
+        },
+        {
+          "name": "689",
+          "img": ""
+        },
+        {
+          "name": "743",
+          "img": ""
+        },
+        {
+          "name": "279",
+          "img": ""
+        },
+        {
+          "name": "343",
+          "img": ""
+        },
+        {
+          "name": "649",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "ojos",
@@ -588,10 +1110,22 @@
       "name": "Paleta 4 colores — versión normal",
       "cost": "1-9: $4.50 / 10-20: $4.20 / 21-99: $4.00",
       "variants": [
-        "001",
-        "002",
-        "003",
-        "004"
+        {
+          "name": "001",
+          "img": ""
+        },
+        {
+          "name": "002",
+          "img": ""
+        },
+        {
+          "name": "003",
+          "img": ""
+        },
+        {
+          "name": "004",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "ojos",
@@ -606,10 +1140,22 @@
       "name": "Paleta 4 colores — versión 3D",
       "cost": "1-9: $15.00 / 10-20: $14.00 / 21-99: $13.20",
       "variants": [
-        "001",
-        "002",
-        "003",
-        "004"
+        {
+          "name": "001",
+          "img": ""
+        },
+        {
+          "name": "002",
+          "img": ""
+        },
+        {
+          "name": "003",
+          "img": ""
+        },
+        {
+          "name": "004",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "ojos",
@@ -624,13 +1170,34 @@
       "name": "Paleta monocolor",
       "cost": "1-9: $5.00 / 10-20: $4.60 / 21-99: $4.20",
       "variants": [
-        "001 Pink",
-        "006 Berry",
-        "012 Rosewood",
-        "015 Cherry",
-        "063 Pink Lilac",
-        "077 Candy",
-        "103 Toffee"
+        {
+          "name": "001 Pink",
+          "img": ""
+        },
+        {
+          "name": "006 Berry",
+          "img": ""
+        },
+        {
+          "name": "012 Rosewood",
+          "img": ""
+        },
+        {
+          "name": "015 Cherry",
+          "img": ""
+        },
+        {
+          "name": "063 Pink Lilac",
+          "img": ""
+        },
+        {
+          "name": "077 Candy",
+          "img": ""
+        },
+        {
+          "name": "103 Toffee",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "ojos",
@@ -645,12 +1212,30 @@
       "name": "Single-color blush",
       "cost": "1-9: $5.80 / 10-20: $5.60 / 21-99: $5.20",
       "variants": [
-        "001",
-        "004",
-        "006",
-        "012",
-        "015",
-        "020"
+        {
+          "name": "001",
+          "img": ""
+        },
+        {
+          "name": "004",
+          "img": ""
+        },
+        {
+          "name": "006",
+          "img": ""
+        },
+        {
+          "name": "012",
+          "img": ""
+        },
+        {
+          "name": "015",
+          "img": ""
+        },
+        {
+          "name": "020",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -665,15 +1250,42 @@
       "name": "Paleta monocolor con brocha",
       "cost": "1-9: $5.00 / 10-20: $4.80 / 21-99: $4.50",
       "variants": [
-        "211",
-        "219",
-        "343",
-        "601",
-        "621",
-        "060",
-        "250",
-        "520",
-        "999"
+        {
+          "name": "211",
+          "img": ""
+        },
+        {
+          "name": "219",
+          "img": ""
+        },
+        {
+          "name": "343",
+          "img": ""
+        },
+        {
+          "name": "601",
+          "img": ""
+        },
+        {
+          "name": "621",
+          "img": ""
+        },
+        {
+          "name": "060",
+          "img": ""
+        },
+        {
+          "name": "250",
+          "img": ""
+        },
+        {
+          "name": "520",
+          "img": ""
+        },
+        {
+          "name": "999",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "ojos",
@@ -688,10 +1300,22 @@
       "name": "Paleta 2 colores",
       "cost": "1-9: $4.50 / 10-20: $4.20 / 21-99: $4.00",
       "variants": [
-        "100",
-        "257",
-        "287",
-        "457"
+        {
+          "name": "100",
+          "img": ""
+        },
+        {
+          "name": "257",
+          "img": ""
+        },
+        {
+          "name": "287",
+          "img": ""
+        },
+        {
+          "name": "457",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "ojos",
@@ -706,7 +1330,10 @@
       "name": "Mascara",
       "cost": "1-9: $3.50 / 10-20: $3.20 / 21-99: $3.00",
       "variants": [
-        "Único"
+        {
+          "name": "Único",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "ojos",
@@ -721,10 +1348,22 @@
       "name": "Bronzer",
       "cost": "1-9: $9.00 / 10-20: $8.50 / 21-99: $8.00",
       "variants": [
-        "02 Light Naturel",
-        "03 Soft Nature",
-        "04 Warm",
-        "05 Intense Nature"
+        {
+          "name": "02 Light Naturel",
+          "img": ""
+        },
+        {
+          "name": "03 Soft Nature",
+          "img": ""
+        },
+        {
+          "name": "04 Warm",
+          "img": ""
+        },
+        {
+          "name": "05 Intense Nature",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -739,7 +1378,10 @@
       "name": "Peptide glazing fluid",
       "cost": "20-49: $2.20 / 50-99: $2.10 / 100-200: $2.00",
       "variants": [
-        "Único"
+        {
+          "name": "Único",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "skincare",
@@ -754,31 +1396,106 @@
       "name": "Peptide lip treatment / gloss",
       "cost": "20-49: $0.80 / 50-99: $0.70 / 100-200: $0.60",
       "variants": [
-        "Sweet Pea",
-        "Pretzel",
-        "Sugarberry",
-        "Strawberry",
-        "Sugar Cookie",
-        "Jellybean",
-        "Rhode Vanilla",
-        "Vanilla Cake",
-        "Watermelon",
-        "Passionfruit",
-        "Salted Caramel",
-        "Cinnamon Roll",
-        "Peppermint Glaze",
-        "PBJ",
-        "Raspberry Jelly",
-        "Guava Spritz",
-        "Peach Pit",
-        "Shortcake",
-        "Salty Tan",
-        "Toast",
-        "Ribbon",
-        "Unscented",
-        "Lemontini",
-        "Espresso",
-        "Banana"
+        {
+          "name": "Sweet Pea",
+          "img": ""
+        },
+        {
+          "name": "Pretzel",
+          "img": ""
+        },
+        {
+          "name": "Sugarberry",
+          "img": ""
+        },
+        {
+          "name": "Strawberry",
+          "img": ""
+        },
+        {
+          "name": "Sugar Cookie",
+          "img": ""
+        },
+        {
+          "name": "Jellybean",
+          "img": ""
+        },
+        {
+          "name": "Rhode Vanilla",
+          "img": ""
+        },
+        {
+          "name": "Vanilla Cake",
+          "img": ""
+        },
+        {
+          "name": "Watermelon",
+          "img": ""
+        },
+        {
+          "name": "Passionfruit",
+          "img": ""
+        },
+        {
+          "name": "Salted Caramel",
+          "img": ""
+        },
+        {
+          "name": "Cinnamon Roll",
+          "img": ""
+        },
+        {
+          "name": "Peppermint Glaze",
+          "img": ""
+        },
+        {
+          "name": "PBJ",
+          "img": ""
+        },
+        {
+          "name": "Raspberry Jelly",
+          "img": ""
+        },
+        {
+          "name": "Guava Spritz",
+          "img": ""
+        },
+        {
+          "name": "Peach Pit",
+          "img": ""
+        },
+        {
+          "name": "Shortcake",
+          "img": ""
+        },
+        {
+          "name": "Salty Tan",
+          "img": ""
+        },
+        {
+          "name": "Toast",
+          "img": ""
+        },
+        {
+          "name": "Ribbon",
+          "img": ""
+        },
+        {
+          "name": "Unscented",
+          "img": ""
+        },
+        {
+          "name": "Lemontini",
+          "img": ""
+        },
+        {
+          "name": "Espresso",
+          "img": ""
+        },
+        {
+          "name": "Banana",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -793,10 +1510,22 @@
       "name": "Birthday limited gloss",
       "cost": "20-49: $0.90 / 50-99: $0.80 / 100-200: $0.70",
       "variants": [
-        "Raspberry",
-        "Espresso",
-        "Toast",
-        "Ribbon"
+        {
+          "name": "Raspberry",
+          "img": ""
+        },
+        {
+          "name": "Espresso",
+          "img": ""
+        },
+        {
+          "name": "Toast",
+          "img": ""
+        },
+        {
+          "name": "Ribbon",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -811,7 +1540,10 @@
       "name": "Blush",
       "cost": "20-49: $0.90 / 50-99: $0.85 / 100-200: $0.80",
       "variants": [
-        "Único"
+        {
+          "name": "Único",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -826,10 +1558,22 @@
       "name": "Highlight stick",
       "cost": "20-49: $0.90 / 50-99: $0.85 / 100-200: $0.80",
       "variants": [
-        "01 Bronzo",
-        "02 Sunlight",
-        "03 Pearl",
-        "04 Rose"
+        {
+          "name": "01 Bronzo",
+          "img": ""
+        },
+        {
+          "name": "02 Sunlight",
+          "img": ""
+        },
+        {
+          "name": "03 Pearl",
+          "img": ""
+        },
+        {
+          "name": "04 Rose",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -844,7 +1588,10 @@
       "name": "Lip liner",
       "cost": "20-49: $1.30 / 50-99: $1.20 / 100-200: $1.10",
       "variants": [
-        "Único"
+        {
+          "name": "Único",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -859,7 +1606,10 @@
       "name": "Gloss set 4 en 1",
       "cost": "20-49: $2.40 / 50-99: $2.20 / 100-200: $2.00",
       "variants": [
-        "Espresso + Raspberry + Toast + Ribbon"
+        {
+          "name": "Espresso + Raspberry + Toast + Ribbon",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -874,7 +1624,10 @@
       "name": "Barrier cream",
       "cost": "20-49: $1.20 / 50-99: $1.10 / 100-200: $1.00",
       "variants": [
-        "Único"
+        {
+          "name": "Único",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "skincare",
@@ -889,7 +1642,10 @@
       "name": "Pineapple face wash",
       "cost": "20-49: $1.50 / 50-99: $1.40",
       "variants": [
-        "Único"
+        {
+          "name": "Único",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "skincare",
@@ -904,7 +1660,10 @@
       "name": "Glazing milk",
       "cost": "20-49: $3.00 / 50-99: $2.90 / 100-200: $2.80",
       "variants": [
-        "Único"
+        {
+          "name": "Único",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "skincare",
@@ -919,7 +1678,10 @@
       "name": "Glazing mist",
       "cost": "20-49: $4.00 / 50-99: $3.90 / 100-200: $3.80",
       "variants": [
-        "Único"
+        {
+          "name": "Único",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "skincare",
@@ -934,9 +1696,18 @@
       "name": "Eye patches",
       "cost": "20-49: $4.00 / 50-99: $3.90 / 100-200: $3.80",
       "variants": [
-        "Rhode logo",
-        "L logo",
-        "Banana"
+        {
+          "name": "Rhode logo",
+          "img": ""
+        },
+        {
+          "name": "L logo",
+          "img": ""
+        },
+        {
+          "name": "Banana",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "skincare",
@@ -951,7 +1722,10 @@
       "name": "Gloss set",
       "cost": "10-50: $5.80 / 50+: $5.60",
       "variants": [
-        "Único"
+        {
+          "name": "Único",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -966,19 +1740,58 @@
       "name": "Lip Butter Balm / gloss",
       "cost": "20-49: $1.00 / 50-99: $0.90 / 100-200: $0.80",
       "variants": [
-        "Poppy",
-        "Cherry",
-        "Pink Sugar",
-        "Vanilla Beige",
-        "Sweet Mint",
-        "Brown Sugar",
-        "Vanilla",
-        "Iced Coffee",
-        "Birthday Cake",
-        "Hot Cocoa",
-        "Pink Guava",
-        "Toasted Marshmallow",
-        "Strawberry"
+        {
+          "name": "Poppy",
+          "img": ""
+        },
+        {
+          "name": "Cherry",
+          "img": ""
+        },
+        {
+          "name": "Pink Sugar",
+          "img": ""
+        },
+        {
+          "name": "Vanilla Beige",
+          "img": ""
+        },
+        {
+          "name": "Sweet Mint",
+          "img": ""
+        },
+        {
+          "name": "Brown Sugar",
+          "img": ""
+        },
+        {
+          "name": "Vanilla",
+          "img": ""
+        },
+        {
+          "name": "Iced Coffee",
+          "img": ""
+        },
+        {
+          "name": "Birthday Cake",
+          "img": ""
+        },
+        {
+          "name": "Hot Cocoa",
+          "img": ""
+        },
+        {
+          "name": "Pink Guava",
+          "img": ""
+        },
+        {
+          "name": "Toasted Marshmallow",
+          "img": ""
+        },
+        {
+          "name": "Strawberry",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -993,14 +1806,38 @@
       "name": "Lip oil",
       "cost": "20-49: $1.50 / 50-99: $1.40 / 100-200: $1.30",
       "variants": [
-        "Soft Mauve",
-        "Rosewood Nights",
-        "Pink Cloud",
-        "Blush Dreams",
-        "Bare Sand",
-        "Rose Bud",
-        "Midnight Berry",
-        "Warm Beige"
+        {
+          "name": "Soft Mauve",
+          "img": ""
+        },
+        {
+          "name": "Rosewood Nights",
+          "img": ""
+        },
+        {
+          "name": "Pink Cloud",
+          "img": ""
+        },
+        {
+          "name": "Blush Dreams",
+          "img": ""
+        },
+        {
+          "name": "Bare Sand",
+          "img": ""
+        },
+        {
+          "name": "Rose Bud",
+          "img": ""
+        },
+        {
+          "name": "Midnight Berry",
+          "img": ""
+        },
+        {
+          "name": "Warm Beige",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -1015,7 +1852,10 @@
       "name": "Lip set 2 en 1",
       "cost": "20-49: $2.10 / 50-99: $2.00 / 100-200: $1.90",
       "variants": [
-        "Birthday Cake + Strawberry"
+        {
+          "name": "Birthday Cake + Strawberry",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -1030,8 +1870,14 @@
       "name": "Gloss set 3 en 1",
       "cost": "20-49: $3.00 / 50-99: $2.70 / 100-200: $2.40",
       "variants": [
-        "Vanilla Beige + Sweet Mint + Poppy",
-        "Cherry + Sweet Mint + Birthday Cake"
+        {
+          "name": "Vanilla Beige + Sweet Mint + Poppy",
+          "img": ""
+        },
+        {
+          "name": "Cherry + Sweet Mint + Birthday Cake",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -1046,8 +1892,14 @@
       "name": "Mini gloss set 4 en 1",
       "cost": "20-49: $1.60 / 50-99: $1.50 / 100-200: $1.40",
       "variants": [
-        "Vanilla + Vanilla Beige + Iced Coffee + Brown Sugar",
-        "Vanilla + Vanilla Beige + Poppy + Brown Sugar"
+        {
+          "name": "Vanilla + Vanilla Beige + Iced Coffee + Brown Sugar",
+          "img": ""
+        },
+        {
+          "name": "Vanilla + Vanilla Beige + Poppy + Brown Sugar",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -1062,7 +1914,10 @@
       "name": "Jet Lag mask",
       "cost": "20-49: $2.10 / 50-99: $2.00 / 100-200: $1.90",
       "variants": [
-        "Único"
+        {
+          "name": "Único",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "skincare",
@@ -1077,7 +1932,10 @@
       "name": "Jet Lag mask",
       "cost": "20-49: $3.20 / 50-99: $3.00 / 100-200: $2.80",
       "variants": [
-        "Único"
+        {
+          "name": "Único",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "skincare",
@@ -1092,12 +1950,30 @@
       "name": "Halo Glow Beauty Wand blush",
       "cost": "20-49: $1.30 / 50-99: $1.20 / 100+: $1.10",
       "variants": [
-        "1 Pink Me Up",
-        "2 You Go Cocoa",
-        "3 Candlelit",
-        "4 Rose You Slay",
-        "5 Magic Hour",
-        "6 Berry Radiant"
+        {
+          "name": "1 Pink Me Up",
+          "img": ""
+        },
+        {
+          "name": "2 You Go Cocoa",
+          "img": ""
+        },
+        {
+          "name": "3 Candlelit",
+          "img": ""
+        },
+        {
+          "name": "4 Rose You Slay",
+          "img": ""
+        },
+        {
+          "name": "5 Magic Hour",
+          "img": ""
+        },
+        {
+          "name": "6 Berry Radiant",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -1112,14 +1988,38 @@
       "name": "Putty blush",
       "cost": "20-49: $1.30 / 50-99: $1.20 / 100+: $1.10",
       "variants": [
-        "01 Fiji",
-        "02 Bora Bora",
-        "03 Bahamas",
-        "04 Turks and Caicos",
-        "05 Caribbean",
-        "06 Bali",
-        "07 Maldives",
-        "08 Tahiti"
+        {
+          "name": "01 Fiji",
+          "img": ""
+        },
+        {
+          "name": "02 Bora Bora",
+          "img": ""
+        },
+        {
+          "name": "03 Bahamas",
+          "img": ""
+        },
+        {
+          "name": "04 Turks and Caicos",
+          "img": ""
+        },
+        {
+          "name": "05 Caribbean",
+          "img": ""
+        },
+        {
+          "name": "06 Bali",
+          "img": ""
+        },
+        {
+          "name": "07 Maldives",
+          "img": ""
+        },
+        {
+          "name": "08 Tahiti",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -1134,11 +2034,26 @@
       "name": "Sheer For It blush tint",
       "cost": "20-49: $1.30 / 50-99: $1.20 / 100+: $1.10",
       "variants": [
-        "1 Pink Positive",
-        "2 Cherry Cola",
-        "3 Orange Crush",
-        "4 Left on Red",
-        "5 Plums Up"
+        {
+          "name": "1 Pink Positive",
+          "img": ""
+        },
+        {
+          "name": "2 Cherry Cola",
+          "img": ""
+        },
+        {
+          "name": "3 Orange Crush",
+          "img": ""
+        },
+        {
+          "name": "4 Left on Red",
+          "img": ""
+        },
+        {
+          "name": "5 Plums Up",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -1153,12 +2068,30 @@
       "name": "Lip gloss",
       "cost": "20-49: $1.30 / 50-99: $1.20 / 100+: $1.00",
       "variants": [
-        "01 Vanilla Toffee",
-        "02 Java Chip",
-        "03 Blackberry Sorbet",
-        "04 Yummy Gummy",
-        "05 Wild Cherry",
-        "06 Strawberry Shortcake"
+        {
+          "name": "01 Vanilla Toffee",
+          "img": ""
+        },
+        {
+          "name": "02 Java Chip",
+          "img": ""
+        },
+        {
+          "name": "03 Blackberry Sorbet",
+          "img": ""
+        },
+        {
+          "name": "04 Yummy Gummy",
+          "img": ""
+        },
+        {
+          "name": "05 Wild Cherry",
+          "img": ""
+        },
+        {
+          "name": "06 Strawberry Shortcake",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -1173,14 +2106,38 @@
       "name": "Glow Reviver lip oil — shine",
       "cost": "20-49: $1.40 / 50-99: $1.30 / 100+: $1.20",
       "variants": [
-        "01 Crystal Baller",
-        "02 Candy Coded",
-        "03 Princess Cut",
-        "04 Citrine Gleam",
-        "05 Super-Neutral",
-        "06 Chocoluxe",
-        "07 Opal-ogy Tour",
-        "08 Divine Wine"
+        {
+          "name": "01 Crystal Baller",
+          "img": ""
+        },
+        {
+          "name": "02 Candy Coded",
+          "img": ""
+        },
+        {
+          "name": "03 Princess Cut",
+          "img": ""
+        },
+        {
+          "name": "04 Citrine Gleam",
+          "img": ""
+        },
+        {
+          "name": "05 Super-Neutral",
+          "img": ""
+        },
+        {
+          "name": "06 Chocoluxe",
+          "img": ""
+        },
+        {
+          "name": "07 Opal-ogy Tour",
+          "img": ""
+        },
+        {
+          "name": "08 Divine Wine",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -1195,15 +2152,42 @@
       "name": "Glow Reviver lip oil",
       "cost": "20-49: $1.40 / 50-99: $1.30 / 100+: $1.20",
       "variants": [
-        "01 Coral Fixation",
-        "02 It's Giving Guava",
-        "03 Pink Quartz",
-        "04 Rose Envy",
-        "05 Red Delicious",
-        "06 Honey Talks",
-        "07 Hot as Fudge",
-        "08 Money Mauve",
-        "09 Jam Session"
+        {
+          "name": "01 Coral Fixation",
+          "img": ""
+        },
+        {
+          "name": "02 It's Giving Guava",
+          "img": ""
+        },
+        {
+          "name": "03 Pink Quartz",
+          "img": ""
+        },
+        {
+          "name": "04 Rose Envy",
+          "img": ""
+        },
+        {
+          "name": "05 Red Delicious",
+          "img": ""
+        },
+        {
+          "name": "06 Honey Talks",
+          "img": ""
+        },
+        {
+          "name": "07 Hot as Fudge",
+          "img": ""
+        },
+        {
+          "name": "08 Money Mauve",
+          "img": ""
+        },
+        {
+          "name": "09 Jam Session",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -1218,12 +2202,30 @@
       "name": "Lip gloss mini",
       "cost": "20-49: $1.10 / 50-99: $1.00",
       "variants": [
-        "Peach",
-        "Vanilla Frosting",
-        "Strawberry",
-        "Honeydew",
-        "Blueberry",
-        "Grape"
+        {
+          "name": "Peach",
+          "img": ""
+        },
+        {
+          "name": "Vanilla Frosting",
+          "img": ""
+        },
+        {
+          "name": "Strawberry",
+          "img": ""
+        },
+        {
+          "name": "Honeydew",
+          "img": ""
+        },
+        {
+          "name": "Blueberry",
+          "img": ""
+        },
+        {
+          "name": "Grape",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -1238,13 +2240,34 @@
       "name": "Monochromatic multi-stick",
       "cost": "20-49: $1.30 / 50-99: $1.20 / 100+: $1.10",
       "variants": [
-        "Dazzling Peony",
-        "Glowing Mango",
-        "Sparkling Rose",
-        "Glistening Peach",
-        "Bronzed Cherry",
-        "Glimmering Guava",
-        "Luminous Berry"
+        {
+          "name": "Dazzling Peony",
+          "img": ""
+        },
+        {
+          "name": "Glowing Mango",
+          "img": ""
+        },
+        {
+          "name": "Sparkling Rose",
+          "img": ""
+        },
+        {
+          "name": "Glistening Peach",
+          "img": ""
+        },
+        {
+          "name": "Bronzed Cherry",
+          "img": ""
+        },
+        {
+          "name": "Glimmering Guava",
+          "img": ""
+        },
+        {
+          "name": "Luminous Berry",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -1259,10 +2282,22 @@
       "name": "Camo liquid blush",
       "cost": "20-49: $1.30 / 50-99: $1.20 / 100+: $1.10",
       "variants": [
-        "Dusty Rose",
-        "Peach Perfect",
-        "Rose Tea",
-        "Coral Crush"
+        {
+          "name": "Dusty Rose",
+          "img": ""
+        },
+        {
+          "name": "Peach Perfect",
+          "img": ""
+        },
+        {
+          "name": "Rose Tea",
+          "img": ""
+        },
+        {
+          "name": "Coral Crush",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -1277,7 +2312,10 @@
       "name": "e.l.f. x Jen Atkin set 3 en 1",
       "cost": "10-30: $4.00 / 31-60: $3.80 / 61-89: $3.60 / 90-100: $3.40",
       "variants": [
-        "Set"
+        {
+          "name": "Set",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -1292,9 +2330,18 @@
       "name": "Matte Fusion setting powder",
       "cost": "20-50: $1.80 / 50-100: $1.40",
       "variants": [
-        "01",
-        "02",
-        "03"
+        {
+          "name": "01",
+          "img": ""
+        },
+        {
+          "name": "02",
+          "img": ""
+        },
+        {
+          "name": "03",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -1309,9 +2356,18 @@
       "name": "Halo Glow setting powder",
       "cost": "20-50: $1.80 / 50-100: $1.40",
       "variants": [
-        "01",
-        "02",
-        "03"
+        {
+          "name": "01",
+          "img": ""
+        },
+        {
+          "name": "02",
+          "img": ""
+        },
+        {
+          "name": "03",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -1326,7 +2382,10 @@
       "name": "Power Grip primer",
       "cost": "20-50: $1.80 / 50-100: $1.40",
       "variants": [
-        "01 Green Tube"
+        {
+          "name": "01 Green Tube",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -1341,8 +2400,14 @@
       "name": "Primer mini",
       "cost": "20-50: $1.20 / 50-99: $1.10 / 100-200: $1.00",
       "variants": [
-        "01 Green Tube",
-        "02 Pink Tube"
+        {
+          "name": "01 Green Tube",
+          "img": ""
+        },
+        {
+          "name": "02 Pink Tube",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -1357,7 +2422,10 @@
       "name": "Luminous Putty primer",
       "cost": "20-50: $1.20 / 50-99: $1.10 / 100-200: $1.00",
       "variants": [
-        "Único"
+        {
+          "name": "Único",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -1372,7 +2440,10 @@
       "name": "Matte primer",
       "cost": "20-50: $1.20 / 50-99: $1.10 / 100-200: $1.00",
       "variants": [
-        "Black"
+        {
+          "name": "Black",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -1387,7 +2458,10 @@
       "name": "e.l.f. Skin Thirst Burst drops",
       "cost": "20-49: $1.00 / 50-100: $0.80",
       "variants": [
-        "Blue"
+        {
+          "name": "Blue",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "skincare",
@@ -1402,7 +2476,10 @@
       "name": "Foundation set 3 en 1",
       "cost": "1-29: $6.50 / 30-50: $6.00",
       "variants": [
-        "Set"
+        {
+          "name": "Set",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -1417,19 +2494,58 @@
       "name": "Soft Pinch liquid blush",
       "cost": "20-50: $1.30 / 50-99: $1.20 / 100+: $1.10",
       "variants": [
-        "01 Lucky",
-        "02 Happy",
-        "03 Joy",
-        "04 Hope",
-        "05 Love",
-        "06 Believe",
-        "07 Grateful",
-        "08 Virtue",
-        "09 Encourage",
-        "10 Bliss",
-        "11 Worth",
-        "12 Faith",
-        "13 Grace"
+        {
+          "name": "01 Lucky",
+          "img": ""
+        },
+        {
+          "name": "02 Happy",
+          "img": ""
+        },
+        {
+          "name": "03 Joy",
+          "img": ""
+        },
+        {
+          "name": "04 Hope",
+          "img": ""
+        },
+        {
+          "name": "05 Love",
+          "img": ""
+        },
+        {
+          "name": "06 Believe",
+          "img": ""
+        },
+        {
+          "name": "07 Grateful",
+          "img": ""
+        },
+        {
+          "name": "08 Virtue",
+          "img": ""
+        },
+        {
+          "name": "09 Encourage",
+          "img": ""
+        },
+        {
+          "name": "10 Bliss",
+          "img": ""
+        },
+        {
+          "name": "11 Worth",
+          "img": ""
+        },
+        {
+          "name": "12 Faith",
+          "img": ""
+        },
+        {
+          "name": "13 Grace",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -1444,11 +2560,26 @@
       "name": "Stay Vulnerable melting cream blush",
       "cost": "20-50: $2.20 / 50-99: $2.10 / 100+: $2.00 / 500+: $1.80",
       "variants": [
-        "01 Apricot",
-        "02 Berry",
-        "03 Mauve",
-        "04 Neutral",
-        "05 Rose"
+        {
+          "name": "01 Apricot",
+          "img": ""
+        },
+        {
+          "name": "02 Berry",
+          "img": ""
+        },
+        {
+          "name": "03 Mauve",
+          "img": ""
+        },
+        {
+          "name": "04 Neutral",
+          "img": ""
+        },
+        {
+          "name": "05 Rose",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -1463,12 +2594,30 @@
       "name": "Stay Vulnerable glossy lip balm",
       "cost": "20-49: $1.40 / 50-99: $1.30 / 100+: $1.20",
       "variants": [
-        "01 Dazzle",
-        "02 Beam",
-        "03 Flicker",
-        "04 Glimmer",
-        "05 Spark",
-        "06 Blaze"
+        {
+          "name": "01 Dazzle",
+          "img": ""
+        },
+        {
+          "name": "02 Beam",
+          "img": ""
+        },
+        {
+          "name": "03 Flicker",
+          "img": ""
+        },
+        {
+          "name": "04 Glimmer",
+          "img": ""
+        },
+        {
+          "name": "05 Spark",
+          "img": ""
+        },
+        {
+          "name": "06 Blaze",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -1483,12 +2632,30 @@
       "name": "Positive Light liquid luminizer",
       "cost": "20-50: $1.80 / 50-99: $1.70 / 100+: $1.60",
       "variants": [
-        "01 Outshine",
-        "02 Transcend",
-        "03 Reflect",
-        "04 Enchant",
-        "05 Flaunt",
-        "06 Reveal"
+        {
+          "name": "01 Outshine",
+          "img": ""
+        },
+        {
+          "name": "02 Transcend",
+          "img": ""
+        },
+        {
+          "name": "03 Reflect",
+          "img": ""
+        },
+        {
+          "name": "04 Enchant",
+          "img": ""
+        },
+        {
+          "name": "05 Flaunt",
+          "img": ""
+        },
+        {
+          "name": "06 Reveal",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -1503,13 +2670,34 @@
       "name": "Soft Pinch matte bouncy blush",
       "cost": "20-50: $1.70 / 50-99: $1.60 / 100+: $1.50",
       "variants": [
-        "01 Happy",
-        "02 Hope",
-        "03 Thriving",
-        "04 Alive",
-        "05 Grateful",
-        "06 Worth",
-        "07 Truth"
+        {
+          "name": "01 Happy",
+          "img": ""
+        },
+        {
+          "name": "02 Hope",
+          "img": ""
+        },
+        {
+          "name": "03 Thriving",
+          "img": ""
+        },
+        {
+          "name": "04 Alive",
+          "img": ""
+        },
+        {
+          "name": "05 Grateful",
+          "img": ""
+        },
+        {
+          "name": "06 Worth",
+          "img": ""
+        },
+        {
+          "name": "07 Truth",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "rostro",
@@ -1524,11 +2712,26 @@
       "name": "Stay Vulnerable glossy lip balm — tonos nude",
       "cost": "20-49: $1.50 / 50-99: $1.40 / 100+: $1.30",
       "variants": [
-        "01 Apricot",
-        "02 Rose",
-        "03 Mauve",
-        "04 Neutral",
-        "05 Berry"
+        {
+          "name": "01 Apricot",
+          "img": ""
+        },
+        {
+          "name": "02 Rose",
+          "img": ""
+        },
+        {
+          "name": "03 Mauve",
+          "img": ""
+        },
+        {
+          "name": "04 Neutral",
+          "img": ""
+        },
+        {
+          "name": "05 Berry",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -1543,11 +2746,26 @@
       "name": "Soft Pinch tinted lip oil",
       "cost": "20-49: $1.20 / 50-99: $1.10 / 100+: $1.00",
       "variants": [
-        "01 Happy",
-        "02 Wonder",
-        "03 Honesty",
-        "04 Hope",
-        "05 Serenity"
+        {
+          "name": "01 Happy",
+          "img": ""
+        },
+        {
+          "name": "02 Wonder",
+          "img": ""
+        },
+        {
+          "name": "03 Honesty",
+          "img": ""
+        },
+        {
+          "name": "04 Hope",
+          "img": ""
+        },
+        {
+          "name": "05 Serenity",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -1562,18 +2780,54 @@
       "name": "Honey Infused lip oil / gloss",
       "cost": "20-49: $1.20 / 50-99: $1.10 / 100+: $1.00",
       "variants": [
-        "Peach",
-        "Glazed Plum",
-        "Milky Mocha",
-        "Raspberry Swirl",
-        "Sticky Toffee",
-        "Vanilla Glaze",
-        "Honey",
-        "Cherry",
-        "Watermelon",
-        "Strawberry",
-        "Coconut",
-        "Mango"
+        {
+          "name": "Peach",
+          "img": ""
+        },
+        {
+          "name": "Glazed Plum",
+          "img": ""
+        },
+        {
+          "name": "Milky Mocha",
+          "img": ""
+        },
+        {
+          "name": "Raspberry Swirl",
+          "img": ""
+        },
+        {
+          "name": "Sticky Toffee",
+          "img": ""
+        },
+        {
+          "name": "Vanilla Glaze",
+          "img": ""
+        },
+        {
+          "name": "Honey",
+          "img": ""
+        },
+        {
+          "name": "Cherry",
+          "img": ""
+        },
+        {
+          "name": "Watermelon",
+          "img": ""
+        },
+        {
+          "name": "Strawberry",
+          "img": ""
+        },
+        {
+          "name": "Coconut",
+          "img": ""
+        },
+        {
+          "name": "Mango",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -1588,7 +2842,10 @@
       "name": "Honey Infused hair oil",
       "cost": "20-100: $1.50 / 101-200: $1.40 / 201+: $1.30",
       "variants": [
-        "Único"
+        {
+          "name": "Único",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "cabello",
@@ -1603,7 +2860,10 @@
       "name": "Honey Infused set 4 piezas",
       "cost": "1-20: $7.50 / 20-50: $7.00 / 50+: $6.80",
       "variants": [
-        "Hair Mask + Hair Perfume + Lip Oil + Hair Oil"
+        {
+          "name": "Hair Mask + Hair Perfume + Lip Oil + Hair Oil",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "cabello",
@@ -1618,7 +2878,10 @@
       "name": "Lip oil set 3 piezas",
       "cost": "1-20: $5.00 / 20-50: $4.50 / 50+: $4.00",
       "variants": [
-        "Vanilla Glaze + Sticky Toffee + Milky Mocha"
+        {
+          "name": "Vanilla Glaze + Sticky Toffee + Milky Mocha",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "labios",
@@ -1633,8 +2896,14 @@
       "name": "Honey Infused hair perfume",
       "cost": "1-20: $3.20 / 20-50: $3.00 / 50+: $2.80",
       "variants": [
-        "01 Rose",
-        "02 Lavender Berry"
+        {
+          "name": "01 Rose",
+          "img": ""
+        },
+        {
+          "name": "02 Lavender Berry",
+          "img": ""
+        }
       ],
       "saleEndsAt": null,
       "cat": "fragancias",
