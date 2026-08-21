@@ -86,40 +86,7 @@
         </p>
       </div>
 
-      <div class="category-grid">
-        <a class="category-card tilt reveal hoverable" href="labios.html" style="--bg:url('/uploads/categoria-labios.jpg')">
-          <div class="orb" style="width:280px;height:280px;right:8%;top:10%"></div>
-          <div class="orb" style="width:130px;height:130px;left:12%;top:36%"></div>
-          <div class="category-copy"><h3>Labios</h3><span>Gloss · Lip oils · Liners →</span></div>
-        </a>
-
-        <div class="category-stack">
-          <a class="category-card tilt reveal delay-1 hoverable" href="rostro.html" style="--bg:linear-gradient(145deg,#edcbd6,#a64a6c)">
-            <div class="orb" style="width:150px;height:150px;right:10%;top:13%"></div>
-            <div class="category-copy"><h3>Rostro</h3><span>Base · Blush · Glow →</span></div>
-          </a>
-          <a class="category-card tilt reveal delay-2 hoverable" href="ojos.html" style="--bg:linear-gradient(145deg,#6e1838,#260711)">
-            <div class="orb" style="width:180px;height:180px;left:18%;top:8%"></div>
-            <div class="category-copy"><h3>Ojos</h3><span>Máscara · Liner · Paletas →</span></div>
-          </a>
-          <a class="category-card tilt reveal delay-3 hoverable" href="skincare.html" style="--bg:linear-gradient(145deg,#e8d5dd,#9a5a72)">
-            <div class="orb" style="width:110px;height:110px;right:14%;top:20%"></div>
-            <div class="category-copy"><h3>Skincare</h3><span>Prep · Hydrate · Glow →</span></div>
-          </a>
-          <a class="category-card tilt reveal delay-3 hoverable" href="catalogo.html" style="--bg:linear-gradient(145deg,#d996ad,#7c173d)">
-            <div class="orb" style="width:145px;height:145px;left:9%;top:13%"></div>
-            <div class="category-copy"><h3>Sets</h3><span>Combos seleccionados →</span></div>
-          </a>
-          <a class="category-card tilt reveal delay-3 hoverable" href="cabello.html" style="--bg:linear-gradient(145deg,#c9a45a,#5a3a12)">
-            <div class="orb" style="width:130px;height:130px;right:12%;top:16%"></div>
-            <div class="category-copy"><h3>Cabello</h3><span>Aceites · Mascarillas →</span></div>
-          </a>
-          <a class="category-card tilt reveal delay-3 hoverable" href="fragancias.html" style="--bg:linear-gradient(145deg,#7c173d,#260711)">
-            <div class="orb" style="width:120px;height:120px;left:14%;top:12%"></div>
-            <div class="category-copy"><h3>Fragancias</h3><span>Perfumes · Brumas →</span></div>
-          </a>
-        </div>
-      </div>
+      <div class="category-grid" data-category-grid></div>
     </section>
 
     <section class="bazaar-section" id="bazaar">
@@ -406,6 +373,49 @@
           <div class="product-meta"><small>${p.brand}</small><h3>${p.name}</h3><strong>${priceLine}</strong></div>
         </article>`;
       }).join("");
+    }
+
+    // ---- categorías del home: dibujadas desde CATEGORIES (panel → Tienda) ----
+    const catGrid = document.querySelector("[data-category-grid]");
+    if (catGrid && window.CATEGORIES && CATEGORIES.length) {
+      const DECOR = {
+        labios:    { big:true, orbs:[{w:280,h:280,r:"8%",t:"10%"},{w:130,h:130,l:"12%",t:"36%"}], grad:"linear-gradient(145deg,#b75a7c,#4c071d)" },
+        rostro:    { orbs:[{w:150,h:150,r:"10%",t:"13%"}], grad:"linear-gradient(145deg,#edcbd6,#a64a6c)" },
+        ojos:      { orbs:[{w:180,h:180,l:"18%",t:"8%"}], grad:"linear-gradient(145deg,#6e1838,#260711)" },
+        skincare:  { orbs:[{w:110,h:110,r:"14%",t:"20%"}], grad:"linear-gradient(145deg,#e8d5dd,#9a5a72)" },
+        sets:      { orbs:[{w:145,h:145,l:"9%",t:"13%"}], grad:"linear-gradient(145deg,#d996ad,#7c173d)" },
+        cabello:   { orbs:[{w:130,h:130,r:"12%",t:"16%"}], grad:"linear-gradient(145deg,#c9a45a,#5a3a12)" },
+        fragancias:{ orbs:[{w:120,h:120,l:"14%",t:"12%"}], grad:"linear-gradient(145deg,#7c173d,#260711)" }
+      };
+      const orbHTML = o => {
+        let pos = `width:${o.w}px;height:${o.h}px;`;
+        if (o.r) pos += `right:${o.r};`; if (o.l) pos += `left:${o.l};`; if (o.t) pos += `top:${o.t};`;
+        return `<div class="orb" style="${pos}"></div>`;
+      };
+      const cardHTML = (cat, delayClass) => {
+        const d = DECOR[cat.slug] || {};
+        const bg = cat.img ? `url('${cat.img}')` : (d.grad || "linear-gradient(145deg,#b75a7c,#4c071d)");
+        return `<a class="category-card tilt reveal ${delayClass} hoverable" href="${cat.href || (cat.slug + '.html')}" style="--bg:${bg}">
+          ${(d.orbs || []).map(orbHTML).join("")}
+          <div class="category-copy"><h3>${cat.name}</h3><span>${cat.note || ""}</span></div>
+        </a>`;
+      };
+      const big = CATEGORIES.find(c => DECOR[c.slug] && DECOR[c.slug].big) || CATEGORIES[0];
+      const rest = CATEGORIES.filter(c => c !== big);
+      catGrid.innerHTML = cardHTML(big, "") +
+        `<div class="category-stack">${rest.map((c, i) => cardHTML(c, i < 2 ? `delay-${i + 1}` : "delay-3")).join("")}</div>`;
+
+      // el efecto "tilt" (inclinación al mover el mouse) se conecta a mano
+      // porque estas tarjetas no existían todavía cuando corrió el resto del script
+      catGrid.querySelectorAll(".tilt").forEach(card => {
+        card.addEventListener("mousemove", e => {
+          const r = card.getBoundingClientRect();
+          const rx = ((e.clientY - r.top) / r.height - .5) * -6;
+          const ry = ((e.clientX - r.left) / r.width - .5) * 8;
+          card.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+        });
+        card.addEventListener("mouseleave", () => card.style.transform = "");
+      });
     }
   }).catch(err => console.error("NINE'S home:", err));
 </script>
