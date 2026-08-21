@@ -487,10 +487,25 @@
     }
   }
 
+  // ---------- cuando alguien llega desde un link de "favoritos" con
+  // ?highlight=ID-DEL-PRODUCTO, hace scroll directo a esa tarjeta en el
+  // catálogo y la resalta un momento, para llevarlo directo a comprar ----------
+  function highlightFromURL() {
+    const id = new URLSearchParams(location.search).get("highlight");
+    if (!id) return;
+    const card = document.querySelector(`.pcard[data-id="${id}"]`);
+    if (!card) return;
+    setTimeout(() => {
+      card.scrollIntoView({ behavior: "smooth", block: "center" });
+      card.classList.add("pcard-highlight");
+      setTimeout(() => card.classList.remove("pcard-highlight"), 2600);
+    }, 300);
+  }
+
   function init() {
     zone = ZONES[0] ? ZONES[0].id : null;
     paintCount(); paintCart(); zoneOptions(); paintCheckoutPage();
-    syncProductCards(); renderSaleGrids(); initMusic();
+    syncProductCards(); renderSaleGrids(); initMusic(); highlightFromURL();
 
     document.addEventListener("click", e => {
       const t = e.target;
