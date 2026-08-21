@@ -402,50 +402,119 @@
     if (yt) initEmbedPlayer(yt);
     else if (sp) initEmbedPlayer(sp);
     else if (SHOP.music) initMp3(SHOP.music);
-    if (hasMusic) musicInviteModal();
+    scheduleHomeModals(hasMusic);
   }
 
-  // aviso grande y centrado (como una bienvenida), que aparece una sola vez
-  // por sesión, justo cuando termina de deslizarse la intro del home, antes
-  // de que el cliente vea el home completo. El botón "Sí" es un clic real
-  // del cliente, así que el navegador SÍ deja reproducir con sonido de
-  // inmediato (a diferencia de intentarlo solo, que siempre se bloquea).
+  // Encadena los 2 avisos grandes del home (bienvenida con 10% off, y
+  // después música) para que nunca se muestren pisados uno con otro.
+  // Ambos aparecen una sola vez por sesión, justo cuando termina de
+  // deslizarse la intro, antes de que el cliente vea el home completo.
+  const WELCOME_KEY = "nines_welcome_seen";
   const INVITE_KEY = "nines_music_invite_seen";
-  function musicInviteModal() {
+
+  function scheduleHomeModals(hasMusic) {
     const loader = document.getElementById("loader");
     if (!loader) return; // no estamos en el home, no hay intro que esperar
-    if (sessionStorage.getItem(INVITE_KEY)) return; // ya lo vio esta sesión
 
-    const show = () => {
-      sessionStorage.setItem(INVITE_KEY, "1");
+    const showMusicNext = () => {
+      if (hasMusic && !sessionStorage.getItem(INVITE_KEY)) {
+        setTimeout(musicInviteModal, 450);
+      }
+    };
+    const start = () => {
+      if (!sessionStorage.getItem(WELCOME_KEY)) welcomeSignupModal(showMusicNext);
+      else showMusicNext();
+    };
+
+    if (document.readyState === "complete") setTimeout(start, 950);
+    else window.addEventListener("load", () => setTimeout(start, 950));
+  }
+
+  // ---------- mensaje de bienvenida + 10% de descuento (aparece primero) ----------
+  function welcomeSignupModal(onDone) {
+    sessionStorage.setItem(WELCOME_KEY, "1");
+
+    fetch("data/home.json").then(r => r.json()).then(home => {
       const overlay = document.createElement("div");
-      overlay.className = "music-modal-overlay";
+      overlay.className = "welcome-modal-overlay";
+      const mediaStyle = home.welcomeImage ? `background-image:url('${home.welcomeImage}');background-size:cover;background-position:center` : "";
       overlay.innerHTML = `
-        <div class="music-modal">
-          <div class="music-modal-icon">🎶</div>
-          <h3>Bienvenida a NINE'S</h3>
-          <p>Dale play a la música, relájate y disfruta tu compra.</p>
-          <div class="music-modal-actions">
-            <button class="btn btn-dark hoverable" data-music-yes>Sí, dale play</button>
-            <button class="music-modal-skip hoverable" data-music-no>Ahora no</button>
+        <div class="welcome-modal">
+          <button class="welcome-modal-close hoverable" data-welcome-close aria-label="Cerrar">×</button>
+          <div class="welcome-modal-media" style="${mediaStyle}"></div>
+          <div class="welcome-modal-body">
+            <div class="eyebrow" style="color:var(--wine)">The Nine's List</div>
+            <h3>Bienvenida a NINE'S</h3>
+            <p>Regístrate y obtén un <strong>10% de descuento</strong> automático en tu primera compra, además de accesos anticipados a lo nuevo.</p>
+            <form data-welcome-form>
+              <input type="text" placeholder="Tu nombre" data-w-name required>
+              <input type="tel" placeholder="Teléfono (WhatsApp)" data-w-phone required>
+              <input type="email" placeholder="Tu correo electrónico" data-w-email required>
+              <button type="submit" class="btn btn-dark hoverable">Quiero mi 10% off</button>
+            </form>
+            <div class="welcome-modal-success" data-welcome-success style="display:none">
+              <div class="newsletter-code">BIENVENIDA10</div>
+              <p class="newsletter-hint">Menciona este código al coordinar tu pedido por WhatsApp.</p>
+            </div>
           </div>
         </div>`;
       document.body.appendChild(overlay);
       requestAnimationFrame(() => overlay.classList.add("is-in"));
-      const close = () => { overlay.classList.remove("is-in"); setTimeout(() => overlay.remove(), 400); };
-      overlay.querySelector("[data-music-yes]").addEventListener("click", () => {
-        if (window.__ninesOpenMusic) window.__ninesOpenMusic();
-        close();
-      });
-      overlay.querySelector("[data-music-no]").addEventListener("click", close);
-      overlay.addEventListener("click", e => { if (e.target === overlay) close(); });
-    };
 
-    // se sincroniza con el mismo instante en que la intro del home termina
-    // de desaparecer (ver el "loader.classList.add('done')" del home, 900ms
-    // después de que la página termina de cargar)
-    if (document.readyState === "complete") setTimeout(show, 950);
-    else window.addEventListener("load", () => setTimeout(show, 950));
+      let finished = false;
+      const finish = () => { if (!finished) { finished = true; onDone && onDone(); } };
+      const close = () => {
+        overlay.classList.remove("is-in");
+        setTimeout(() => { overlay.remove(); finish(); }, 400);
+      };
+      overlay.querySelector("[data-welcome-close]").addEventListener("click", close);
+      overlay.addEventListener("click", e => { if (e.target === overlay) close(); });
+
+      overlay.querySelector("[data-welcome-form]").addEventListener("submit", e => {
+        e.preventDefault();
+        const name = overlay.querySelector("[data-w-name]").value.trim();
+        const phone = overlay.querySelector("[data-w-phone]").value.trim();
+        const email = overlay.querySelector("[data-w-email]").value.trim();
+        const url = window.SHOP_BACKEND && window.SHOP_BACKEND.APPS_SCRIPT_URL;
+        if (url) {
+          fetch(url, {
+            method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({ tipo: "suscriptor", name, phone, email })
+          }).catch(() => {});
+        }
+        overlay.querySelector("[data-welcome-form]").style.display = "none";
+        overlay.querySelector("[data-welcome-success]").style.display = "block";
+        setTimeout(close, 3500);
+      });
+    }).catch(() => { onDone && onDone(); });
+  }
+
+  // ---------- aviso de música (aparece después de la bienvenida) ----------
+  function musicInviteModal() {
+    if (sessionStorage.getItem(INVITE_KEY)) return; // ya lo vio esta sesión
+    sessionStorage.setItem(INVITE_KEY, "1");
+
+    const overlay = document.createElement("div");
+    overlay.className = "music-modal-overlay";
+    overlay.innerHTML = `
+      <div class="music-modal">
+        <div class="music-modal-icon">🎶</div>
+        <h3>Bienvenida a NINE'S</h3>
+        <p>Dale play a la música, relájate y disfruta tu compra.</p>
+        <div class="music-modal-actions">
+          <button class="btn btn-dark hoverable" data-music-yes>Sí, dale play</button>
+          <button class="music-modal-skip hoverable" data-music-no>Ahora no</button>
+        </div>
+      </div>`;
+    document.body.appendChild(overlay);
+    requestAnimationFrame(() => overlay.classList.add("is-in"));
+    const close = () => { overlay.classList.remove("is-in"); setTimeout(() => overlay.remove(), 400); };
+    overlay.querySelector("[data-music-yes]").addEventListener("click", () => {
+      if (window.__ninesOpenMusic) window.__ninesOpenMusic();
+      close();
+    });
+    overlay.querySelector("[data-music-no]").addEventListener("click", close);
+    overlay.addEventListener("click", e => { if (e.target === overlay) close(); });
   }
 
   function initEmbedPlayer({ url, height }) {
