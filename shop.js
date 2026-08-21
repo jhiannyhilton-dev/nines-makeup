@@ -375,26 +375,60 @@
   // ---------- música de fondo opcional: nunca suena sola, el navegador no
   // lo permite (y tampoco es lo que queremos). El cliente la activa con un
   // botón flotante. Dos modos, según lo que hayas puesto en el panel:
-  //  - spotifyPlaylist: abre un mini-reproductor de Spotify (100% legal
-  //    para música con derechos de autor, la licencia la maneja Spotify).
+  //  - youtubePlaylist: abre un mini-reproductor de YouTube Music (prioridad
+  //    más alta — reproduce canciones completas, sin cortes).
+  //  - spotifyPlaylist: igual pero con Spotify (corta a 30 seg si el
+  //    cliente no tiene sesión de Spotify iniciada — restricción de ellos).
   //  - music (MP3): reproduce el archivo directo, para pistas libres de
   //    derechos como las de Pixabay.
-  // Si pones las dos, Spotify tiene prioridad. ----------
+  // Prioridad: YouTube > Spotify > MP3. ----------
   const MUSIC_KEY = "nines_music_on";
 
+  function youtubeEmbedURL(link) {
+    const m = String(link || "").match(/[?&]list=([a-zA-Z0-9_-]+)/);
+    if (!m) return null;
+    return { url: `https://www.youtube.com/embed/videoseries?list=${m[1]}`, height: 250 };
+  }
   function spotifyEmbedURL(link) {
     const m = String(link || "").match(/open\.spotify\.com\/(playlist|album|track|artist)\/([a-zA-Z0-9]+)/);
     if (!m) return null;
-    return `https://open.spotify.com/embed/${m[1]}/${m[2]}?utm_source=generator&theme=0`;
+    return { url: `https://open.spotify.com/embed/${m[1]}/${m[2]}?utm_source=generator&theme=0`, height: 152 };
   }
 
   function initMusic() {
-    const spotifyURL = spotifyEmbedURL(SHOP.spotifyPlaylist);
-    if (spotifyURL) return initSpotify(spotifyURL);
+    const yt = youtubeEmbedURL(SHOP.youtubePlaylist);
+    const hasMusic = !!(yt || spotifyEmbedURL(SHOP.spotifyPlaylist) || SHOP.music);
+    if (hasMusic) musicInviteBanner();
+    if (yt) return initEmbedPlayer(yt);
+    const sp = spotifyEmbedURL(SHOP.spotifyPlaylist);
+    if (sp) return initEmbedPlayer(sp);
     if (SHOP.music) return initMp3(SHOP.music);
   }
 
-  function initSpotify(embedURL) {
+  // aviso flotante que aparece una sola vez por sesión, justo cuando
+  // termina la intro del home, para que el cliente sepa que hay música
+  // (solo en el home — es donde vive esa intro; en las demás páginas
+  // el botón ya está siempre visible, sin necesitar aviso)
+  const INVITE_KEY = "nines_music_invite_seen";
+  function musicInviteBanner() {
+    const loader = document.getElementById("loader");
+    if (!loader) return; // no estamos en el home, no hay intro que esperar
+    if (sessionStorage.getItem(INVITE_KEY)) return; // ya lo vio esta sesión
+
+    setTimeout(() => {
+      const banner = document.createElement("div");
+      banner.className = "music-invite";
+      banner.innerHTML = `🎶 Dale play a la música, relájate y disfruta tu compra <span class="music-invite-arrow">↘</span>`;
+      document.body.appendChild(banner);
+      sessionStorage.setItem(INVITE_KEY, "1");
+      requestAnimationFrame(() => banner.classList.add("is-in"));
+      const hide = () => { banner.classList.remove("is-in"); setTimeout(() => banner.remove(), 500); };
+      setTimeout(hide, 6000);
+      banner.addEventListener("click", hide);
+    }, 2200); // coincide con el momento en que la intro termina de deslizarse
+  }
+
+  function initEmbedPlayer({ url, height }) {
     const btn = document.createElement("button");
     btn.className = "music-toggle";
     btn.setAttribute("aria-label", "Playlist de Nine's");
@@ -413,7 +447,7 @@
       if (open && !loaded) {
         // el iframe solo se carga la primera vez que se abre, para no
         // gastar datos del cliente si nunca le da clic a la música
-        panel.innerHTML = `<iframe src="${embedURL}" width="100%" height="152" frameborder="0"
+        panel.innerHTML = `<iframe src="${url}" width="100%" height="${height}" frameborder="0"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
         loaded = true;
       }
