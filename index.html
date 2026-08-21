@@ -173,7 +173,9 @@
         <p class="reveal delay-1">
           Nuevos drops, reposiciones, recomendaciones y accesos anticipados directamente en tu correo.
         </p>
-        <form class="form reveal delay-2" id="newsletterForm" onsubmit="subscribe(event)">
+        <form class="form-news reveal delay-2" id="newsletterForm" onsubmit="subscribe(event)">
+          <input id="newsName" type="text" placeholder="Tu nombre" required>
+          <input id="newsPhone" type="tel" placeholder="Teléfono (WhatsApp)" required>
           <input id="email" type="email" placeholder="Tu correo electrónico" required>
           <button class="btn btn-dark hoverable magnetic" type="submit">Quiero entrar</button>
         </form>
@@ -313,14 +315,22 @@
 
     function subscribe(e){
       e.preventDefault();
-      const email = document.getElementById('email').value;
+      const name = document.getElementById('newsName').value.trim();
+      const phone = document.getElementById('newsPhone').value.trim();
+      const email = document.getElementById('email').value.trim();
+
       document.getElementById('newsletterForm').style.display = 'none';
       document.getElementById('newsletterSuccess').style.display = 'block';
-      // registro simple del correo, solo para tu conocimiento (revisa la consola
-      // del navegador). Si más adelante quieres guardarlos de verdad en un
-      // Sheet o mandar el código por correo automático, se puede conectar
-      // al mismo backend de pedidos.
-      console.log('Nueva suscriptora The Nine\'s List:', email);
+
+      const url = window.SHOP_BACKEND && window.SHOP_BACKEND.APPS_SCRIPT_URL;
+      if (url) {
+        fetch(url, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify({ tipo: 'suscriptor', name, phone, email })
+        }).catch(() => {});
+      }
       e.target.reset();
     }
   </script>
