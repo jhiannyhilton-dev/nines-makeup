@@ -571,3 +571,16 @@ footer .brand-logo-svg{height:46px;color:#fff;margin-bottom:18px}
 .music-panel.is-open{transform:translateY(0) scale(1);opacity:1;pointer-events:auto}
 .music-panel iframe{display:block}
 @media(max-width:640px){.music-panel{right:16px;bottom:52px}}
+
+/* ---- Aviso flotante invitando a poner la música (solo home, una vez) ---- */
+.music-invite{
+  position:fixed;right:20px;bottom:64px;z-index:498;max-width:230px;
+  background:var(--wine-deep);color:#fff;font-size:12.5px;line-height:1.5;
+  padding:13px 16px;border-radius:16px 16px 4px 16px;
+  box-shadow:0 16px 34px rgba(47,2,12,.28);cursor:pointer;
+  opacity:0;transform:translateY(10px) scale(.96);
+  transition:opacity .4s var(--ease),transform .4s var(--ease);
+}
+.music-invite.is-in{opacity:1;transform:translateY(0) scale(1)}
+.music-invite-arrow{display:inline-block;margin-left:2px}
+@media(max-width:640px){.music-invite{right:16px;bottom:54px;max-width:200px;font-size:12px}}
