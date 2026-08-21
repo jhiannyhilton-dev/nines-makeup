@@ -1,0 +1,102 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Favoritos de la semana — NINE'S</title>
+<meta name="description" content="Los 3 productos favoritos de esta semana en NINE'S.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+<style>
+  .fav-wrap{ max-width:1100px; margin:0 auto; padding:60px 22px 100px; }
+  .fav-head{ text-align:center; max-width:560px; margin:0 auto 60px; }
+  .fav-head h1{ font-family:"Italiana",serif; font-size:clamp(38px,6vw,60px); color:var(--wine-deep); margin:14px 0 12px; line-height:1 }
+  .fav-head p{ color:var(--muted); font-size:15px; }
+  .fav-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:36px; }
+  @media(max-width:860px){ .fav-grid{ grid-template-columns:1fr; max-width:420px; margin:0 auto } }
+  .fav-card{ text-decoration:none; color:inherit; display:block; }
+  .fav-rank{ font-family:"Italiana",serif; font-size:15px; color:var(--wine); letter-spacing:.1em; margin-bottom:14px; }
+  .fav-frame{ position:relative; aspect-ratio:1; border-radius:22px; overflow:hidden; background:linear-gradient(150deg,var(--blush),var(--rose-soft)); display:grid; place-items:center; margin-bottom:18px; box-shadow:var(--shadow); transition:transform .5s var(--ease); }
+  .fav-card:hover .fav-frame{ transform:translateY(-6px) }
+  .fav-frame img{ width:100%; height:100%; object-fit:cover }
+  .fav-frame .pcard-swatch{ font-size:60px }
+  .fav-brand{ font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--wine); margin-bottom:6px }
+  .fav-name{ font-family:"Italiana",serif; font-size:22px; color:var(--wine-deep); margin:0 0 10px; line-height:1.25 }
+  .fav-blurb{ font-size:13.5px; color:var(--muted); line-height:1.6; margin:0 0 12px }
+  .fav-price{ font-size:14px; font-weight:600; color:var(--ink) }
+  .fav-empty{ text-align:center; padding:80px 20px; color:var(--muted) }
+</style>
+</head><body>
+
+<div class="announcement">Envíos a todo el país · Belleza, curated by Nine's</div>
+<header class="navbar" id="navbar">
+  <nav class="nav-links"><a class="nav-link hoverable" href="rostro.html">Rostro</a><a class="nav-link hoverable" href="labios.html">Labios</a><a class="nav-link hoverable" href="ojos.html">Ojos</a><a class="nav-link hoverable" href="skincare.html">Skincare</a><a class="nav-link hoverable" href="cabello.html">Cabello</a><a class="nav-link hoverable" href="fragancias.html">Fragancias</a><a class="nav-link hoverable" href="ofertas.html">Ofertas</a></nav>
+  <a href="index.html" class="brand-logo hoverable" aria-label="NINE'S" style="font-family:'Italiana',serif;font-size:26px;color:var(--wine-deep)">NINE'S</a>
+  <div class="nav-actions">
+    <a class="nav-link hide-mobile hoverable" href="catalogo.html">Catálogo</a>
+    <button class="nav-icon hoverable" data-open-cart aria-label="Carrito">🛍 <span class="nav-count" data-count>0</span></button>
+  </div>
+</header>
+
+<main class="fav-wrap">
+  <div class="fav-head">
+    <div class="eyebrow">The Nine's Edit</div>
+    <h1>Favoritos de la semana</h1>
+    <p>Los 3 productos que más está pidiendo la gente esta semana — probados, aprobados y listos para pedir.</p>
+  </div>
+
+  <div class="fav-grid" data-weekly-grid></div>
+  <div class="fav-empty" data-weekly-empty style="display:none">
+    <p>Estamos armando los favoritos de esta semana — vuelve pronto.</p>
+    <a href="catalogo.html" class="btn btn-dark hoverable" style="margin-top:14px;display:inline-block">Ver catálogo completo</a>
+  </div>
+</main>
+
+<footer>
+    <div class="footer-grid" style="display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:44px;padding:70px clamp(22px,6vw,90px) 30px">
+      <div><a href="index.html" aria-label="NINE'S" style="font-family:'Italiana',serif;font-size:22px;color:var(--wine-deep)">NINE'S</a>
+        <p style="max-width:34ch">Maquillaje, skincare y favoritos de belleza. Pedidos por WhatsApp · Delivery y pickup en Santo Domingo.</p></div>
+      <div><h4>Catálogo</h4><p><a href="rostro.html">Rostro</a><br><a href="labios.html">Labios</a><br><a href="ojos.html">Ojos</a><br><a href="skincare.html">Skincare</a><br><a href="cabello.html">Cabello</a><br><a href="fragancias.html">Fragancias</a></p></div>
+      <div><h4>Visítanos</h4><p>Calle B No. 68, Ensanche Isabelita, Santo Domingo Este</p></div>
+    </div>
+    <div class="footer-bottom" style="padding:24px clamp(22px,6vw,90px)">© 2026 NINE'S · Belleza, curated</div>
+  </footer>
+
+<div class="scrim" data-scrim></div>
+<aside class="drawer" data-drawer role="dialog" aria-label="Carrito">
+  <div class="drawer-top"><span class="drawer-title" data-drawer-title>Carrito</span>
+    <button class="drawer-x" data-close-cart aria-label="Cerrar">×</button></div>
+  <div class="cart-view" data-cart-view style="display:contents">
+    <div class="drawer-body" data-cart-body></div>
+    <div class="drawer-foot" data-cart-foot></div>
+  </div>
+</aside>
+
+<script src="catalog.js"></script><script src="backend-config.js"></script><script src="shop.js"></script>
+<script>
+  Promise.all([
+    fetch("data/home.json").then(r => r.json()),
+    window.NINES_READY
+  ]).then(([home]) => {
+    const grid = document.querySelector("[data-weekly-grid]");
+    const empty = document.querySelector("[data-weekly-empty]");
+    const list = (home.weeklyFavorites || []).map(w => {
+      const p = PRODUCTS.find(x => x.id === w.id);
+      return p ? { p, blurb: w.blurb || "" } : null;
+    }).filter(Boolean);
+
+    if (!list.length) { grid.style.display = "none"; empty.style.display = "block"; return; }
+
+    grid.innerHTML = list.map(({ p, blurb }, i) => {
+      const img = p.img
+        ? `<img src="${p.img}" alt="${p.name}">`
+        : `<div class="pcard-swatch">${p.brand.charAt(0)}</div>`;
+      const priceLine = p.price > 0 ? `RD$ ${Number(p.price).toLocaleString("es-DO")}` : "Disponible en Nine's";
+      return `<a class="fav-card hoverable" href="${p.cat}.html?highlight=${p.id}">
+        <div class="fav-rank">0${i + 1}</div>
+        <div class="fav-frame">${img}</div>
+        <div class="fav-brand">${p.brand}</div>
+        <h3 class="fav-name">${p.name}</h3>
+        ${blurb ? `<p class="fav-blurb">${blurb}</p>` : ""}
+        <div class="fav-price">${priceLine}</div>
+      </a>`;
+    }).join("");
+  }).catch(err => console.error("NINE'S favoritos-semana:", err));
+</script>
+</body></html>
