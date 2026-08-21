@@ -39,7 +39,7 @@
     .loader-inner{text-align:center;color:white}
     .loader-mark{
       font-family:"Italiana",serif;font-size:110px;line-height:1;
-      animation:pulse 1.4s ease-in-out infinite alternate;
+      animation:pulseGlow 1.7s ease-in-out infinite alternate;
     }
     .loader-line{
       width:180px;height:1px;margin:20px auto 0;
@@ -50,7 +50,16 @@
       animation:load 1.2s var(--ease) infinite
     }
     @keyframes load{from{transform:translateX(-120%)}to{transform:translateX(240%)}}
-    @keyframes pulse{from{opacity:.45;transform:scale(.96)}to{opacity:1;transform:scale(1)}}
+    @keyframes pulseGlow{
+      from{
+        opacity:.5;transform:scale(.93);
+        text-shadow:0 0 0px rgba(255,255,255,0),0 0 0px rgba(242,209,220,0);
+      }
+      to{
+        opacity:1;transform:scale(1.07);
+        text-shadow:0 0 22px rgba(255,255,255,.9),0 0 55px rgba(255,255,255,.55),0 0 90px rgba(242,209,220,.4);
+      }
+    }
 
     .scroll-progress{
       position:fixed;left:0;top:0;z-index:999;
