@@ -377,7 +377,7 @@
 
     // ---- categorías del home: dibujadas desde CATEGORIES (panel → Tienda) ----
     const catGrid = document.querySelector("[data-category-grid]");
-    if (catGrid && window.CATEGORIES && CATEGORIES.length) {
+    if (catGrid && typeof CATEGORIES !== "undefined" && CATEGORIES.length) {
       const DECOR = {
         labios:    { big:true, orbs:[{w:280,h:280,r:"8%",t:"10%"},{w:130,h:130,l:"12%",t:"36%"}], grad:"linear-gradient(145deg,#b75a7c,#4c071d)" },
         rostro:    { orbs:[{w:150,h:150,r:"10%",t:"13%"}], grad:"linear-gradient(145deg,#edcbd6,#a64a6c)" },
