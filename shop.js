@@ -371,10 +371,50 @@
   document.addEventListener("DOMContentLoaded", () => { domReady = true; tryInit(); });
   document.addEventListener("nines:data-ready", () => { dataReady = true; tryInit(); });
 
+  // ---------- música de fondo opcional: nunca suena sola, el navegador no
+  // lo permite (y tampoco es lo que queremos). El cliente la activa con un
+  // botón flotante; si la activó, seguimos intentando en las páginas
+  // siguientes (algunos navegadores lo permiten una vez ya interactuó con
+  // el sitio; si no, el botón sigue ahí para que le dé play otra vez). ----------
+  const MUSIC_KEY = "nines_music_on";
+  function initMusic() {
+    const url = SHOP.music;
+    if (!url) return; // no has puesto música en el panel todavía
+
+    const audio = document.createElement("audio");
+    audio.src = url; audio.loop = true; audio.preload = "none";
+
+    const btn = document.createElement("button");
+    btn.className = "music-toggle";
+    btn.setAttribute("aria-label", "Música de fondo");
+    btn.innerHTML = "🔇";
+    document.body.appendChild(audio);
+    document.body.appendChild(btn);
+
+    const setOn = on => {
+      btn.innerHTML = on ? "🔊" : "🔇";
+      btn.classList.toggle("is-on", on);
+      localStorage.setItem(MUSIC_KEY, on ? "1" : "0");
+    };
+    btn.addEventListener("click", () => {
+      if (audio.paused) {
+        audio.play().then(() => setOn(true)).catch(() => toast("Tu navegador bloqueó el sonido — dale clic de nuevo"));
+      } else {
+        audio.pause(); setOn(false);
+      }
+    });
+
+    // si ya la había activado antes, lo intentamos de nuevo en silencio;
+    // si el navegador lo bloquea no pasa nada, el botón queda listo
+    if (localStorage.getItem(MUSIC_KEY) === "1") {
+      audio.play().then(() => setOn(true)).catch(() => setOn(false));
+    }
+  }
+
   function init() {
     zone = ZONES[0] ? ZONES[0].id : null;
     paintCount(); paintCart(); zoneOptions(); paintCheckoutPage();
-    syncProductCards(); renderSaleGrids();
+    syncProductCards(); renderSaleGrids(); initMusic();
 
     document.addEventListener("click", e => {
       const t = e.target;
