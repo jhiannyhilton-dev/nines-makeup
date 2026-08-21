@@ -102,6 +102,7 @@ collections:
               - { label: "WhatsApp (con código de país, ej. 18098862048)", name: "whatsapp", widget: "string" }
               - { label: "Dirección de la tienda", name: "address", widget: "string" }
               - { label: "Símbolo de moneda", name: "currency", widget: "string" }
+              - { label: "Música de fondo (opcional)", name: "music", widget: "file", required: false, hint: "Sube un MP3 corto (idealmente que haga loop bien, 2-4 min). El cliente la activa con un botón — nunca suena sola." }
           - label: "Zonas de envío"
             name: "ZONES"
             widget: "list"
