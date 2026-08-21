@@ -64,6 +64,12 @@ function doPost(e) {
       return jsonResponse_({ ok: false, error: 'Acción no reconocida.' });
     }
 
+    // ===== NUEVA SUSCRIPTORA DE THE NINE'S LIST =====
+    if (data.tipo === 'suscriptor') {
+      logSubscriber_(data);
+      return jsonResponse_({ ok: true });
+    }
+
     // ===== NUEVO PEDIDO (el código ya viene armado desde la web) =====
     var orderCode = data.orderCode || ('NN-' + Utilities.formatDate(new Date(), 'America/Santo_Domingo', 'yyMMdd') +
       '-' + Math.floor(1000 + Math.random() * 9000));
@@ -76,6 +82,24 @@ function doPost(e) {
   } catch (err) {
     return jsonResponse_({ ok: false, error: String(err && err.message ? err.message : err) });
   }
+}
+
+/* ---------- Registro de suscriptoras (The Nine's List) ---------- */
+function logSubscriber_(data) {
+  var ss = abrirLibro_();
+  var sheet = ss.getSheetByName('Suscriptores');
+  if (!sheet) {
+    sheet = ss.insertSheet('Suscriptores');
+    sheet.appendRow(['Fecha', 'Nombre', 'Teléfono', 'Correo', 'Código de bienvenida']);
+    sheet.setFrozenRows(1);
+  }
+  sheet.appendRow([
+    new Date(),
+    data.name || '',
+    data.phone || '',
+    data.email || '',
+    'BIENVENIDA10'
+  ]);
 }
 
 /* ---------- Registro en Google Sheets ---------- */
@@ -285,6 +309,15 @@ function jsonResponse_(obj) {
  * Selecciona "testOrder" arriba y pulsa Ejecutar. Autoriza los permisos.
  * Debe: crear/actualizar el Sheet, agregar una fila, y mandarte un correo.
  */
+/**
+ * Prueba rápida de suscriptores — selecciona "testSubscriber" y Ejecutar.
+ * Debe crear/usar la hoja "Suscriptores" y agregar una fila.
+ */
+function testSubscriber() {
+  logSubscriber_({ name: 'Cliente de prueba', phone: '8090000000', email: 'prueba@nines.com' });
+  Logger.log('Suscriptor de prueba agregado');
+}
+
 function testOrder() {
   var fake = {
     postData: {
