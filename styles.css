@@ -362,6 +362,17 @@
     .form{width:min(620px,100%);margin:auto;display:flex;padding:6px;border-radius:999px;background:white;box-shadow:0 18px 50px rgba(71,5,29,.10)}
     .form input{flex:1;border:0;outline:0;background:transparent;padding:0 22px;min-width:0}
 
+    .form-news{
+      display:flex;flex-direction:column;gap:12px;border-radius:24px;
+      background:white;box-shadow:0 18px 50px rgba(71,5,29,.10);padding:22px;
+    }
+    .form-news input{
+      border:1px solid var(--line);border-radius:14px;background:var(--ivory);
+      padding:14px 18px;font-size:14px;outline:0;transition:border-color .25s;
+    }
+    .form-news input:focus{border-color:var(--wine)}
+    .form-news button{border-radius:14px;padding:14px 22px;margin-top:2px}
+
     footer{background:#1f0d14;color:white;padding:80px clamp(24px,6vw,100px) 28px}
     .footer-grid{display:grid;grid-template-columns:1.2fr repeat(3,.65fr);gap:55px;padding-bottom:55px}
     .footer-logo{width:230px;filter:brightness(0) invert(1);margin-bottom:22px}
@@ -572,18 +583,25 @@ footer .brand-logo-svg{height:46px;color:#fff;margin-bottom:18px}
 .music-panel iframe{display:block}
 @media(max-width:640px){.music-panel{right:16px;bottom:52px}}
 
-/* ---- Aviso flotante invitando a poner la música (solo home, una vez) ---- */
-.music-invite{
-  position:fixed;right:20px;bottom:64px;z-index:498;max-width:230px;
-  background:var(--wine-deep);color:#fff;font-size:12.5px;line-height:1.5;
-  padding:13px 16px;border-radius:16px 16px 4px 16px;
-  box-shadow:0 16px 34px rgba(47,2,12,.28);cursor:pointer;
-  opacity:0;transform:translateY(10px) scale(.96);
-  transition:opacity .4s var(--ease),transform .4s var(--ease);
+/* ---- Modal grande de bienvenida invitando a poner la música (solo home, una vez) ---- */
+.music-modal-overlay{
+  position:fixed;inset:0;z-index:2000;
+  background:rgba(37,8,16,.55);backdrop-filter:blur(4px);
+  display:grid;place-items:center;padding:24px;
+  opacity:0;pointer-events:none;transition:opacity .4s var(--ease);
 }
-.music-invite.is-in{opacity:1;transform:translateY(0) scale(1)}
-.music-invite-arrow{display:inline-block;margin-left:2px}
-@media(max-width:640px){.music-invite{right:16px;bottom:54px;max-width:200px;font-size:12px}}
+.music-modal-overlay.is-in{opacity:1;pointer-events:auto}
+.music-modal{
+  background:var(--ivory);border-radius:24px;padding:44px 38px;max-width:380px;width:100%;
+  text-align:center;box-shadow:0 40px 90px rgba(37,8,16,.4);
+  transform:translateY(18px) scale(.96);transition:transform .4s var(--ease);
+}
+.music-modal-overlay.is-in .music-modal{transform:translateY(0) scale(1)}
+.music-modal-icon{font-size:34px;margin-bottom:14px}
+.music-modal h3{font-family:"Italiana",serif;font-size:28px;color:var(--wine-deep);margin:0 0 12px}
+.music-modal p{font-size:14.5px;color:var(--muted);line-height:1.6;margin:0 0 26px}
+.music-modal-actions{display:flex;flex-direction:column;gap:12px}
+.music-modal-skip{background:none;border:none;color:var(--muted);font-size:12.5px;text-decoration:underline;cursor:pointer;padding:4px}
 
 /* ---- Mensaje de bienvenida tras suscribirse al newsletter ---- */
 .newsletter-success{
