@@ -387,45 +387,65 @@
   function youtubeEmbedURL(link) {
     const m = String(link || "").match(/[?&]list=([a-zA-Z0-9_-]+)/);
     if (!m) return null;
-    return { url: `https://www.youtube.com/embed/videoseries?list=${m[1]}`, height: 250 };
+    return { url: `https://www.youtube.com/embed/videoseries?list=${m[1]}&autoplay=1`, height: 250 };
   }
   function spotifyEmbedURL(link) {
     const m = String(link || "").match(/open\.spotify\.com\/(playlist|album|track|artist)\/([a-zA-Z0-9]+)/);
     if (!m) return null;
-    return { url: `https://open.spotify.com/embed/${m[1]}/${m[2]}?utm_source=generator&theme=0`, height: 152 };
+    return { url: `https://open.spotify.com/embed/${m[1]}/${m[2]}?utm_source=generator&theme=0&autoplay=1`, height: 152 };
   }
 
   function initMusic() {
     const yt = youtubeEmbedURL(SHOP.youtubePlaylist);
-    const hasMusic = !!(yt || spotifyEmbedURL(SHOP.spotifyPlaylist) || SHOP.music);
-    if (hasMusic) musicInviteBanner();
-    if (yt) return initEmbedPlayer(yt);
-    const sp = spotifyEmbedURL(SHOP.spotifyPlaylist);
-    if (sp) return initEmbedPlayer(sp);
-    if (SHOP.music) return initMp3(SHOP.music);
+    const sp = !yt && spotifyEmbedURL(SHOP.spotifyPlaylist);
+    const hasMusic = !!(yt || sp || SHOP.music);
+    if (yt) initEmbedPlayer(yt);
+    else if (sp) initEmbedPlayer(sp);
+    else if (SHOP.music) initMp3(SHOP.music);
+    if (hasMusic) musicInviteModal();
   }
 
-  // aviso flotante que aparece una sola vez por sesión, justo cuando
-  // termina la intro del home, para que el cliente sepa que hay música
-  // (solo en el home — es donde vive esa intro; en las demás páginas
-  // el botón ya está siempre visible, sin necesitar aviso)
+  // aviso grande y centrado (como una bienvenida), que aparece una sola vez
+  // por sesión, justo cuando termina de deslizarse la intro del home, antes
+  // de que el cliente vea el home completo. El botón "Sí" es un clic real
+  // del cliente, así que el navegador SÍ deja reproducir con sonido de
+  // inmediato (a diferencia de intentarlo solo, que siempre se bloquea).
   const INVITE_KEY = "nines_music_invite_seen";
-  function musicInviteBanner() {
+  function musicInviteModal() {
     const loader = document.getElementById("loader");
     if (!loader) return; // no estamos en el home, no hay intro que esperar
     if (sessionStorage.getItem(INVITE_KEY)) return; // ya lo vio esta sesión
 
-    setTimeout(() => {
-      const banner = document.createElement("div");
-      banner.className = "music-invite";
-      banner.innerHTML = `🎶 Dale play a la música, relájate y disfruta tu compra <span class="music-invite-arrow">↘</span>`;
-      document.body.appendChild(banner);
+    const show = () => {
       sessionStorage.setItem(INVITE_KEY, "1");
-      requestAnimationFrame(() => banner.classList.add("is-in"));
-      const hide = () => { banner.classList.remove("is-in"); setTimeout(() => banner.remove(), 500); };
-      setTimeout(hide, 6000);
-      banner.addEventListener("click", hide);
-    }, 2200); // coincide con el momento en que la intro termina de deslizarse
+      const overlay = document.createElement("div");
+      overlay.className = "music-modal-overlay";
+      overlay.innerHTML = `
+        <div class="music-modal">
+          <div class="music-modal-icon">🎶</div>
+          <h3>Bienvenida a NINE'S</h3>
+          <p>Dale play a la música, relájate y disfruta tu compra.</p>
+          <div class="music-modal-actions">
+            <button class="btn btn-dark hoverable" data-music-yes>Sí, dale play</button>
+            <button class="music-modal-skip hoverable" data-music-no>Ahora no</button>
+          </div>
+        </div>`;
+      document.body.appendChild(overlay);
+      requestAnimationFrame(() => overlay.classList.add("is-in"));
+      const close = () => { overlay.classList.remove("is-in"); setTimeout(() => overlay.remove(), 400); };
+      overlay.querySelector("[data-music-yes]").addEventListener("click", () => {
+        if (window.__ninesOpenMusic) window.__ninesOpenMusic();
+        close();
+      });
+      overlay.querySelector("[data-music-no]").addEventListener("click", close);
+      overlay.addEventListener("click", e => { if (e.target === overlay) close(); });
+    };
+
+    // se sincroniza con el mismo instante en que la intro del home termina
+    // de desaparecer (ver el "loader.classList.add('done')" del home, 900ms
+    // después de que la página termina de cargar)
+    if (document.readyState === "complete") setTimeout(show, 950);
+    else window.addEventListener("load", () => setTimeout(show, 950));
   }
 
   function initEmbedPlayer({ url, height }) {
@@ -453,6 +473,11 @@
       }
     };
     btn.addEventListener("click", () => setOpen(!panel.classList.contains("is-open")));
+    window.__ninesOpenMusic = () => setOpen(true);
+    // si ya la había activado en una página anterior, la reabrimos sola al
+    // llegar aquí — con autoplay=1 en la URL, casi siempre retoma el sonido
+    // sin que el cliente tenga que darle clic otra vez (el navegador ya
+    // "confía" en este sitio porque el cliente interactuó con música antes)
     if (localStorage.getItem(MUSIC_KEY) === "1") setOpen(true);
   }
 
@@ -479,6 +504,7 @@
         audio.pause(); setOn(false);
       }
     });
+    window.__ninesOpenMusic = () => audio.play().then(() => setOn(true)).catch(() => setOn(false));
 
     // si ya la había activado antes, lo intentamos de nuevo en silencio;
     // si el navegador lo bloquea no pasa nada, el botón queda listo
