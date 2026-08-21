@@ -94,6 +94,7 @@ collections:
               - { label: "ID del producto", name: "id", widget: "string" }
               - { label: "Por qué es favorito (una frase corta)", name: "blurb", widget: "text", required: false }
           - { label: "Foto de la sección 'La tienda se siente como una marca'", name: "editorial", widget: "image", required: false, hint: "PNG con fondo transparente para mejor resultado." }
+          - { label: "Foto del mensaje de bienvenida (10% off)", name: "welcomeImage", widget: "image", required: false, hint: "Foto normal, con fondo — se muestra a la izquierda del mensaje de bienvenida. Si la dejas vacía, se usa un fondo de color." }
 
   - name: "tienda"
     label: "Configuración de la tienda"
