@@ -372,15 +372,57 @@
   document.addEventListener("nines:data-ready", () => { dataReady = true; tryInit(); });
 
   // ---------- música de fondo opcional: nunca suena sola, el navegador no
+  // ---------- música de fondo opcional: nunca suena sola, el navegador no
   // lo permite (y tampoco es lo que queremos). El cliente la activa con un
-  // botón flotante; si la activó, seguimos intentando en las páginas
-  // siguientes (algunos navegadores lo permiten una vez ya interactuó con
-  // el sitio; si no, el botón sigue ahí para que le dé play otra vez). ----------
+  // botón flotante. Dos modos, según lo que hayas puesto en el panel:
+  //  - spotifyPlaylist: abre un mini-reproductor de Spotify (100% legal
+  //    para música con derechos de autor, la licencia la maneja Spotify).
+  //  - music (MP3): reproduce el archivo directo, para pistas libres de
+  //    derechos como las de Pixabay.
+  // Si pones las dos, Spotify tiene prioridad. ----------
   const MUSIC_KEY = "nines_music_on";
-  function initMusic() {
-    const url = SHOP.music;
-    if (!url) return; // no has puesto música en el panel todavía
 
+  function spotifyEmbedURL(link) {
+    const m = String(link || "").match(/open\.spotify\.com\/(playlist|album|track|artist)\/([a-zA-Z0-9]+)/);
+    if (!m) return null;
+    return `https://open.spotify.com/embed/${m[1]}/${m[2]}?utm_source=generator&theme=0`;
+  }
+
+  function initMusic() {
+    const spotifyURL = spotifyEmbedURL(SHOP.spotifyPlaylist);
+    if (spotifyURL) return initSpotify(spotifyURL);
+    if (SHOP.music) return initMp3(SHOP.music);
+  }
+
+  function initSpotify(embedURL) {
+    const btn = document.createElement("button");
+    btn.className = "music-toggle";
+    btn.setAttribute("aria-label", "Playlist de Nine's");
+    btn.innerHTML = "🎵";
+    document.body.appendChild(btn);
+
+    const panel = document.createElement("div");
+    panel.className = "music-panel";
+    document.body.appendChild(panel);
+
+    let loaded = false;
+    const setOpen = open => {
+      panel.classList.toggle("is-open", open);
+      btn.classList.toggle("is-on", open);
+      localStorage.setItem(MUSIC_KEY, open ? "1" : "0");
+      if (open && !loaded) {
+        // el iframe solo se carga la primera vez que se abre, para no
+        // gastar datos del cliente si nunca le da clic a la música
+        panel.innerHTML = `<iframe src="${embedURL}" width="100%" height="152" frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
+        loaded = true;
+      }
+    };
+    btn.addEventListener("click", () => setOpen(!panel.classList.contains("is-open")));
+    if (localStorage.getItem(MUSIC_KEY) === "1") setOpen(true);
+  }
+
+  function initMp3(url) {
     const audio = document.createElement("audio");
     audio.src = url; audio.loop = true; audio.preload = "none";
 
