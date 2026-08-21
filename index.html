@@ -30,7 +30,7 @@
     <nav class="nav-links">
       <a class="nav-link hoverable" href="#shop">Shop</a>
       <a class="nav-link hoverable" href="#edit">The Nine’s Edit</a>
-      <a class="nav-link hoverable" href="#story">Nuestra historia</a>
+      <a class="nav-link hoverable" href="historia.html">Nuestra historia</a>
       <a class="nav-link hoverable" href="ofertas.html">Ofertas</a>
     </nav>
     <a href="#" class="hoverable">
@@ -109,7 +109,7 @@
           <p>
             Novedades, productos virales y esenciales que merecen un lugar en tu colección.
           </p>
-          <a href="#" class="btn btn-dark hoverable magnetic">Descubrir el favorito</a>
+          <a href="favoritos-semana.html" class="btn btn-dark hoverable magnetic">Descubrir el favorito</a>
           <div class="showcase-counter"><span id="showcaseNumber">01</span> <small>/ 03</small></div>
         </div>
 
@@ -146,7 +146,7 @@
           Nine’s no se presenta como un lugar lleno de productos. Se presenta como una mirada,
           una selección y una experiencia. Aquí la identidad dirige cada detalle.
         </p>
-        <a href="#" class="btn btn-light hoverable magnetic reveal delay-2">Conocer nuestra historia</a>
+        <a href="historia.html" class="btn btn-light hoverable magnetic reveal delay-2">Conocer nuestra historia</a>
       </div>
     </section>
 
@@ -173,10 +173,17 @@
         <p class="reveal delay-1">
           Nuevos drops, reposiciones, recomendaciones y accesos anticipados directamente en tu correo.
         </p>
-        <form class="form reveal delay-2" onsubmit="subscribe(event)">
+        <form class="form reveal delay-2" id="newsletterForm" onsubmit="subscribe(event)">
           <input id="email" type="email" placeholder="Tu correo electrónico" required>
           <button class="btn btn-dark hoverable magnetic" type="submit">Quiero entrar</button>
         </form>
+        <div class="newsletter-success" id="newsletterSuccess" style="display:none">
+          <div class="newsletter-success-icon">✦</div>
+          <h3>¡Bienvenida a la familia NINE'S!</h3>
+          <p>Por animarte a formar parte, te regalamos un <strong>10% de descuento</strong> en tu primera compra.</p>
+          <div class="newsletter-code">BIENVENIDA10</div>
+          <p class="newsletter-hint">Menciona este código quien coordine tu pedido por WhatsApp.</p>
+        </div>
       </div>
     </section>
   </main>
@@ -307,7 +314,13 @@
     function subscribe(e){
       e.preventDefault();
       const email = document.getElementById('email').value;
-      alert(`Bienvenida a The Nine’s List ✦\n${email}`);
+      document.getElementById('newsletterForm').style.display = 'none';
+      document.getElementById('newsletterSuccess').style.display = 'block';
+      // registro simple del correo, solo para tu conocimiento (revisa la consola
+      // del navegador). Si más adelante quieres guardarlos de verdad en un
+      // Sheet o mandar el código por correo automático, se puede conectar
+      // al mismo backend de pedidos.
+      console.log('Nueva suscriptora The Nine\'s List:', email);
       e.target.reset();
     }
   </script>
@@ -368,10 +381,10 @@
           ? `<img src="${p.img}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover">`
           : `<div class="pcard-swatch" style="position:static;font-size:40px">${p.brand.charAt(0)}</div>`;
         const priceLine = p.price > 0 ? `RD$ ${Number(p.price).toLocaleString("es-DO")}` : "Disponible en Nine's";
-        return `<article class="product-card reveal hoverable">
+        return `<a href="${p.cat}.html?highlight=${p.id}" class="product-card reveal hoverable">
           <div class="product-image real-product">${img}</div>
           <div class="product-meta"><small>${p.brand}</small><h3>${p.name}</h3><strong>${priceLine}</strong></div>
-        </article>`;
+        </a>`;
       }).join("");
       // conecta las tarjetas recién creadas a la animación de aparición
       // (el observer solo revisó las que existían al cargar la página)
