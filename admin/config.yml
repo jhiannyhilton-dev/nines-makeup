@@ -102,7 +102,8 @@ collections:
               - { label: "WhatsApp (con código de país, ej. 18098862048)", name: "whatsapp", widget: "string" }
               - { label: "Dirección de la tienda", name: "address", widget: "string" }
               - { label: "Símbolo de moneda", name: "currency", widget: "string" }
-              - { label: "Música de fondo (opcional)", name: "music", widget: "file", required: false, hint: "Sube un MP3 corto (idealmente que haga loop bien, 2-4 min). El cliente la activa con un botón — nunca suena sola." }
+              - { label: "Música de fondo — MP3 (opcional)", name: "music", widget: "file", required: false, hint: "Solo úsalo si NO vas a usar la playlist de Spotify de abajo. Sube un MP3 corto (2-4 min) libre de derechos." }
+              - { label: "Tu playlist de Spotify (opcional, reemplaza a la de MP3)", name: "spotifyPlaylist", widget: "string", required: false, hint: "Pega el link para compartir de tu playlist (Spotify → los 3 puntos → Compartir → Copiar enlace). Ej: https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M" }
           - label: "Zonas de envío"
             name: "ZONES"
             widget: "list"
