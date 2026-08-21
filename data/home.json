@@ -9,5 +9,10 @@
     "e-070",
     "g-084"
   ],
+  "weeklyFavorites": [
+    { "id": "rb-076", "blurb": "El blush líquido que no falta en ninguna rutina — un color natural que dura todo el día." },
+    { "id": "hb-001", "blurb": "El polvo suelto favorito para un acabado sin brillo, perfecto para cualquier tono de piel." },
+    { "id": "e-070", "blurb": "El primer que agarra hasta el maquillaje más terco — la base de una piel que dura." }
+  ],
   "editorial": ""
 }
