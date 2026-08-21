@@ -2187,6 +2187,10 @@
         {
           "name": "09 Jam Session",
           "img": ""
+        },
+        {
+          "name": "10 Crystal Clear",
+          "img": ""
         }
       ],
       "saleEndsAt": null,
@@ -2296,6 +2300,26 @@
         },
         {
           "name": "Coral Crush",
+          "img": ""
+        },
+        {
+          "name": "Copper Etiquette",
+          "img": ""
+        },
+        {
+          "name": "Cheeky Lychee",
+          "img": ""
+        },
+        {
+          "name": "Pinky Promise",
+          "img": ""
+        },
+        {
+          "name": "Suave Mauve",
+          "img": ""
+        },
+        {
+          "name": "Gorg Orange",
           "img": ""
         }
       ],
@@ -2909,6 +2933,78 @@
       "cat": "fragancias",
       "id": "g-087",
       "spec": "50ml"
+    },
+    {
+      "id": "hb-088",
+      "brand": "Huda Beauty",
+      "name": "Blush Filter Palette",
+      "cat": "rostro",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        {
+          "name": "Toasty Peach",
+          "img": ""
+        }
+      ],
+      "cost": "1: $5.80",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "d-089",
+      "brand": "Dior",
+      "name": "Set de miniaturas de perfume",
+      "cat": "fragancias",
+      "spec": "4 x 5ml",
+      "price": 0,
+      "img": null,
+      "variants": [
+        {
+          "name": "Único",
+          "img": ""
+        }
+      ],
+      "cost": "1: $7.00",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "t28-090",
+      "brand": "Tower 28 Beauty",
+      "name": "ShineOn Lip Jelly",
+      "cat": "labios",
+      "spec": "",
+      "price": 0,
+      "img": null,
+      "variants": [
+        {
+          "name": "Único",
+          "img": ""
+        }
+      ],
+      "cost": "5: $1.80",
+      "salePrice": 0,
+      "saleEndsAt": null
+    },
+    {
+      "id": "r-091",
+      "brand": "Rhode",
+      "name": "Peptide Lip Tint (lata)",
+      "cat": "labios",
+      "spec": "lata redonda",
+      "price": 0,
+      "img": null,
+      "variants": [
+        {
+          "name": "Único",
+          "img": ""
+        }
+      ],
+      "cost": "10-26: $0.60-$0.90",
+      "salePrice": 0,
+      "saleEndsAt": null
     }
   ]
 }
