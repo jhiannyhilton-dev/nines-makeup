@@ -384,24 +384,18 @@
     const catGrid = document.querySelector("[data-category-grid]");
     if (catGrid && typeof CATEGORIES !== "undefined" && CATEGORIES.length) {
       const DECOR = {
-        labios:    { big:true, orbs:[{w:280,h:280,r:"8%",t:"10%"},{w:130,h:130,l:"12%",t:"36%"}], grad:"linear-gradient(145deg,#b75a7c,#4c071d)" },
-        rostro:    { orbs:[{w:150,h:150,r:"10%",t:"13%"}], grad:"linear-gradient(145deg,#edcbd6,#a64a6c)" },
-        ojos:      { orbs:[{w:180,h:180,l:"18%",t:"8%"}], grad:"linear-gradient(145deg,#6e1838,#260711)" },
-        skincare:  { orbs:[{w:110,h:110,r:"14%",t:"20%"}], grad:"linear-gradient(145deg,#e8d5dd,#9a5a72)" },
-        sets:      { orbs:[{w:145,h:145,l:"9%",t:"13%"}], grad:"linear-gradient(145deg,#d996ad,#7c173d)" },
-        cabello:   { orbs:[{w:130,h:130,r:"12%",t:"16%"}], grad:"linear-gradient(145deg,#c9a45a,#5a3a12)" },
-        fragancias:{ orbs:[{w:120,h:120,l:"14%",t:"12%"}], grad:"linear-gradient(145deg,#7c173d,#260711)" }
-      };
-      const orbHTML = o => {
-        let pos = `width:${o.w}px;height:${o.h}px;`;
-        if (o.r) pos += `right:${o.r};`; if (o.l) pos += `left:${o.l};`; if (o.t) pos += `top:${o.t};`;
-        return `<div class="orb" style="${pos}"></div>`;
+        labios:    { big:true, grad:"linear-gradient(145deg,#b75a7c,#4c071d)" },
+        rostro:    { grad:"linear-gradient(145deg,#edcbd6,#a64a6c)" },
+        ojos:      { grad:"linear-gradient(145deg,#6e1838,#260711)" },
+        skincare:  { grad:"linear-gradient(145deg,#e8d5dd,#9a5a72)" },
+        sets:      { grad:"linear-gradient(145deg,#d996ad,#7c173d)" },
+        cabello:   { grad:"linear-gradient(145deg,#c9a45a,#5a3a12)" },
+        fragancias:{ grad:"linear-gradient(145deg,#7c173d,#260711)" }
       };
       const cardHTML = (cat, delayClass) => {
         const d = DECOR[cat.slug] || {};
         const bg = cat.img ? `url('${cat.img}')` : (d.grad || "linear-gradient(145deg,#b75a7c,#4c071d)");
         return `<a class="category-card tilt reveal ${delayClass} hoverable" href="${cat.href || (cat.slug + '.html')}" style="--bg:${bg}">
-          ${(d.orbs || []).map(orbHTML).join("")}
           <div class="category-copy"><h3>${cat.name}</h3><span>${cat.note || ""}</span></div>
         </a>`;
       };
