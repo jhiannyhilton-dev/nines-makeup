@@ -547,3 +547,20 @@ footer .brand-logo-svg{height:46px;color:#fff;margin-bottom:18px}
 .pay-method.is-soon{opacity:.55;cursor:default}
 .pay-method.is-soon:hover{border-color:var(--line);box-shadow:none;transform:none}
 .pay-secure{font-size:11px;color:var(--muted);line-height:1.6;padding:13px;background:var(--blush);border-radius:12px;border-left:2px solid var(--wine);margin-top:16px}
+
+/* ---- Botón de música de fondo (opcional, apagado por defecto) ---- */
+.music-toggle{
+  position:fixed;right:20px;bottom:20px;z-index:500;
+  width:48px;height:48px;border-radius:50%;border:none;cursor:pointer;
+  background:var(--wine-deep);color:#fff;font-size:18px;
+  display:grid;place-items:center;
+  box-shadow:0 10px 26px rgba(47,2,12,.3);
+  transition:transform .3s var(--ease),background .3s var(--ease);
+}
+.music-toggle:hover{transform:scale(1.08)}
+.music-toggle.is-on{background:var(--wine);animation:musicPulse 2s ease-in-out infinite}
+@keyframes musicPulse{
+  0%,100%{box-shadow:0 10px 26px rgba(47,2,12,.3),0 0 0 0 rgba(135,11,57,.35)}
+  50%{box-shadow:0 10px 26px rgba(47,2,12,.3),0 0 0 10px rgba(135,11,57,0)}
+}
+@media(max-width:640px){.music-toggle{right:16px;bottom:16px;width:44px;height:44px;font-size:16px}}
