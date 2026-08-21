@@ -7,13 +7,13 @@
   "ZONES": [
     {
       "id": "isabelita",
-      "name": "Villa Duarte / Puente Juan Carlos.",
-      "fee": 250
+      "name": "Ensanche Isabelita / Alma Rosa",
+      "fee": 150
     },
     {
       "id": "sde",
       "name": "Santo Domingo Este (resto)",
-      "fee": 300
+      "fee": 250
     },
     {
       "id": "dn",
@@ -23,12 +23,12 @@
     {
       "id": "norte",
       "name": "Santo Domingo Norte",
-      "fee": 500
+      "fee": 400
     },
     {
       "id": "oeste",
       "name": "Santo Domingo Oeste",
-      "fee": 525
+      "fee": 450
     },
     {
       "id": "otro",
@@ -38,34 +38,53 @@
   ],
   "CATEGORIES": [
     {
-      "slug": "rostro",
-      "name": "Rostro",
-      "note": "Base, blush, glow y polvos."
-    },
-    {
       "slug": "labios",
       "name": "Labios",
-      "note": "Gloss, lip oils, labiales y liners."
+      "note": "Gloss · Lip oils · Liners →",
+      "href": "labios.html",
+      "img": "/uploads/categoria-labios.jpg"
+    },
+    {
+      "slug": "rostro",
+      "name": "Rostro",
+      "note": "Base · Blush · Glow →",
+      "href": "rostro.html",
+      "img": ""
     },
     {
       "slug": "ojos",
       "name": "Ojos",
-      "note": "Paletas, máscara y delineado."
+      "note": "Máscara · Liner · Paletas →",
+      "href": "ojos.html",
+      "img": ""
     },
     {
       "slug": "skincare",
       "name": "Skincare",
-      "note": "Prep, hidratación y tratamiento."
+      "note": "Prep · Hydrate · Glow →",
+      "href": "skincare.html",
+      "img": ""
+    },
+    {
+      "slug": "sets",
+      "name": "Sets",
+      "note": "Combos seleccionados →",
+      "href": "catalogo.html",
+      "img": ""
     },
     {
       "slug": "cabello",
       "name": "Cabello",
-      "note": "Aceites, mascarillas y perfume capilar."
+      "note": "Aceites · Mascarillas →",
+      "href": "cabello.html",
+      "img": ""
     },
     {
       "slug": "fragancias",
       "name": "Fragancias",
-      "note": "Perfumes y brumas."
+      "note": "Perfumes · Brumas →",
+      "href": "fragancias.html",
+      "img": ""
     }
   ],
   "FEATURED": {
