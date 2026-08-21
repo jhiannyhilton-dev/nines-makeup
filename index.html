@@ -257,12 +257,12 @@
       }
     }, { passive:true });
 
-    const observer = new IntersectionObserver((entries) => {
+    window.__ninesObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if(entry.isIntersecting) entry.target.classList.add('visible');
       });
     }, { threshold:.16 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    document.querySelectorAll('.reveal').forEach(el => window.__ninesObserver.observe(el));
 
     let mouseX = 0, mouseY = 0, cursorX = 0, cursorY = 0;
     document.addEventListener('mousemove', e => {
@@ -373,6 +373,11 @@
           <div class="product-meta"><small>${p.brand}</small><h3>${p.name}</h3><strong>${priceLine}</strong></div>
         </article>`;
       }).join("");
+      // conecta las tarjetas recién creadas a la animación de aparición
+      // (el observer solo revisó las que existían al cargar la página)
+      grid.querySelectorAll(".reveal").forEach(el => window.__ninesObserver
+        ? window.__ninesObserver.observe(el)
+        : el.classList.add("visible"));
     }
 
     // ---- categorías del home: dibujadas desde CATEGORIES (panel → Tienda) ----
@@ -416,6 +421,10 @@
         });
         card.addEventListener("mouseleave", () => card.style.transform = "");
       });
+      // mismo arreglo: conectar estas tarjetas a la animación de aparición
+      catGrid.querySelectorAll(".reveal").forEach(el => window.__ninesObserver
+        ? window.__ninesObserver.observe(el)
+        : el.classList.add("visible"));
     }
   }).catch(err => console.error("NINE'S home:", err));
 </script>
