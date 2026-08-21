@@ -118,6 +118,8 @@ collections:
               - { label: "Slug (no cambiar)", name: "slug", widget: "string" }
               - { label: "Nombre", name: "name", widget: "string" }
               - { label: "Descripción corta", name: "note", widget: "string" }
+              - { label: "Página a la que enlaza (no cambiar)", name: "href", widget: "string" }
+              - { label: "Foto de portada de la categoría", name: "img", widget: "image", required: false, hint: "Puedes subirla desde tu computadora, elegirla de la galería de medios, o pegar una URL. Si la dejas vacía, se muestra un color de fondo." }
           - label: "Marca destacada del banner (home)"
             name: "FEATURED"
             widget: "object"
