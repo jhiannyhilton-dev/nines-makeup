@@ -234,7 +234,8 @@
     .category-stack .category-card{min-height:314px}
     .category-card::before{
       content:"";position:absolute;inset:-4%;z-index:-2;
-      background:var(--bg);transition:transform .8s var(--ease)
+      background:var(--bg);background-size:cover;background-position:center;
+      transition:transform .8s var(--ease)
     }
     .category-card::after{
       content:"";position:absolute;inset:0;z-index:-1;
