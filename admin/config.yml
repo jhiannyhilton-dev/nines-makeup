@@ -103,7 +103,8 @@ collections:
               - { label: "Dirección de la tienda", name: "address", widget: "string" }
               - { label: "Símbolo de moneda", name: "currency", widget: "string" }
               - { label: "Música de fondo — MP3 (opcional)", name: "music", widget: "file", required: false, hint: "Solo úsalo si NO vas a usar la playlist de Spotify de abajo. Sube un MP3 corto (2-4 min) libre de derechos." }
-              - { label: "Tu playlist de Spotify (opcional, reemplaza a la de MP3)", name: "spotifyPlaylist", widget: "string", required: false, hint: "Pega el link para compartir de tu playlist (Spotify → los 3 puntos → Compartir → Copiar enlace). Ej: https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M" }
+              - { label: "Tu playlist de Spotify (opcional)", name: "spotifyPlaylist", widget: "string", required: false, hint: "Solo se usa si el campo de YouTube de abajo está vacío. Corta las canciones a 30 seg si el cliente no tiene sesión de Spotify iniciada — es una restricción de Spotify, no nuestra." }
+              - { label: "Tu playlist de YouTube Music (recomendado, reproduce canciones completas)", name: "youtubePlaylist", widget: "string", required: false, hint: "Pega el link para compartir de tu playlist (YouTube Music → los 3 puntos → Compartir → Copiar enlace). Tiene prioridad sobre Spotify si llenas los dos." }
           - label: "Zonas de envío"
             name: "ZONES"
             widget: "list"
